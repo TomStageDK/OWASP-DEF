@@ -7,7 +7,10 @@ OWASP DEF (Data Exchange Format Project)
 
 This is a draft project for the above.
 
-The goal for this draft is to come up with an Data Exchange Format that should be able to hold almost any Penetration test software output.
+The goal of this draft is to come up with an Data Exchange Format that should be able to hold almost any Penetration test software output.
+
+This is based on the initial work done by Simon Bennetts (Psiinon) Zed Attack Proxy Project Leader and  Dinis Cruz O2 Platform Project Leader, 
+and a lot of input from Dan Cornell and the guys behind Threadfix and the SSVL format.
 
 Further information can be found at the above links.
 
