@@ -1,0 +1,45 @@
+<Vulnerabilities SpecVersion=”0.1”>
+	<Session>
+	    <!-- Note that most of the elements will probably be optional-->
+	    <Session-reference>Product specific reference</Session-reference>
+	    <Tool-name>Name of the tool that found the issue</Tool-name>
+	    <Tool-version>Version of the tool that found the issue</Tool-version>
+	    <Date-time>Date and time the session was started</Date-time>
+	    <Summary>A sort (one line) description</Summary>
+	    <Description>More detailed description</Description>
+		<Site>
+		    <Host>The hostname</Host>
+		    <Port>The port</Port>
+		</Site>
+		<Issues>
+			<Issue>
+			    <Issue-reference>Product specific reference</Issue-reference>
+			    <Summary>A sort (one line) description</Summary>
+			    <Description>More detailed description</Description>
+			    <Further-info>More information about this specific issue</Further-info>
+			    <Severity>One of an agreed list of values</Severity>
+			    <Confidence>One of an agreed list of values</Confidence>
+			    <Background>More info on the type of issue</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <WASC-classification>WASC classification</WASC-classification>
+			    <Reference-URLs/>
+				<Pages>
+					<Page>
+					    <Page-reference>Product specific reference</Page-reference>
+					    <Method>HTTP method (GET, POST, etc)</Method>
+					    <URL>The actual URL</URL>
+						<Parameters>
+						    <Parameter>The parameter</Parameter> <!-- multiple -->
+						</Parameters>
+						<Request-response>
+						    <Page-reference>Product specific reference</Page-reference>
+						    <Request>The base64 encoded request</Request>
+						    <Response>The base64 encoded response</Response>
+						</Request-response>
+					</Page>
+				</Pages>
+			</Issue>
+		</Issues>
+	</Session>
+</Vulnerabilities>
+	
