@@ -39,7 +39,7 @@
                                       <xs:element type="xs:string" name="Confidence"/>
                                       <xs:element type="xs:string" name="Background"/>
                                       <xs:element type="xs:string" name="Remediation"/>
-                                      <xs:element name="classification">
+                                      <xs:element name="Classification">
                                         <xs:complexType>
                                           <xs:simpleContent>
                                             <xs:extension base="xs:string">
@@ -125,7 +125,7 @@
                           <xs:element type="xs:byte" name="Confidence"/>
                           <xs:element type="xs:string" name="Background"/>
                           <xs:element type="xs:string" name="Remediation"/>
-                          <xs:element name="classification">
+                          <xs:element name="Classification">
                             <xs:complexType>
                               <xs:simpleContent>
                                 <xs:extension base="xs:string">

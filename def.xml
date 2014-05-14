@@ -17,7 +17,7 @@
 					    <Confidence>One of an agreed list of values</Confidence>
 					    <Background>More info on the type of issue</Background> <!-- Optional (or is Further-info enough?) -->
 					    <Remediation>Advise on how to fix the issue</Remediation> <!-- Optional (or is Further-info enough?) -->
-					    <classification type="the scoring system 1" id="The calssification from the scoring system 1" url="http://www.cvedetails.com/cwe-details/79/Failure-to-Preserve-Web-Page-Structure-039-Cross-site-Scr.html"/> <!-- multiple -->
+					    <Classification type="the scoring system 1" id="The calssification from the scoring system 1" url="http://www.cvedetails.com/cwe-details/79/Failure-to-Preserve-Web-Page-Structure-039-Cross-site-Scr.html"/> <!-- multiple -->
 						<Page>
 						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
 						    <Method>HTTP method (GET, POST, etc)</Method>
@@ -41,7 +41,7 @@
 					    <Confidence>One of an agreed list of values</Confidence>
 					    <Background>More info on the type of issue</Background> <!-- Optional (or is Further-info enough?) -->
 					    <Remediation>Advise on how to fix the issue</Remediation> <!-- Optional (or is Further-info enough?) -->
-					    <classification type="the scoring system 1" id="The calssification from the scoring system 1" /> <!-- multiple -->
+					    <Classification type="the scoring system 1" id="The calssification from the scoring system 1" /> <!-- multiple -->
 						<Page>
 						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
 						    <Method>HTTP method (GET, POST, etc)</Method>
@@ -72,7 +72,7 @@
 			    <Confidence>10</Confidence>
 			    <Background>More info on the type of issue</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
-			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
 				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0"> <!-- multiple -->
 					<LineText>
 					String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
@@ -98,7 +98,7 @@
 			    <Confidence>10</Confidence>
 			    <Background>More info on the type of issue</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
-			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
 				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0"> <!-- multiple -->
 					<LineText>
 					String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
@@ -133,7 +133,7 @@
 				2. The data is included in dynamic content that is sent to a web user without being validated for malicious code.
 				</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
-			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
 				<DataFlowElement SourceFileName="C:\Projects\Site\php\Web\index.php" LineNumber="42"> <!-- multiple -->
 					<LineText>
 						<![CDATA[<link rel="stylesheet" href="<?php echo $tmpTools->templateurl();?>/css/template_rtl.css" type="text/css" />]]>
@@ -153,7 +153,7 @@
 				2. The data is included in dynamic content that is sent to a web user without being validated for malicious code.
 				</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
-			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
 				<DataFlowElement SourceFileName="C:\Projects\Site\php\Web\index.php" LineNumber="42"> <!-- multiple -->
 					<LineText>
 						<![CDATA[<link rel="stylesheet" href="<?php echo $tmpTools->templateurl();?>/css/template_rtl.css" type="text/css" />]]>
