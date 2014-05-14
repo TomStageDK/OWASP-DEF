@@ -17,7 +17,7 @@
 					    <Confidence>One of an agreed list of values</Confidence>
 					    <Background>More info on the type of issue</Background>
 					    <Remediation>Advise on how to fix the issue</Remediation>
-					    <classification type="the scoring system 1" id="The calssification from the scoring system 1" />
+					    <classification type="the scoring system 1" id="The calssification from the scoring system 1" url="http://www.cvedetails.com/cwe-details/79/Failure-to-Preserve-Web-Page-Structure-039-Cross-site-Scr.html"/>
 						<Page>
 						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
 						    <Method>HTTP method (GET, POST, etc)</Method>
