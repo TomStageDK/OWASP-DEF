@@ -1,10 +1,5 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:annotation>
-        <xs:documentation>
-            This is version 0.1 of the XSD format for SSVL
-        </xs:documentation>
-    </xs:annotation>
-   <xs:element name="DEF">
+  <xs:element name="DEF">
     <xs:complexType>
       <xs:sequence>
         <xs:element type="xs:string" name="Session-reference"/>
@@ -32,7 +27,7 @@
                           <xs:element type="xs:string" name="Software-name" minOccurs="0"/>
                           <xs:element type="xs:string" name="Software-version" minOccurs="0"/>
                           <xs:element type="xs:string" name="Software-arguments" minOccurs="0"/>
-                          <xs:element name="Vulnerability" minOccurs="0">
+                          <xs:element name="Vulnerability" maxOccurs="unbounded" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="Finding">
@@ -40,7 +35,6 @@
                                     <xs:sequence>
                                       <xs:element type="xs:string" name="Summary"/>
                                       <xs:element type="xs:string" name="Description"/>
-                                      <xs:element type="xs:string" name="Severity"/>
                                       <xs:element type="xs:string" name="Further-info"/>
                                       <xs:element type="xs:string" name="Confidence"/>
                                       <xs:element type="xs:string" name="Background"/>
@@ -49,8 +43,8 @@
                                         <xs:complexType>
                                           <xs:simpleContent>
                                             <xs:extension base="xs:string">
-                                              <xs:attribute type="xs:string" name="type"/>
-                                              <xs:attribute type="xs:string" name="id"/>
+                                              <xs:attribute type="xs:string" name="type" use="optional"/>
+                                              <xs:attribute type="xs:string" name="id" use="optional"/>
                                             </xs:extension>
                                           </xs:simpleContent>
                                         </xs:complexType>
@@ -81,12 +75,12 @@
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute type="xs:short" name="NativeID"/>
-                                    <xs:attribute type="xs:string" name="IdentifiedTimestamp"/>
+                                    <xs:attribute type="xs:short" name="NativeID" use="optional"/>
+                                    <xs:attribute type="xs:string" name="IdentifiedTimestamp" use="optional"/>
                                   </xs:complexType>
                                 </xs:element>
                               </xs:sequence>
-                              <xs:attribute type="xs:string" name="Severity"/>
+                              <xs:attribute type="xs:string" name="Severity" use="optional"/>
                             </xs:complexType>
                           </xs:element>
                           <xs:element name="data" maxOccurs="unbounded" minOccurs="0">
@@ -118,15 +112,14 @@
               <xs:element type="xs:string" name="Software-name"/>
               <xs:element type="xs:string" name="Software-version"/>
               <xs:element type="xs:string" name="Software-arguments"/>
-              <xs:element name="Vulnerability" minOccurs="0">
+              <xs:element name="Vulnerability" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Finding">
                       <xs:complexType>
-                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                        <xs:sequence>
                           <xs:element type="xs:string" name="Summary"/>
                           <xs:element type="xs:string" name="Description"/>
-                          <xs:element type="xs:string" name="Severity"/>
                           <xs:element type="xs:string" name="Further-info"/>
                           <xs:element type="xs:byte" name="Confidence"/>
                           <xs:element type="xs:string" name="Background"/>
@@ -142,7 +135,7 @@
                               </xs:simpleContent>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element name="DataFlowElement">
+                          <xs:element name="DataFlowElement" maxOccurs="unbounded" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element type="xs:string" name="LineText"/>
@@ -153,7 +146,7 @@
                               <xs:attribute type="xs:byte" name="Sequence" use="optional"/>
                             </xs:complexType>
                           </xs:element>
-                        </xs:choice>
+                        </xs:sequence>
                         <xs:attribute type="xs:short" name="NativeID" use="optional"/>
                         <xs:attribute type="xs:string" name="IdentifiedTimestamp" use="optional"/>
                       </xs:complexType>
