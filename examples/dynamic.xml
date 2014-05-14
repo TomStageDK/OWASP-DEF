@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<DEF SpecVersion="0.1">
+    <Session-reference>Product specific reference</Session-reference>
+    <Date-time>Date and time the session was started</Date-time>
+	<Scan type="dynamic"> <!-- multiple -->
+		<Host name="Hostname" ip-address="1.1.1.1">
+			<Port protocol="tcp / udp" portid="80">
+				<Service name="http" product="Apache httpd 2.2.3" version="1.0" />
+			    <Software-name>Name of the tool that found the issue</Software-name>
+			    <Software-version>Version of the tool that found the issue</Software-version>
+			    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+				<Vulnerability Severity="Critical"> <!-- multiple -->
+					<Finding NativeID="12345" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+					    <Summary>A sort (one line) description</Summary>
+					    <Description>More detailed description</Description>
+					    <Further-info>More information about this specific issue</Further-info> <!-- multiple -->
+					    <Confidence>One of an agreed list of values</Confidence>
+					    <Background>More info on the type of issue</Background> <!-- Optional (or is Further-info enough?) -->
+					    <Remediation>Advise on how to fix the issue</Remediation> <!-- Optional (or is Further-info enough?) -->
+					    <classification type="the scoring system 1" id="The calssification from the scoring system 1" /> <!-- multiple -->
+						<Page>
+						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
+						    <Method>HTTP method (GET, POST, etc)</Method>
+						    <URL>The actual URL</URL>
+							<Parameters>
+							    <Parameter>The parameter</Parameter> <!-- multiple? -->
+							</Parameters>
+							<Request-response>
+							    <Request>The request</Request> <!-- Should this be base 64 encoded? -->
+							    <Response>The response</Response> <!-- Should this be base 64 encoded? -->
+							    <html>Base 64 encoded HTML responce</html>
+							</Request-response>
+						</Page>
+					</Finding>
+				</Vulnerability>
+				<Vulnerability Severity="High"> <!-- multiple -->
+					<Finding NativeID="12345" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+					    <Summary>A sort (one line) description</Summary>
+					    <Description>More detailed description</Description>
+					    <Further-info>More information about this specific issue</Further-info> <!-- multiple -->
+					    <Confidence>One of an agreed list of values</Confidence>
+					    <Background>More info on the type of issue</Background> <!-- Optional (or is Further-info enough?) -->
+					    <Remediation>Advise on how to fix the issue</Remediation> <!-- Optional (or is Further-info enough?) -->
+					    <classification type="the scoring system 1" id="The calssification from the scoring system 1" /> <!-- multiple -->
+						<Page>
+						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
+						    <Method>HTTP method (GET, POST, etc)</Method>
+						    <URL>The actual URL</URL>
+							<Parameters>
+							    <Parameter>The parameter</Parameter> <!-- multiple? -->
+							</Parameters>
+							<Request-response>
+							    <Request>The request</Request> <!-- Should this be base 64 encoded? -->
+							    <Response>The response</Response> <!-- Should this be base 64 encoded? -->
+							    <html>Base 64 encoded HTML responce</html>
+							</Request-response>
+						</Page>
+					</Finding>
+				</Vulnerability>
+			</Port>
+		</Host>
+	</Scan>
+</DEF>
+	

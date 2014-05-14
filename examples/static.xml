@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<DEF SpecVersion="0.1">
+    <Session-reference>Product specific reference</Session-reference>
+    <Date-time>Date and time the session was started</Date-time>
+	<Scan type="static"> <!-- multiple -->
+	    <Software-name>Microsoft CAT.NET</Software-name>
+	    <Software-version>1</Software-version>
+	    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+		<Vulnerability Severity="Critical"> <!-- multiple -->
+			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+			    <Summary>XSS</Summary>
+			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info> <!-- multiple -->
+			    <Confidence>10</Confidence>
+			    <Background>More info on the type of issue</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0"> <!-- multiple -->
+					<LineText>
+					String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="17" Sequence="1">
+					<LineText>
+					cmd = new SqlCommand(sql);
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="22" Sequence="2">
+					<LineText>
+					reader = cmd.ExecuteReader();
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+		<Vulnerability Severity="High"> <!-- multiple -->
+			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+			    <Summary>XSS</Summary>
+			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info> <!-- multiple -->
+			    <Confidence>10</Confidence>
+			    <Background>More info on the type of issue</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0"> <!-- multiple -->
+					<LineText>
+					String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="17" Sequence="1">
+					<LineText>
+					cmd = new SqlCommand(sql);
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="22" Sequence="2">
+					<LineText>
+					reader = cmd.ExecuteReader();
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+	</Scan>
+	<Scan type="static"> <!-- multiple -->
+	    <Software-name>HP Fortify SCA</Software-name>
+	    <Software-version>SCA Engine version: 5.7.0.0025</Software-version>
+	    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+		<Vulnerability Severity="Critical"> <!-- multiple -->
+			<Finding>
+			    <Summary>Cross-Site Scripting: Reflected</Summary>
+			    <Description>More detailed description</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info> <!-- multiple -->
+			    <Confidence>10</Confidence>
+			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
+				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
+					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.
+				2. The data is included in dynamic content that is sent to a web user without being validated for malicious code.
+				</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+				<DataFlowElement SourceFileName="C:\Projects\Site\php\Web\index.php" LineNumber="42"> <!-- multiple -->
+					<LineText>
+						<![CDATA[<link rel="stylesheet" href="<?php echo $tmpTools->templateurl();?>/css/template_rtl.css" type="text/css" />]]>
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+		<Vulnerability Severity="High"> <!-- multiple -->
+			<Finding>
+			    <Summary>Cross-Site Scripting: Reflected</Summary>
+			    <Description>More detailed description</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info> <!-- multiple -->
+			    <Confidence>10</Confidence>
+			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
+				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
+					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.
+				2. The data is included in dynamic content that is sent to a web user without being validated for malicious code.
+				</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/> <!-- multiple -->
+				<DataFlowElement SourceFileName="C:\Projects\Site\php\Web\index.php" LineNumber="42"> <!-- multiple -->
+					<LineText>
+						<![CDATA[<link rel="stylesheet" href="<?php echo $tmpTools->templateurl();?>/css/template_rtl.css" type="text/css" />]]>
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+	</Scan>
+</DEF>
+	
