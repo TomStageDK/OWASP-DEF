@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <DEF SpecVersion="0.1">
-    <Session-reference>Product specific reference</Session-reference>
-    <Date-time>Date and time the session was started</Date-time>
+    <Session-Reference>Product specific reference</Session-Reference>
+    <Date-Time>Date and time the session was started</Date-Time>
 	<Scan type="static">
-	    <Software-name>The name of the Software that did the scan</Software-name>
-	    <Software-version>The version of the Software that did the scan</Software-version>
-	    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+	    <Software-Name>The name of the Software that did the scan</Software-Name>
+	    <Software-Version>The version of the Software that did the scan</Software-Version>
+	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
 		<Vulnerability Severity="The Severity">
-			<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" uniqueID="The Software unique ID for this Finding">
+			<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" UniqueID="The Software unique ID for this Finding">
 			    <Summary>A sort (one line) description</Summary>
 			    <Description>More detailed description</Description>
 			    <Confidence>One of an agreed list of values</Confidence>
 			    <Background>More info on the type of issue</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
-			    <Further-information>
-			    	<Further-info>More information about this specific issue</Further-info>
-			    </Further-information>
+			    <Further-Information>
+			    	<Further-Info>More information about this specific issue</Further-Info>
+			    </Further-Information>
 				<Classifications>
-					<Classification type="The Classification System" id="Classification ID" href="The URL to the Classification description">The Title for the Clasasification</Classification>
+					<Classification type="The Classification System" id="Classification ID" href="The URL to the Classification description">The Title for the Classification</Classification>
 				</Classifications>
 				<DataFlowElement SourceFileName="The path and filename of the file the vulnerability was found in" LineNumber="The line number" ColumnNumber="The Colum number" Sequence="The sequence">
 					<LineText>The line where the vulnerability was found (This could be with x number of lines around it)</LineText>
