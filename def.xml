@@ -79,7 +79,7 @@
 			    	<Further-Info>More information about this specific issue</Further-Info>
 			    </Further-Information>
 				<Classifications>
-					<Classification type="The Classification System" id="Classification ID" href="The URL to the Classification description">The Title for the Clasasification</Classification>
+					<Classification type="The Classification System" id="Classification ID" href="The URL to the Classification description">The Title for the Classification</Classification>
 				</Classifications>
 				<DataFlowElement SourceFileName="The path and filename of the file the vulnerability was found in" LineNumber="The line number" ColumnNumber="The Colum number" Sequence="The sequence">
 					<LineText>The line where the vulnerability was found (This could be with X number of lines around it)</LineText>
@@ -92,6 +92,9 @@
 	    <Software-Version>Version of the tool that found the issue</Software-Version>
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
+	    	<Scan-Info>
+	    		<data name="Scan Info name" value="Value for the Scan Info Data" />
+	    	</Scan-Info>
 			<Port protocol="tcp / udp" portid="The Port Number">
 				<Service name="Name of the Service" product="Product Name" version="Product Version" />
 				<Scan-Data>
