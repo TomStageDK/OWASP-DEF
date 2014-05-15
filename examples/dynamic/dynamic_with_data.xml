@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<DEF SpecVersion="0.1">
+    <Session-reference>testphp.vulnweb.com OWASP Top 10 Scan</Session-reference>
+    <Date-time>2002-05-30T09:00:00</Date-time>
+	<Scan type="dynamic">
+		<Host name="testphp.vulnweb.com" ip-address="176.28.50.165">
+			<Port protocol="tcp" portid="80">
+				<Service name="http" product="nginx" version="1.4.1" />
+			    <Software-Name>ZAProxy</Software-Name>
+			    <Software-Version>2.3.0.1</Software-Version>
+			    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+				<Vulnerability Severity="Critical">
+					<Finding NativeID="40018" IdentifiedTimestamp="2002-05-30T09:00:00" UniqueID="0000-0000-0000-0001">
+					    <Summary>SQL Injection - MySQL</Summary>
+					    <Description>SQL injection may be possible</Description>
+					    <Confidence>9</Confidence>
+					    <Background>RDBMS [MySQL] likely, given UNION-specific error message fragment [The used SELECT statements have a different number of columns] in HTML results
+			The vulnerability was detected by manipulating the parameter with an SQL UNION clause to cause a database error message to be returned and recognised
+						</Background>
+					    <Remediation>Do not trust client side input, even if there is client side validation in place.  
+				In general, type check all data on the server side.
+				If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'
+				If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.
+				If database Stored Procedures can be used, use them.
+				Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!
+				Do not create dynamic SQL queries using simple string concatenation.
+				Escape all data received from the client.
+				Apply a 'whitelist' of allowed characters, or a 'blacklist' of disallowed characters in user input.
+				Apply the privilege of least privilege by using the least privileged database user possible.
+				In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.
+				Grant the minimum database access that is necessary for the application.
+						</Remediation>
+					    <Further-Information>
+					    	<Further-Info>OWASP A1-Injection : https://www.owasp.org/index.php/Top_10_2010-A1</Further-Info>
+					    	<Further-Info>OWASP SQLInjection Cheat Sheet : https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet</Further-Info>
+					    </Further-Information>
+						<Classifications>
+							<Classification type="CWE" id="CWE-89" href="http://cwe.mitre.org/data/definitions/89.html">CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</Classification>
+							<Classification type="WASC" id="19" href="http://projects.webappsec.org/w/page/13246963/SQL%20Injection">WASC-19: SQL Injection</Classification>
+						</Classifications>
+						<Page>
+						    <Page-Reference>add new User</Page-Reference>
+						    <URL>http://testphp.vulnweb.com/secured/newuser.php</URL>
+						    <Method>POST</Method>
+						    <HTTPVersion>HTTP/1.1</HTTPVersion>
+						    <StatusCode>200</StatusCode>
+			    			<Language>PHP</Language>
+							<Parameters>
+							    <Parameter>uuname</Parameter>
+							</Parameters>
+							<Request-Response>
+							    <Request>
+							    	<Raw><![CDATA[GET /demo/ HTTP/1.1
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)
+Accept: */*
+Pragma: no-cache
+Host: testphp.vulnweb.com
+X-Scan-Memo: Category="Crawl"; Function="CreateStateRequest"; SID="71EA7BFD4D5506343757C24752102E39"; SessionType="ExternalAddedToCrawl"; CrawlType="None"; AttackType="None"; OriginatingEngineID="00000000-0000-0000-0000-000000000000"; ThreadId="267"; ThreadType="CrawlBreadthFirstDBReader"; 
+Connection: Keep-Alive
+Cookie: CustomCookie=SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511
+
+]]>
+									</Raw>
+									<Headers>
+										<Data name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)"/>
+										<Data name="Accept" value="*/*"/>
+										<Data name="Pragma" value="no-cache"/>
+										<Data name="Host" value="testphp.vulnweb.com"/>
+										<Data name="X-Scan-Memo" value="Category="Crawl"; Function="CreateStateRequest"; SID="71EA7BFD4D5506343757C24752102E39"; SessionType="ExternalAddedToCrawl"; CrawlType="None"; AttackType="None"; OriginatingEngineID="00000000-0000-0000-0000-000000000000"; ThreadId="267"; ThreadType="CrawlBreadthFirstDBReader";"/>
+										<Data name="Connection" value="Keep-Alive"/>
+										<Data name="Cookie" value="CustomCookie=SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511"/>
+									</Headers>
+								    <Cookie>
+										<Data name="CustomCookie" value="SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511"/>
+										<Data name="Domain" value="testphp.vulnweb.com"/>
+										<Data name="path" value="newuser"/>
+								    </Cookie>
+									<Additional-RequestData>
+										<Data name="cookie" value="12345"/>
+									</Additional-RequestData>
+							    </Request>
+							    <Response>
+							    	<Raw><![CDATA[HTTP/1.1 200 OK
+Date: Mon, 04 Nov 2013 20:53:29 GMT
+Server: Apache/2.2.19 (Win32) PHP/5.3.6
+Last-Modified: Thu, 09 Jun 2011 14:24:57 GMT
+ETag: "2000000023431-384-4a54837b0b761"
+Accept-Ranges: bytes
+Content-Length: 900
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!-- XSS TEST - STORED -->
+<!-- The goal is to pull the payload from the database. After that we'll see. -->
+
+<html>
+	<head>
+		<title>Threadfix Vulnerability Demos</title>
+	</head>
+	<body>
+	<h2> Demo List </h2>
+	<ol>
+		<li><a href="XSS.php">XSS</a><br/></li>
+		<li><a href="SQLI.php">SQL Injection</a><br/></li>
+		<li><a href="PredictableResource.php">Predictable Resource Location</a><br/></li>
+		<li><a href="PathTraversal.php?action=PathTraversal.php">Path Traversal</a></li>
+		<li><a href="DirectoryIndexing/">Directory Indexing</a></li>
+		<li><a href="XPathInjection.php">XPath Injection</a></li>
+		<li><a href="LDAPInjection.php">LDAP Injection</a></li>
+		<li><a href="FormatString.php">Format String Injection</a></li>
+		<li><a href="OSCommandInjection.php">OS Command Injection</a></li>
+		<li><a href="EvalInjection.php">Eval Injection</a></li>
+	</ol>
+	</body>
+</html>
+]]>
+									</Raw>
+									<Headers>
+										<Data name="Date" value="Mon, 04 Nov 2013 20:53:29 GMT"/>
+										<Data name="Server" value="Apache/2.2.19 (Win32) PHP/5.3.6"/>
+										<Data name="Last-Modified" value="Thu, 09 Jun 2011 14:24:57 GMT"/>
+										<Data name="ETag" value="2000000023431-384-4a54837b0b761"/>
+										<Data name="Accept-Ranges" value="bytes"/>
+										<Data name="Content-Length" value="900"/>
+										<Data name="Keep-Alive" value="timeout=5, max=100"/>
+										<Data name="Connection" value="Keep-Alive"/>
+										<Data name="Content-Type" value="text/html"/>
+									</Headers>
+								    <Cookie>
+										<Data name="CustomCookie" value="SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511"/>
+										<Data name="Domain" value="testphp.vulnweb.com"/>
+										<Data name="path" value="newuser"/>
+								    </Cookie>
+									<Additional-ResponseData>
+										<Data name="The name of the Additional Data" value="The value for the Additional Data"/>
+									</Additional-ResponseData>
+							    </Response>
+							</Request-Response>
+						</Page>
+					</Finding>
+				</Vulnerability>
+			</Port>
+		</Host>
+	</Scan>
+</DEF>
+	
