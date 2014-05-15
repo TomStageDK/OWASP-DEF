@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<DEF SpecVersion="0.1">
+    <Session-reference>Product specific reference</Session-reference>
+    <Date-time>Date and time the session was started</Date-time>
+	<Scan type="dynamic">
+		<Host name="Hostname" ip-address="1.1.1.1">
+			<Port protocol="tcp / udp" portid="80">
+				<Service name="http" product="Apache httpd 2.2.3" version="1.0" />
+			    <Software-name>Name of the tool that found the issue</Software-name>
+			    <Software-version>Version of the tool that found the issue</Software-version>
+			    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+				<Vulnerability Severity="Critical">
+					<Finding NativeID="12345" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+					    <Summary>A sort (one line) description</Summary>
+					    <Description>More detailed description</Description>
+					    <Further-info>More information about this specific issue</Further-info>
+					    <Confidence>One of an agreed list of values</Confidence>
+					    <Background>More info on the type of issue</Background>
+					    <Remediation>Advise on how to fix the issue</Remediation>
+					    <Classification type="the scoring system 1" id="The calssification from the scoring system 1" url="http://www.cvedetails.com/cwe-details/79/Failure-to-Preserve-Web-Page-Structure-039-Cross-site-Scr.html"/>
+						<Page>
+						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
+						    <Method>HTTP method (GET, POST, etc)</Method>
+						    <URL>The actual URL</URL>
+							<Parameters>
+							    <Parameter>The parameter</Parameter>
+							</Parameters>
+							<Request-response>
+							    <Request>The request</Request>
+							    <Response>The response</Response>
+							    <html>Base 64 encoded HTML responce</html>
+							</Request-response>
+						</Page>
+					</Finding>
+				</Vulnerability>
+				<Vulnerability Severity="High">
+					<Finding NativeID="12345" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+					    <Summary>A sort (one line) description</Summary>
+					    <Description>More detailed description</Description>
+					    <Further-info>More information about this specific issue</Further-info>
+					    <Confidence>One of an agreed list of values</Confidence>
+					    <Background>More info on the type of issue</Background>
+					    <Remediation>Advise on how to fix the issue</Remediation>
+					    <Classification type="the scoring system 1" id="The calssification from the scoring system 1" />
+						<Page>
+						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
+						    <Method>HTTP method (GET, POST, etc)</Method>
+						    <URL>The actual URL</URL>
+							<Parameters>
+							    <Parameter>The parameter</Parameter>
+							</Parameters>
+							<Request-response>
+							    <Request>The request</Request>
+							    <Response>The response</Response>
+							    <html>Base 64 encoded HTML responce</html>
+							</Request-response>
+						</Page>
+					</Finding>
+				</Vulnerability>
+			</Port>
+		</Host>
+	</Scan>
+	<Scan type="static">
+	    <Software-name>Microsoft CAT.NET</Software-name>
+	    <Software-version>1</Software-version>
+	    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+		<Vulnerability Severity="Critical">
+			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+			    <Summary>XSS</Summary>
+			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info>
+			    <Confidence>10</Confidence>
+			    <Background>More info on the type of issue</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0">
+					<LineText>
+					String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="17" Sequence="1">
+					<LineText>
+					cmd = new SqlCommand(sql);
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="22" Sequence="2">
+					<LineText>
+					reader = cmd.ExecuteReader();
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+		<Vulnerability Severity="High">
+			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+			    <Summary>XSS</Summary>
+			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info>
+			    <Confidence>10</Confidence>
+			    <Background>More info on the type of issue</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0">
+					<LineText>
+					String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="17" Sequence="1">
+					<LineText>
+					cmd = new SqlCommand(sql);
+					</LineText>
+				</DataFlowElement>
+				<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="22" Sequence="2">
+					<LineText>
+					reader = cmd.ExecuteReader();
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+	</Scan>
+	<Scan type="static">
+	    <Software-name>HP Fortify SCA</Software-name>
+	    <Software-version>SCA Engine version: 5.7.0.0025</Software-version>
+	    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+		<Vulnerability Severity="Critical">
+			<Finding>
+			    <Summary>Cross-Site Scripting: Reflected</Summary>
+			    <Description>More detailed description</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info>
+			    <Confidence>10</Confidence>
+			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
+				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
+					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.
+				2. The data is included in dynamic content that is sent to a web user without being validated for malicious code.
+				</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/>
+				<DataFlowElement SourceFileName="C:\Projects\Site\php\Web\index.php" LineNumber="42">
+					<LineText>
+						<![CDATA[<link rel="stylesheet" href="<?php echo $tmpTools->templateurl();?>/css/template_rtl.css" type="text/css" />]]>
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+		<Vulnerability Severity="High">
+			<Finding>
+			    <Summary>Cross-Site Scripting: Reflected</Summary>
+			    <Description>More detailed description</Description>
+			    <Further-info>https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29</Further-info>
+			    <Confidence>10</Confidence>
+			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
+				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
+					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.
+				2. The data is included in dynamic content that is sent to a web user without being validated for malicious code.
+				</Background>
+			    <Remediation>Advise on how to fix the issue</Remediation>
+			    <Classification type="CWE" id="79" url="https://cwe.mitre.org/data/definitions/79.html"/>
+				<DataFlowElement SourceFileName="C:\Projects\Site\php\Web\index.php" LineNumber="42">
+					<LineText>
+						<![CDATA[<link rel="stylesheet" href="<?php echo $tmpTools->templateurl();?>/css/template_rtl.css" type="text/css" />]]>
+					</LineText>
+				</DataFlowElement>
+			</Finding>
+		</Vulnerability>
+	</Scan>
+	<Scan type="info">
+	    <Software-name>Name of the tool that found the issue</Software-name>
+	    <Software-version>Version of the tool that found the issue</Software-version>
+	    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+	    <Host name="Hostname" ip-address="1.1.1.1">
+		    <Port protocol="tcp / udp" portid="21">
+				<Service name="ftp" product="ProFTPD" version="1.3.3e" />
+				<data>
+					<data name="state" value="open"/>
+					<data name="reason" value="syn-ack"/>
+					<data name="reason_ttl" value="54"/>
+					<data name="method" value="probed"/>
+					<data name="ostype" value="Unix"/>
+					<data name="conf" value="10"/>
+					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.31 - 2.6.35"/>
+					<data name="accuracy" value="98"/>
+					<data name="line" value="41855"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="98"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="HP P2000 G3 NAS device"/>
+					<data name="accuracy" value="97"/>
+					<data name="line" value="25943"/>
+					<data name="osclass" value="storage-misc"/>
+					<data name="vendor" value="HP"/>
+					<data name="osfamily" value="embedded"/>
+					<data name="accuracy" value="97"/>
+					<data name="cpe" value="cpe:/h:hp:p2000_g3"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.32"/>
+					<data name="accuracy" value="97"/>
+					<data name="line" value="42773"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="97"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.26 - 2.6.35"/>
+					<data name="accuracy" value="96"/>
+					<data name="line" value="43092"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="96"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 3.0 - 3.9"/>
+					<data name="accuracy" value="96"/>
+					<data name="line" value="47287"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="3.X"/>
+					<data name="accuracy" value="96"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:3"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.22 - 2.6.36"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="39691"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.23 - 2.6.38"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="39895"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.15 - 2.6.30"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="36329"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.22"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="39171"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6.22"/>
+				</data>
+				<data>
+					<data name="osmatch" value="DD-WRT v23 (Linux 2.4.37)"/>
+					<data name="accuracy" value="94"/>
+					<data name="line" value="35067"/>
+					<data name="osclass" value="WAP"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.4.X"/>
+					<data name="accuracy" value="94"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.4"/>
+				</data>
+				<data>
+					<data name="uptime" value="8880195"/>
+					<data name="lastboot" value="Wed Jan 15 00:10:53 2014"/>
+				</data>
+				<data>
+					<data name="distance" value="13"/>
+				</data>
+				<data>
+					<data name="tcpsequence" value="261"/>
+					<data name="difficulty" value="Good luck!"/>
+					<data name="values" value="AC94822C,6766AFF1,730BDBE8,79D67243,3E64E1C4,DC45ABF1"/>
+				</data>
+				<data>
+					<data name="ipidsequence" value="All zeros"/>
+					<data name="values" value="0,0,0,0,0,0"/>
+				</data>
+				<data>
+					<data name="tcptssequence" value="100HZ"/>
+					<data name="values" value="34EE0DC9,34EE0DD3,34EE0DDD,34EE0DE7,34EE0DF1,34EE0DFB"/>
+				</data>
+	
+				<data>
+					<data name="times" value="44109"/>
+					<data name="rttvar" value="467"/>
+					<data name="to" value="100000"/>
+				</data>
+			</Port>
+		    <Port protocol="tcp / udp" portid="80">
+				<Service name="http" product="Apache httpd 2.2.3" version="1.0" />
+				<data>
+					<data name="state" value="open"/>
+					<data name="reason" value="syn-ack"/>
+					<data name="reason_ttl" value="54"/>
+					<data name="method" value="probed"/>
+					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+				</data>
+			</Port>
+	    </Host>
+	    <Host name="Hostname" ip-address="1.1.1.2">
+		    <Port protocol="tcp / udp" portid="21">
+				<Service name="ftp" product="ProFTPD" version="1.3.3e" />
+				<data>
+					<data name="state" value="open"/>
+					<data name="reason" value="syn-ack"/>
+					<data name="reason_ttl" value="54"/>
+					<data name="method" value="probed"/>
+					<data name="ostype" value="Unix"/>
+					<data name="conf" value="10"/>
+					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.31 - 2.6.35"/>
+					<data name="accuracy" value="98"/>
+					<data name="line" value="41855"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="98"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="HP P2000 G3 NAS device"/>
+					<data name="accuracy" value="97"/>
+					<data name="line" value="25943"/>
+					<data name="osclass" value="storage-misc"/>
+					<data name="vendor" value="HP"/>
+					<data name="osfamily" value="embedded"/>
+					<data name="accuracy" value="97"/>
+					<data name="cpe" value="cpe:/h:hp:p2000_g3"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.32"/>
+					<data name="accuracy" value="97"/>
+					<data name="line" value="42773"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="97"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.26 - 2.6.35"/>
+					<data name="accuracy" value="96"/>
+					<data name="line" value="43092"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="96"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 3.0 - 3.9"/>
+					<data name="accuracy" value="96"/>
+					<data name="line" value="47287"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="3.X"/>
+					<data name="accuracy" value="96"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:3"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.22 - 2.6.36"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="39691"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.23 - 2.6.38"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="39895"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.15 - 2.6.30"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="36329"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+				</data>
+				<data>
+					<data name="osmatch" value="Linux 2.6.22"/>
+					<data name="accuracy" value="95"/>
+					<data name="line" value="39171"/>
+					<data name="osclass" value="general purpose"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.6.X"/>
+					<data name="accuracy" value="95"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6.22"/>
+				</data>
+				<data>
+					<data name="osmatch" value="DD-WRT v23 (Linux 2.4.37)"/>
+					<data name="accuracy" value="94"/>
+					<data name="line" value="35067"/>
+					<data name="osclass" value="WAP"/>
+					<data name="vendor" value="Linux"/>
+					<data name="osfamily" value="Linux"/>
+					<data name="osgen" value="2.4.X"/>
+					<data name="accuracy" value="94"/>
+					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.4"/>
+				</data>
+				<data>
+					<data name="uptime" value="8880195"/>
+					<data name="lastboot" value="Wed Jan 15 00:10:53 2014"/>
+				</data>
+				<data>
+					<data name="distance" value="13"/>
+				</data>
+				<data>
+					<data name="tcpsequence" value="261"/>
+					<data name="difficulty" value="Good luck!"/>
+					<data name="values" value="AC94822C,6766AFF1,730BDBE8,79D67243,3E64E1C4,DC45ABF1"/>
+				</data>
+				<data>
+					<data name="ipidsequence" value="All zeros"/>
+					<data name="values" value="0,0,0,0,0,0"/>
+				</data>
+				<data>
+					<data name="tcptssequence" value="100HZ"/>
+					<data name="values" value="34EE0DC9,34EE0DD3,34EE0DDD,34EE0DE7,34EE0DF1,34EE0DFB"/>
+				</data>
+	
+				<data>
+					<data name="times" value="44109"/>
+					<data name="rttvar" value="467"/>
+					<data name="to" value="100000"/>
+				</data>
+			</Port>
+		    <Port protocol="tcp / udp" portid="80">
+				<Service name="http" product="Apache httpd 2.2.3" version="1.0" />
+				<data>
+					<data name="state" value="open"/>
+					<data name="reason" value="syn-ack"/>
+					<data name="reason_ttl" value="54"/>
+					<data name="method" value="probed"/>
+					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+				</data>
+			</Port>
+	    </Host>
+	</Scan>
+	<Scan type="info">
+	    <Software-name>Name of the tool that found the issue</Software-name>
+	    <Software-version>Version of the tool that found the issue</Software-version>
+	    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+	    <Host name="testphp.vulnweb.com" ip-address="176.28.50.165">
+		    <Port protocol="tcp" portid="80">
+				<Service name="HTTPServer" product="nginx" version="1.4.1" />
+				<data>
+					<data name="uri" value="http://testphp.vulnweb.com"/>
+					<data name="http-status" value="200"/>
+					<data name="Email" value="wvs@acunetix.com"/>
+					<data name="Adobe-Flash"/>
+					<data name="Title" value="Home of Acunetix Art"/>
+					<data name="PHP" value="5.3.10-1~lucid+2uwsgi2"/>
+					<data name="HTTPServer" value="nginx/1.4.1"/>
+					<data name="IP" value="176.28.50.165"/>
+					<data name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+					<data name="nginx" value="1.4.1"/>
+				</data>
+				<data>
+					<data name="uri" value="http://testphp.vulnweb.com/robots.txt"/>
+					<data name="http-status" value="404"/>
+					<data name="Title" value="404 Not Found"/>
+					<data name="HTTPServer" value="nginx/1.4.1"/>
+					<data name="IP" value="176.28.50.165"/>
+					<data name="nginx" value="1.4.1"/>
+				</data>
+				<data>
+					<data name="uri" value="http://testphp.vulnweb.com/gui/"/>
+					<data name="http-status" value="404"/>
+					<data name="Title" value="404 Not Found"/>
+					<data name="HTTPServer" value="nginx/1.4.1"/>
+					<data name="nginx" value="1.4.1"/>
+				</data>
+				<data>
+					<data name="uri" value="http://testphp.vulnweb.com/cgi-bin/authLogin.cgi"/>
+					<data name="http-status" value="404"/>
+					<data name="IP" value="176.28.50.165"/>
+					<data name="Title" value="404 Not Found"/>
+					<data name="HTTPServer" value="nginx/1.4.1"/>
+					<data name="IP" value="176.28.50.165"/>
+					<data name="nginx" value="1.4.1"/>
+				</data>
+			</Port>
+	    </Host>
+	</Scan>
+</DEF>
