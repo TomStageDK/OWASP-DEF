@@ -1,0 +1,98 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xml" href="whatweb.xsl"?>
+<log>
+<target>
+	<uri>http://testphp.vulnweb.com</uri>
+	<http-status>200</http-status>
+	<plugin>
+		<name>Email</name>
+		<string>wvs@acunetix.com</string>
+	</plugin>
+	<plugin>
+		<name>Adobe-Flash</name>
+	</plugin>
+	<plugin>
+		<name>Title</name>
+		<string>Home of Acunetix Art</string>
+	</plugin>
+	<plugin>
+		<name>PHP</name>
+		<version>5.3.10-1~lucid+2uwsgi2</version>
+	</plugin>
+	<plugin>
+		<name>HTTPServer</name>
+		<string>nginx/1.4.1</string>
+	</plugin>
+	<plugin>
+		<name>IP</name>
+		<string>176.28.50.165</string>
+	</plugin>
+	<plugin>
+		<name>X-Powered-By</name>
+		<string>PHP/5.3.10-1~lucid+2uwsgi2</string>
+	</plugin>
+	<plugin>
+		<name>nginx</name>
+		<version>1.4.1</version>
+	</plugin>
+</target>
+<target>
+	<uri>http://testphp.vulnweb.com/robots.txt</uri>
+	<http-status>404</http-status>
+	<plugin>
+		<name>Title</name>
+		<string>404 Not Found</string>
+	</plugin>
+	<plugin>
+		<name>HTTPServer</name>
+		<string>nginx/1.4.1</string>
+	</plugin>
+	<plugin>
+		<name>IP</name>
+		<string>176.28.50.165</string>
+	</plugin>
+	<plugin>
+		<name>nginx</name>
+		<version>1.4.1</version>
+	</plugin>
+</target>
+<target>
+	<uri>http://testphp.vulnweb.com/gui/</uri>
+	<http-status>404</http-status>
+	<plugin>
+		<name>Title</name>
+		<string>404 Not Found</string>
+	</plugin>
+	<plugin>
+		<name>HTTPServer</name>
+		<string>nginx/1.4.1</string>
+	</plugin>
+	<plugin>
+		<name>IP</name>
+		<string>176.28.50.165</string>
+	</plugin>
+	<plugin>
+		<name>nginx</name>
+		<version>1.4.1</version>
+	</plugin>
+</target>
+<target>
+	<uri>http://testphp.vulnweb.com/cgi-bin/authLogin.cgi</uri>
+	<http-status>404</http-status>
+	<plugin>
+		<name>Title</name>
+		<string>404 Not Found</string>
+	</plugin>
+	<plugin>
+		<name>HTTPServer</name>
+		<string>nginx/1.4.1</string>
+	</plugin>
+	<plugin>
+		<name>IP</name>
+		<string>176.28.50.165</string>
+	</plugin>
+	<plugin>
+		<name>nginx</name>
+		<version>1.4.1</version>
+	</plugin>
+</target>
+</log>

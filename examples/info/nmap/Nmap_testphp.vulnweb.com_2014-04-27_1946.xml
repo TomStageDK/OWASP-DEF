@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Sun Apr 27 19:46:51 2014 as: nmap -oX - -p 1-65535 -sV -T3 -O -R -&#45;version-light -&#45;webxml testphp.vulnweb.com -->
+<nmaprun scanner="nmap" args="nmap -oX - -p 1-65535 -sV -T3 -O -R -&#45;version-light -&#45;webxml testphp.vulnweb.com" start="1398620811" startstr="Sun Apr 27 19:46:51 2014" version="6.40" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1398620811" endtime="1398621248"><status state="up" reason="echo-reply" reason_ttl="54"/>
+<address addr="176.28.50.165" addrtype="ipv4"/>
+<hostnames>
+<hostname name="testphp.vulnweb.com" type="user"/>
+<hostname name="rs202995.rs.hosteurope.de" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65520">
+<extrareasons reason="resets" count="65520"/>
+</extraports>
+<port protocol="tcp" portid="21">
+	<state state="open" reason="syn-ack" reason_ttl="54"/>
+	<service name="ftp" product="ProFTPD" version="1.3.3e" ostype="Unix" method="probed" conf="10">
+		<cpe>cpe:/a:proftpd:proftpd:1.3.3e</cpe>
+	</service>
+</port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="ssh" product="OpenSSH" version="5.3p1 Debian 3ubuntu7.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.3p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="smtp" product="Postfix smtpd" hostname=" rs202995.rs.hosteurope.de" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="domain" product="ISC BIND" version="none" method="probed" conf="10"><cpe>cpe:/a:isc:bind:none</cpe></service></port>
+
+<port protocol="tcp" portid="80">
+	<state state="open" reason="syn-ack" reason_ttl="54"/>
+	<service name="http" product="nginx" version="1.4.1" method="probed" conf="10">
+		<cpe>cpe:/a:igor_sysoev:nginx:1.4.1</cpe>
+	</service>
+</port>
+
+<port protocol="tcp" portid="106"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="pop3pw" product="poppassd" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="pop3" product="Courier pop3d" hostname="localhost.localdomain" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="imap" servicefp="SF-Port143-TCP:V=6.40%I=2%D=4/27%Time=535D43FA%P=x86_64-redhat-linux-gnu%r(NULL,A1,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\x20STARTTLS\]\r\n&quot;)%r(GetRequest,103,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\x20STARTTLS\]\r\nGET\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n\*\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n&quot;)%r(GenericLines,101,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\x20STARTTLS\]\r\n\*\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n\*\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n&quot;)%r(SSLSessionReq,D2,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\x20STARTTLS\]\r\n\x16\x03\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="smtp" product="Postfix smtpd" hostname=" rs202995.rs.hosteurope.de" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service></port>
+<port protocol="tcp" portid="646"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ldp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="imaps" servicefp="SF-Port993-TCP:V=6.40%T=SSL%I=2%D=4/27%Time=535D4401%P=x86_64-redhat-linux-gnu%r(NULL,98,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\]\r\n&quot;)%r(GenericLines,F8,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\]\r\n\*\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n\*\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n&quot;)%r(GetRequest,FA,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\]\r\nGET\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n\*\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n&quot;)%r(SSLSessionReq,C9,&quot;\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20UIDPLUS\x20CHILDREN\x20NAMESPACE\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20SORT\x20QUOTA\x20AUTH=CRAM-MD5\x20AUTH=PLAIN\x20IDLE\x20ACL\x20ACL2=UNION\]\r\n\x16\x03\x20NO\x20Error\x20in\x20IMAP\x20command\x20received\x20by\x20server\.\r\n&quot;);" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="pop3" product="Courier pop3d" hostname="localhost.localdomain" tunnel="ssl" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="http" product="lighttpd" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd</cpe></service></port>
+<port protocol="tcp" portid="8880"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="http" product="lighttpd" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd</cpe></service></port>
+</ports>
+<os>
+	<portused state="open" proto="tcp" portid="21"/>
+	<portused state="closed" proto="tcp" portid="1"/>
+	<portused state="closed" proto="udp" portid="41646"/>
+	<osmatch name="Linux 2.6.31 - 2.6.35" accuracy="98" line="41855">
+		<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="98">
+			<cpe>cpe:/o:linux:linux_kernel:2.6</cpe>
+		</osclass>
+	</osmatch>
+	<osmatch name="HP P2000 G3 NAS device" accuracy="97" line="25943">
+	<osclass type="storage-misc" vendor="HP" osfamily="embedded" accuracy="97"><cpe>cpe:/h:hp:p2000_g3</cpe></osclass>
+	</osmatch>
+	<osmatch name="Linux 2.6.32" accuracy="97" line="42773">
+	<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+	</osmatch>
+	<osmatch name="Linux 2.6.26 - 2.6.35" accuracy="96" line="43092">
+	<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+	</osmatch>
+	<osmatch name="Linux 3.0 - 3.9" accuracy="96" line="47287">
+	<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+	</osmatch>
+	<osmatch name="Linux 2.6.22 - 2.6.36" accuracy="95" line="39691">
+	<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+	</osmatch>
+	<osmatch name="Linux 2.6.23 - 2.6.38" accuracy="95" line="39895">
+	<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+	</osmatch>
+	<osmatch name="Linux 2.6.15 - 2.6.30" accuracy="95" line="36329">
+	<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+	</osmatch>
+	<osmatch name="Linux 2.6.22" accuracy="95" line="39171">
+	<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+	</osmatch>
+	<osmatch name="DD-WRT v23 (Linux 2.4.37)" accuracy="94" line="35067">
+	<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.4</cpe></osclass>
+	</osmatch>
+</os>
+<uptime seconds="8880195" lastboot="Wed Jan 15 00:10:53 2014"/>
+<distance value="13"/>
+<tcpsequence index="261" difficulty="Good luck!" values="AC94822C,6766AFF1,730BDBE8,79D67243,3E64E1C4,DC45ABF1"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="34EE0DC9,34EE0DD3,34EE0DDD,34EE0DE7,34EE0DF1,34EE0DFB"/>
+<times srtt="44109" rttvar="467" to="100000"/>
+</host>
+<runstats>
+	<finished time="1398621248" timestr="Sun Apr 27 19:54:08 2014" elapsed="437.76" summary="Nmap done at Sun Apr 27 19:54:08 2014; 1 IP address (1 host up) scanned in 437.76 seconds" exit="success"/>
+	<hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

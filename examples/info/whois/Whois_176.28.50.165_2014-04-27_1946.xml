@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Whois SpecVersion="0.1">
+    <target>
+        176.28.50.165
+    </target>
+    <version>
+        4.0
+    </version>
+    <status>
+        <status>
+            ASSIGNED PA
+        </status>
+    </status>
+    <emails>
+        <email>
+            abuse@hosteurope.de
+        </email>
+        <email>
+            hostmaster@hosteurope.de
+        </email>
+    </emails>
+    <admin>
+        <admin>
+            handle
+        </admin>
+    </admin>
+    <tech>
+        <tech>
+            handle
+        </tech>
+    </tech>
+    <raw>
+        % This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the &quot;-B&quot; flag.
+
+% Information related to '176.28.48.0 - 176.28.55.255'
+
+% Abuse contact for '176.28.48.0 - 176.28.55.255' is 'abuse@hosteurope.de'
+
+inetnum:        176.28.48.0 - 176.28.55.255
+remarks:        INFRA-AW
+netname:        DE-HE-RS-CLIENTS-176-28-48-NET
+descr:          Host Europe GmbH
+descr:          hostmaster@hosteurope.de
+country:        DE
+admin-c:        HER
+tech-c:         HER
+status:         ASSIGNED PA
+mnt-by:         HOSTEUROPE-MNT
+source:         RIPE # Filtered
+
+role:           Host Europe Ripehandle
+address:        Welserstrasse 14
+address:        51149 Koeln
+phone:          +49 2203 1045 0
+abuse-mailbox:  abuse@hosteurope.de
+admin-c:        BURN
+admin-c:        HONK
+admin-c:        JUPP
+admin-c:        MATE
+admin-c:        METT
+admin-c:        MOMO
+admin-c:        OUZO
+admin-c:        SEPP
+admin-c:        WIRR
+tech-c:         BURN
+tech-c:         HONK
+tech-c:         JUPP
+tech-c:         MATE
+tech-c:         METT
+tech-c:         MOMO
+tech-c:         OUZO
+tech-c:         SEPP
+tech-c:         WIRR
+nic-hdl:        HER
+mnt-by:         HOSTEUROPE-MNT
+source:         RIPE # Filtered
+
+% Information related to '176.28.0.0/18AS20773'
+
+route:          176.28.0.0/18
+descr:          DE-HEC-176-28-SLASH-18
+origin:         AS20773
+member-of:      AS20773:RS-HOSTEUROPE
+mnt-by:         HOSTEUROPE-MNT
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.72 (DBC-WHOIS3)
+
+
+
+    </raw>
+</Whois>

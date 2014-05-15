@@ -1,0 +1,18 @@
+<fiercescan args=" -dns vulnweb.com -only arin, -template /opt/fierce2/tt -format xml -output /home/WASS/Fierce_testphp.vulnweb.com_2014-04-27_1946.xml" startscan="1398621249" startscanstr="Sun Apr 27 19:54:09 2014" fversion="2.0-r420" xmlversion="1.0"> 
+<domainscan domain="vulnweb.com" ip="undefined" startscan="1398621249" startscanstr="Sun Apr 27 19:54:09 2014">
+
+    <!--  Name Servers -->
+    <nameservers starttime="1398621249" starttimestr="Sun Apr 27 19:54:09 2014" endtime="1398621250" endtimestr="Sun Apr 27 19:54:10 2014" elapsedtime="1">
+            <node ip="46.105.158.142" hostname="ns3.eurodns.com" type="A" ttl="640"/>
+            <node ip="192.174.68.100" hostname="ns4.eurodns.com" type="A" ttl="14"/>
+            <node ip="80.92.89.242" hostname="ns2.eurodns.com" type="A" ttl="3313"/>
+            <node ip="80.92.65.2" hostname="ns1.eurodns.com" type="A" ttl="2400"/>
+    </nameservers>
+    <!--  ARIN -->
+    <arin query="vulnweb" starttime="1398621250" starttimestr="Sun Apr 27 19:54:10 2014" endtime="1398621254" endtimestr="Sun Apr 27 19:54:14 2014" elapsedtime="4">
+        </arin>
+<endtimedetails endtime="1398621254" endtimestr="Sun Apr 27 19:54:09 2014" elapsedtime="5"/>
+</domainscan>
+
+<endscan endtime="1398621254" endtimestr="Sun Apr 27 19:54:14 2014" elapsedtime="5"/>
+</fiercescan>

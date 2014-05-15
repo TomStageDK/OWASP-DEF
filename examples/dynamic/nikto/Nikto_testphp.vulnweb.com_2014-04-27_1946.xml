@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!DOCTYPE niktoscan SYSTEM "/usr/share/nikto/docs/nikto.dtd">
+<niktoscan hoststest="0" options="-h testphp.vulnweb.com -vhost testphp.vulnweb.com -port 80 -root / -ask no -output /home/WASS/Nikto_testphp.vulnweb.com_2014-04-27_1946.xml -Format xml -Cgidirs all" version="2.1.5" scanstart="Sun Apr 27 20:09:22 2014" scanend="Thu Jan  1 01:00:00 1970" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="176.28.50.165" targethostname="testphp.vulnweb.com" targetport="80" targetbanner="nginx/1.4.1" starttime="2014-04-27 20:09:22" sitename="http://testphp.vulnweb.com:80" siteip="http://176.28.50.165:80" hostheader="testphp.vulnweb.com" errors="0" checks="6545">
+
+
+<item id="999986" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Retrieved x-powered-by header: PHP/5.3.10-1~lucid+2uwsgi2]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/]]></iplink>
+</item>
+
+<item id="999976" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/]]></iplink>
+</item>
+
+<item id="999984" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Server leaks inodes via ETags, header found with file /clientaccesspolicy.xml, fields: 0x5049b03d 0x133 ]]></description>
+<uri><![CDATA[/clientaccesspolicy.xml]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/clientaccesspolicy.xml]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/clientaccesspolicy.xml]]></iplink>
+</item>
+
+<item id="999982" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/clientaccesspolicy.xml contains a full wildcard entry. See http://msdn.microsoft.com/en-us/library/cc197955(v=vs.95).aspx]]></description>
+<uri><![CDATA[/clientaccesspolicy.xml]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/clientaccesspolicy.xml]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/clientaccesspolicy.xml]]></iplink>
+</item>
+
+<item id="999981" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[lines]]></description>
+<uri><![CDATA[/clientaccesspolicy.xml]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/clientaccesspolicy.xml]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/clientaccesspolicy.xml]]></iplink>
+</item>
+
+<item id="999975" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/crossdomain.xml contains a full wildcard entry. See http://jeremiahgrossman.blogspot.com/2008/05/crossdomainxml-invites-cross-site.html]]></description>
+<uri><![CDATA[/crossdomain.xml]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/crossdomain.xml]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/crossdomain.xml]]></iplink>
+</item>
+
+<item id="999974" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/crossdomain.xml contains 0 line which should be manually viewed for improper domains or wildcards.]]></description>
+<uri><![CDATA[/crossdomain.xml]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/crossdomain.xml]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/crossdomain.xml]]></iplink>
+</item>
+
+<item id="000405" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/CVS/Entries: CVS Entries file may contain directory listing information.]]></description>
+<uri><![CDATA[/CVS/Entries]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/CVS/Entries]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/CVS/Entries]]></iplink>
+</item>
+
+<item id="750000" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/admin/: Directory indexing found.]]></description>
+<uri><![CDATA[/admin/]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/admin/]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/admin/]]></iplink>
+</item>
+
+<item id="001384" osvdbid="12184" osvdblink="http://osvdb.org/12184" method="GET">
+<description><![CDATA[/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.]]></description>
+<uri><![CDATA[/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></iplink>
+</item>
+
+<item id="001551" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/admin/: This might be interesting...]]></description>
+<uri><![CDATA[/admin/]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/admin/]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/admin/]]></iplink>
+</item>
+
+<item id="750000" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/images/: Directory indexing found.]]></description>
+<uri><![CDATA[/images/]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/images/]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/images/]]></iplink>
+</item>
+
+<item id="750000" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/images/?pattern=/etc/*&sort=name: Directory indexing found.]]></description>
+<uri><![CDATA[/images/?pattern=/etc/*&sort=name]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/images/?pattern=/etc/*&sort=name]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/images/?pattern=/etc/*&sort=name]]></iplink>
+</item>
+
+<item id="006333" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/login.php: Admin login page/section found.]]></description>
+<uri><![CDATA[/login.php]]></uri>
+<namelink><![CDATA[http://testphp.vulnweb.com:80/login.php]]></namelink>
+<iplink><![CDATA[http://176.28.50.165:80/login.php]]></iplink>
+</item>
+
+<statistics elapsed="1162" itemsfound="14" itemstested="6545" endtime="2014-04-27 20:28:44" />
+</scandetails>
+
+
+</niktoscan>

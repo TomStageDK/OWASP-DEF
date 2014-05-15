@@ -1,0 +1,1348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <root>
+        <rootURL>
+            http://testphp.vulnweb.com/
+        </rootURL>
+        <toBrowse/>
+        <browsed>
+            <resouce encoding="UTF-8" method="GET" path="http://testphp.vulnweb.com/">
+                <referer>
+                    
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/style.css">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="content-length" value="5482"/>
+                    <header name="status_code" value="200"/>
+                    <header name="accept-ranges" value="bytes"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="last-modified" value="Wed, 11 May 2011 10:27:48 GMT"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="etag" value="&quot;4dca64a4-156a&quot;"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/css"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/index.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/categories.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/artists.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/disclaimer.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/guestbook.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/AJAX/index.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:23 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/search.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params>
+                    <input name="test" value="query"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/login.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/userinfo.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="302"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="location" value="login.php"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/Flash/add.swf">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="content-length" value="17418"/>
+                    <header name="status_code" value="200"/>
+                    <header name="accept-ranges" value="bytes"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="last-modified" value="Wed, 11 May 2011 10:27:45 GMT"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="etag" value="&quot;4dca64a1-440a&quot;"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="application/x-shockwave-flash"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/privacy.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="404"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/Mod_Rewrite_Shop/">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/hpp/">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/search.php">
+                <referer>
+                    http://testphp.vulnweb.com/
+                </referer>
+                <get_params>
+                    <input name="test" value="query"/>
+                </get_params>
+                <post_params>
+                    <input name="searchFor" value="default"/>
+                    <input name="goButton" value="go"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/listproducts.php">
+                <referer>
+                    http://testphp.vulnweb.com/categories.php
+                </referer>
+                <get_params>
+                    <input name="cat" value="1"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/listproducts.php">
+                <referer>
+                    http://testphp.vulnweb.com/categories.php
+                </referer>
+                <get_params>
+                    <input name="cat" value="2"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:24 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/listproducts.php">
+                <referer>
+                    http://testphp.vulnweb.com/categories.php
+                </referer>
+                <get_params>
+                    <input name="cat" value="3"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:25 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/listproducts.php">
+                <referer>
+                    http://testphp.vulnweb.com/categories.php
+                </referer>
+                <get_params>
+                    <input name="cat" value="4"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:25 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/artists.php">
+                <referer>
+                    http://testphp.vulnweb.com/artists.php
+                </referer>
+                <get_params>
+                    <input name="artist" value="1"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:25 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/artists.php">
+                <referer>
+                    http://testphp.vulnweb.com/artists.php
+                </referer>
+                <get_params>
+                    <input name="artist" value="2"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:25 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/artists.php">
+                <referer>
+                    http://testphp.vulnweb.com/artists.php
+                </referer>
+                <get_params>
+                    <input name="artist" value="3"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:25 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/guestbook.php">
+                <referer>
+                    http://testphp.vulnweb.com/guestbook.php
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="name" value="anonymous%20user"/>
+                    <input name="text" value="on"/>
+                    <input name="submit" value="add%20message"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:25 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-1" method="GET" path="http://testphp.vulnweb.com/AJAX/styles.css">
+                <referer>
+                    http://testphp.vulnweb.com/AJAX/index.php
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="content-length" value="562"/>
+                    <header name="status_code" value="200"/>
+                    <header name="accept-ranges" value="bytes"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="last-modified" value="Wed, 11 May 2011 10:27:48 GMT"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="etag" value="&quot;4dca64a4-232&quot;"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:25 GMT"/>
+                    <header name="content-type" value="text/css"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-1" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/AJAX/index.php
+                </referer>
+                <get_params>
+                    <input name="file" value="%27%20%2B%20pict.item%280%29.firstChild.nodeValue%20%2B%20%27"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-1" method="GET" path="http://testphp.vulnweb.com/AJAX/.php">
+                <referer>
+                    http://testphp.vulnweb.com/AJAX/index.php
+                </referer>
+                <get_params>
+                    <input name="id" value=""/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="404"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-1" method="GET" path="http://testphp.vulnweb.com/AJAX/showxml.php">
+                <referer>
+                    http://testphp.vulnweb.com/AJAX/index.php
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/signup.php">
+                <referer>
+                    http://testphp.vulnweb.com/login.php
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/userinfo.php">
+                <referer>
+                    http://testphp.vulnweb.com/login.php
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="uname" value="default"/>
+                    <input name="pass" value="letmein"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="302"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="location" value="login.php"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="ascii" method="GET" path="http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/">
+                <referer>
+                    http://testphp.vulnweb.com/Mod_Rewrite_Shop/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="content-length" value="570"/>
+                    <header name="status_code" value="404"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="ascii" method="GET" path="http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/">
+                <referer>
+                    http://testphp.vulnweb.com/Mod_Rewrite_Shop/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="content-length" value="570"/>
+                    <header name="status_code" value="404"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="ascii" method="GET" path="http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/color-printer/3/">
+                <referer>
+                    http://testphp.vulnweb.com/Mod_Rewrite_Shop/
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="content-length" value="570"/>
+                    <header name="status_code" value="404"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="ascii" method="GET" path="http://testphp.vulnweb.com/hpp/">
+                <referer>
+                    http://testphp.vulnweb.com/hpp/
+                </referer>
+                <get_params>
+                    <input name="pp" value="12"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/product.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="pic" value="1"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/1.jpg"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:26 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/1.jpg"/>
+                    <input name="size" value="160"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:27 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/product.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="pic" value="2"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:27 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/2.jpg"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:27 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/2.jpg"/>
+                    <input name="size" value="160"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:27 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/product.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="pic" value="3"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:27 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/3.jpg"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:27 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/3.jpg"/>
+                    <input name="size" value="160"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:28 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/product.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="pic" value="4"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:28 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/4.jpg"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:28 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/4.jpg"/>
+                    <input name="size" value="160"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:28 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/product.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="pic" value="5"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:28 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/5.jpg"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:28 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/5.jpg"/>
+                    <input name="size" value="160"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:29 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/product.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="pic" value="7"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:29 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/7.jpg"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:29 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=1
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/7.jpg"/>
+                    <input name="size" value="160"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:29 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/product.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=2
+                </referer>
+                <get_params>
+                    <input name="pic" value="6"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:29 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=2
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/6.jpg"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:29 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/showimage.php">
+                <referer>
+                    http://testphp.vulnweb.com/listproducts.php?cat=2
+                </referer>
+                <get_params>
+                    <input name="file" value="./pictures/6.jpg"/>
+                    <input name="size" value="160"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:30 GMT"/>
+                    <header name="content-type" value="image/jpeg"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/listproducts.php">
+                <referer>
+                    http://testphp.vulnweb.com/artists.php?artist=1
+                </referer>
+                <get_params>
+                    <input name="artist" value="1"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:30 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/listproducts.php">
+                <referer>
+                    http://testphp.vulnweb.com/artists.php?artist=2
+                </referer>
+                <get_params>
+                    <input name="artist" value="2"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:30 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/listproducts.php">
+                <referer>
+                    http://testphp.vulnweb.com/artists.php?artist=3
+                </referer>
+                <get_params>
+                    <input name="artist" value="3"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:30 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="GET" path="http://testphp.vulnweb.com/secured/newuser.php">
+                <referer>
+                    http://testphp.vulnweb.com/signup.php
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:30 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/secured/newuser.php">
+                <referer>
+                    http://testphp.vulnweb.com/signup.php
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="uuname" value="default"/>
+                    <input name="upass" value="letmein"/>
+                    <input name="upass2" value="letmein"/>
+                    <input name="urname" value="default"/>
+                    <input name="ucc" value="default"/>
+                    <input name="uemail" value="default"/>
+                    <input name="uphone" value="default"/>
+                    <input name="uaddress" value="on"/>
+                    <input name="signup" value="signup"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:30 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="ascii" method="GET" path="http://testphp.vulnweb.com/hpp/params.php">
+                <referer>
+                    http://testphp.vulnweb.com/hpp/?pp=12
+                </referer>
+                <get_params>
+                    <input name="p" value="valid"/>
+                    <input name="pp" value="12"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:31 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="ascii" method="GET" path="http://testphp.vulnweb.com/hpp/params.php">
+                <referer>
+                    http://testphp.vulnweb.com/hpp/?pp=12
+                </referer>
+                <get_params>
+                    <input name="aaaa/" value="submit"/>
+                </get_params>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:31 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/product.php?pic=1
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="price" value="500"/>
+                    <input name="addcart" value="1"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:31 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/product.php?pic=2
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="price" value="800"/>
+                    <input name="addcart" value="2"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:31 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/product.php?pic=3
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="price" value="986"/>
+                    <input name="addcart" value="3"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:32 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/product.php?pic=4
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="price" value="1000"/>
+                    <input name="addcart" value="4"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:32 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/product.php?pic=5
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="price" value="460"/>
+                    <input name="addcart" value="5"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:32 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/product.php?pic=7
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="price" value="15000"/>
+                    <input name="addcart" value="7"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:32 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-2" method="POST" path="http://testphp.vulnweb.com/cart.php">
+                <referer>
+                    http://testphp.vulnweb.com/product.php?pic=6
+                </referer>
+                <get_params/>
+                <post_params>
+                    <input name="price" value="10000"/>
+                    <input name="addcart" value="6"/>
+                </post_params>
+                <file_params/>
+                <headers>
+                    <header name="x-powered-by" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
+                    <header name="transfer-encoding" value="chunked"/>
+                    <header name="status_code" value="200"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="connection" value="close"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:33 GMT"/>
+                    <header name="content-type" value="text/html"/>
+                </headers>
+            </resouce>
+            <resouce encoding="iso-8859-1" method="GET" path="http://testphp.vulnweb.com/secured/style.css">
+                <referer>
+                    http://testphp.vulnweb.com/secured/newuser.php
+                </referer>
+                <get_params/>
+                <post_params/>
+                <file_params/>
+                <headers>
+                    <header name="content-length" value="5482"/>
+                    <header name="status_code" value="200"/>
+                    <header name="accept-ranges" value="bytes"/>
+                    <header name="server" value="nginx/1.4.1"/>
+                    <header name="last-modified" value="Wed, 11 May 2011 10:27:44 GMT"/>
+                    <header name="connection" value="keep-alive"/>
+                    <header name="etag" value="&quot;4dca64a0-156a&quot;"/>
+                    <header name="date" value="Sun, 27 Apr 2014 18:37:33 GMT"/>
+                    <header name="content-type" value="text/css"/>
+                </headers>
+            </resouce>
+        </browsed>
+    </root>
