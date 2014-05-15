@@ -2,15 +2,15 @@
   <xs:element name="DEF">
     <xs:complexType>
       <xs:sequence>
-        <xs:element type="xs:string" name="Session-reference"/>
-        <xs:element type="xs:string" name="Date-time"/>
+        <xs:element type="xs:string" name="Session-Reference"/>
+        <xs:element type="xs:string" name="Date-Time"/>
         <xs:element name="Scan" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:choice maxOccurs="unbounded" minOccurs="0">
               <xs:element name="Host">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="Port" maxOccurs="unbounded" minOccurs="0">
+                    <xs:element name="Port">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="Service">
@@ -24,10 +24,10 @@
                               </xs:simpleContent>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element type="xs:string" name="Software-name" minOccurs="0"/>
-                          <xs:element type="xs:string" name="Software-version" minOccurs="0"/>
-                          <xs:element type="xs:string" name="Software-arguments" minOccurs="0"/>
-                          <xs:element name="Vulnerability" maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:string" name="Software-Name" minOccurs="0"/>
+                          <xs:element type="xs:string" name="Software-Version" minOccurs="0"/>
+                          <xs:element type="xs:string" name="Software-Arguments" minOccurs="0"/>
+                          <xs:element name="Vulnerability" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="Finding">
@@ -35,27 +35,42 @@
                                     <xs:sequence>
                                       <xs:element type="xs:string" name="Summary"/>
                                       <xs:element type="xs:string" name="Description"/>
-                                      <xs:element type="xs:string" name="Further-info"/>
                                       <xs:element type="xs:string" name="Confidence"/>
                                       <xs:element type="xs:string" name="Background"/>
                                       <xs:element type="xs:string" name="Remediation"/>
-                                      <xs:element name="Classification">
+                                      <xs:element name="Further-Information">
                                         <xs:complexType>
-                                          <xs:simpleContent>
-                                            <xs:extension base="xs:string">
-                                              <xs:attribute type="xs:string" name="type" use="optional"/>
-                                              <xs:attribute type="xs:string" name="id" use="optional"/>
-                                              <xs:attribute type="xs:anyURI" name="url" use="optional"/>
-                                            </xs:extension>
-                                          </xs:simpleContent>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="Further-Info"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Classifications">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Classification">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:string" name="type"/>
+                                                    <xs:attribute type="xs:string" name="id"/>
+                                                    <xs:attribute type="xs:string" name="href"/>
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
                                         </xs:complexType>
                                       </xs:element>
                                       <xs:element name="Page">
                                         <xs:complexType>
                                           <xs:sequence>
-                                            <xs:element type="xs:string" name="Page-reference"/>
-                                            <xs:element type="xs:string" name="Method"/>
+                                            <xs:element type="xs:string" name="Page-Reference"/>
                                             <xs:element type="xs:string" name="URL"/>
+                                            <xs:element type="xs:string" name="Method"/>
+                                            <xs:element type="xs:string" name="HTTPVersion"/>
+                                            <xs:element type="xs:string" name="StatusCode"/>
+                                            <xs:element type="xs:string" name="Language"/>
                                             <xs:element name="Parameters">
                                               <xs:complexType>
                                                 <xs:sequence>
@@ -63,12 +78,119 @@
                                                 </xs:sequence>
                                               </xs:complexType>
                                             </xs:element>
-                                            <xs:element name="Request-response">
+                                            <xs:element name="Request-Response">
                                               <xs:complexType>
                                                 <xs:sequence>
-                                                  <xs:element type="xs:string" name="Request"/>
-                                                  <xs:element type="xs:string" name="Response"/>
-                                                  <xs:element type="xs:string" name="html"/>
+                                                  <xs:element name="Request">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element type="xs:string" name="Raw"/>
+                                                        <xs:element name="Headers">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Data">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute type="xs:string" name="name"/>
+                                                                      <xs:attribute type="xs:string" name="value"/>
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Cookie">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Data">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute type="xs:string" name="name"/>
+                                                                      <xs:attribute type="xs:string" name="value"/>
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Additional-RequestData">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Data">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute type="xs:string" name="name"/>
+                                                                      <xs:attribute type="xs:string" name="value"/>
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="Response">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element type="xs:string" name="Raw"/>
+                                                        <xs:element name="Headers">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Data">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute type="xs:string" name="name"/>
+                                                                      <xs:attribute type="xs:string" name="value"/>
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Cookie">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Data">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute type="xs:string" name="name"/>
+                                                                      <xs:attribute type="xs:string" name="value"/>
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Additional-ResponseData">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Data">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute type="xs:string" name="name"/>
+                                                                      <xs:attribute type="xs:string" name="value"/>
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
                                                 </xs:sequence>
                                               </xs:complexType>
                                             </xs:element>
@@ -76,23 +198,24 @@
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute type="xs:short" name="NativeID" use="optional"/>
-                                    <xs:attribute type="xs:string" name="IdentifiedTimestamp" use="optional"/>
+                                    <xs:attribute type="xs:string" name="NativeID"/>
+                                    <xs:attribute type="xs:string" name="IdentifiedTimestamp"/>
+                                    <xs:attribute type="xs:string" name="UniqueID"/>
                                   </xs:complexType>
                                 </xs:element>
                               </xs:sequence>
-                              <xs:attribute type="xs:string" name="Severity" use="optional"/>
+                              <xs:attribute type="xs:string" name="Severity"/>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element name="data" maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name="Scan-Data" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="data" maxOccurs="unbounded" minOccurs="0">
+                                <xs:element name="data">
                                   <xs:complexType>
                                     <xs:simpleContent>
                                       <xs:extension base="xs:string">
-                                        <xs:attribute type="xs:string" name="name" use="optional"/>
-                                        <xs:attribute type="xs:string" name="value" use="optional"/>
+                                        <xs:attribute type="xs:string" name="name"/>
+                                        <xs:attribute type="xs:string" name="value"/>
                                       </xs:extension>
                                     </xs:simpleContent>
                                   </xs:complexType>
@@ -102,7 +225,7 @@
                           </xs:element>
                         </xs:sequence>
                         <xs:attribute type="xs:string" name="protocol" use="optional"/>
-                        <xs:attribute type="xs:byte" name="portid" use="optional"/>
+                        <xs:attribute type="xs:string" name="portid" use="optional"/>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -110,10 +233,10 @@
                   <xs:attribute type="xs:string" name="ip-address" use="optional"/>
                 </xs:complexType>
               </xs:element>
-              <xs:element type="xs:string" name="Software-name"/>
-              <xs:element type="xs:string" name="Software-version"/>
-              <xs:element type="xs:string" name="Software-arguments"/>
-              <xs:element name="Vulnerability" maxOccurs="unbounded" minOccurs="0">
+              <xs:element type="xs:string" name="Software-Name"/>
+              <xs:element type="xs:string" name="Software-Version"/>
+              <xs:element type="xs:string" name="Software-Arguments"/>
+              <xs:element name="Vulnerability" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Finding">
@@ -121,39 +244,52 @@
                         <xs:sequence>
                           <xs:element type="xs:string" name="Summary"/>
                           <xs:element type="xs:string" name="Description"/>
-                          <xs:element type="xs:string" name="Further-info"/>
-                          <xs:element type="xs:byte" name="Confidence"/>
+                          <xs:element type="xs:string" name="Confidence"/>
                           <xs:element type="xs:string" name="Background"/>
                           <xs:element type="xs:string" name="Remediation"/>
-                          <xs:element name="Classification">
+                          <xs:element name="Further-Information">
                             <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute type="xs:string" name="type" use="optional"/>
-                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
-                                  <xs:attribute type="xs:string" name="url" use="optional"/>
-                                </xs:extension>
-                              </xs:simpleContent>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="Further-Info"/>
+                              </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element name="DataFlowElement" maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name="Classifications">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Classification">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="type"/>
+                                        <xs:attribute type="xs:string" name="id"/>
+                                        <xs:attribute type="xs:string" name="href"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="DataFlowElement">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element type="xs:string" name="LineText"/>
                               </xs:sequence>
-                              <xs:attribute type="xs:string" name="SourceFileName" use="optional"/>
-                              <xs:attribute type="xs:byte" name="LineNumber" use="optional"/>
-                              <xs:attribute type="xs:byte" name="ColumnNumber" use="optional"/>
-                              <xs:attribute type="xs:byte" name="Sequence" use="optional"/>
+                              <xs:attribute type="xs:string" name="SourceFileName"/>
+                              <xs:attribute type="xs:string" name="LineNumber"/>
+                              <xs:attribute type="xs:string" name="ColumnNumber"/>
+                              <xs:attribute type="xs:string" name="Sequence"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attribute type="xs:short" name="NativeID" use="optional"/>
-                        <xs:attribute type="xs:string" name="IdentifiedTimestamp" use="optional"/>
+                        <xs:attribute type="xs:string" name="NativeID"/>
+                        <xs:attribute type="xs:string" name="IdentifiedTimestamp"/>
+                        <xs:attribute type="xs:string" name="uniqueID"/>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attribute type="xs:string" name="Severity" use="optional"/>
+                  <xs:attribute type="xs:string" name="Severity"/>
                 </xs:complexType>
               </xs:element>
             </xs:choice>
