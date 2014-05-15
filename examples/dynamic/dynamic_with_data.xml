@@ -51,7 +51,7 @@
 							</Parameters>
 							<Request-Response>
 							    <Request>
-							    	<Raw><![CDATA[GET /demo/ HTTP/1.1
+							    	<Request-Raw><![CDATA[GET /demo/ HTTP/1.1
 User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)
 Accept: */*
 Pragma: no-cache
@@ -61,8 +61,8 @@ Connection: Keep-Alive
 Cookie: CustomCookie=SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511
 
 ]]>
-									</Raw>
-									<Headers>
+									</Request-Raw>
+									<Request-Headers>
 										<Data name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)"/>
 										<Data name="Accept" value="*/*"/>
 										<Data name="Pragma" value="no-cache"/>
@@ -70,18 +70,18 @@ Cookie: CustomCookie=SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511
 										<Data name="X-Scan-Memo" value="Category="Crawl"; Function="CreateStateRequest"; SID="71EA7BFD4D5506343757C24752102E39"; SessionType="ExternalAddedToCrawl"; CrawlType="None"; AttackType="None"; OriginatingEngineID="00000000-0000-0000-0000-000000000000"; ThreadId="267"; ThreadType="CrawlBreadthFirstDBReader";"/>
 										<Data name="Connection" value="Keep-Alive"/>
 										<Data name="Cookie" value="CustomCookie=SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511"/>
-									</Headers>
-								    <Cookie>
+									</Request-Headers>
+								    <Request-Cookie>
 										<Data name="CustomCookie" value="SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511"/>
 										<Data name="Domain" value="testphp.vulnweb.com"/>
 										<Data name="path" value="newuser"/>
-								    </Cookie>
+								    </Request-Cookie>
 									<Additional-RequestData>
 										<Data name="cookie" value="12345"/>
 									</Additional-RequestData>
 							    </Request>
 							    <Response>
-							    	<Raw><![CDATA[HTTP/1.1 200 OK
+							    	<Response-Raw><![CDATA[HTTP/1.1 200 OK
 Date: Mon, 04 Nov 2013 20:53:29 GMT
 Server: Apache/2.2.19 (Win32) PHP/5.3.6
 Last-Modified: Thu, 09 Jun 2011 14:24:57 GMT
@@ -116,8 +116,8 @@ Content-Type: text/html
 	</body>
 </html>
 ]]>
-									</Raw>
-									<Headers>
+									</Response-Raw>
+									<Response-Headers>
 										<Data name="Date" value="Mon, 04 Nov 2013 20:53:29 GMT"/>
 										<Data name="Server" value="Apache/2.2.19 (Win32) PHP/5.3.6"/>
 										<Data name="Last-Modified" value="Thu, 09 Jun 2011 14:24:57 GMT"/>
@@ -127,12 +127,12 @@ Content-Type: text/html
 										<Data name="Keep-Alive" value="timeout=5, max=100"/>
 										<Data name="Connection" value="Keep-Alive"/>
 										<Data name="Content-Type" value="text/html"/>
-									</Headers>
-								    <Cookie>
+									</Response-Headers>
+								    <Response-Cookie>
 										<Data name="CustomCookie" value="SomeCookie76485ZX827111B5A04946A888F05845D0ACC5A8Y3511"/>
 										<Data name="Domain" value="testphp.vulnweb.com"/>
 										<Data name="path" value="newuser"/>
-								    </Cookie>
+								    </Response-Cookie>
 									<Additional-ResponseData>
 										<Data name="The name of the Additional Data" value="The value for the Additional Data"/>
 									</Additional-ResponseData>
