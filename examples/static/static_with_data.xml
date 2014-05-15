@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- The data in this example is compose from different sources -->
 <DEF SpecVersion="0.1">
     <Session-Reference>Product specific reference</Session-Reference>
     <Date-Time>Date and time the session was started</Date-Time>
