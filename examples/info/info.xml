@@ -8,12 +8,12 @@
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
 	    	<Scan-Info>
-	    		<data name="Scan Info name" value="Value for the Scan Info Data" />
+	    		<data name="Scan Info name">The value for the Scan-Info Data</data>
 	    	</Scan-Info>
 			<Port protocol="tcp / udp" portid="The Port Number">
 				<Service name="Name of the Service" product="Product Name" version="Product Version" />
 				<Scan-Data>
-					<data name="Name of the Scan Data" value="Value of the Scan Data"/>
+					<data name="Name of the Scan Data">The value for the Scan Data</data>
 				</Scan-Data>
 			</Port>
 	    </Host>

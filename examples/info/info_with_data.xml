@@ -9,345 +9,345 @@
 	    <Software-Arguments>-oX - -p 1-65535 -sV -T3 -O -R -&#45;version-light -&#45;webxml testphp.vulnweb.com</Software-Arguments>
 	    <Host name="testphp.vulnweb.com" ip-address="176.28.50.165">
 	    	<Scan-Info>
-	    		<data name="hostname" value="testphp.vulnweb.com" />
-	    		<data name="type" value="user" />
+	    		<data name="hostname">testphp.vulnweb.com</data>
+	    		<data name="type">user</data>
 	    	</Scan-Info>
 	    	<Scan-Info>
-	    		<data name="hostname" value="rs202995.rs.hosteurope.de" />
-	    		<data name="type" value="PTR" />
+	    		<data name="hostname">rs202995.rs.hosteurope.de</data>
+	    		<data name="type">PTR</data>
 	    	</Scan-Info>
 	    	<Scan-Info>
-	    		<data name="state" value="closed" />
-	    		<data name="count" value="65520" />
-	    		<data name="reason" value="resets" />
-	    		<data name="count" value="65520" />
+	    		<data name="state">closed</data>
+	    		<data name="count">65520</data>
+	    		<data name="reason">resets</data>
+	    		<data name="count">65520</data>
 	    	</Scan-Info>
 		    <Port protocol="tcp" portid="21">
 				<Service name="ftp" product="ProFTPD" version="1.3.3e" />
 				<Scan-Data>
-					<data name="state" value="open"/>
-					<data name="reason" value="syn-ack"/>
-					<data name="reason_ttl" value="54"/>
-					<data name="method" value="probed"/>
-					<data name="ostype" value="Unix"/>
-					<data name="conf" value="10"/>
-					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+					<data name="state">open</data>
+					<data name="reason">syn-ack</data>
+					<data name="reason_ttl">54</data>
+					<data name="method">probed</data>
+					<data name="ostype">Unix</data>
+					<data name="conf">10</data>
+					<data name="cpe">cpe:/a:igor_sysoev:nginx:1.4.1</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.31 - 2.6.35"/>
-					<data name="accuracy" value="98"/>
-					<data name="line" value="41855"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="98"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.31 - 2.6.35</data>
+					<data name="accuracy">98</data>
+					<data name="line">41855</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">98</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="HP P2000 G3 NAS device"/>
-					<data name="accuracy" value="97"/>
-					<data name="line" value="25943"/>
-					<data name="osclass" value="storage-misc"/>
-					<data name="vendor" value="HP"/>
-					<data name="osfamily" value="embedded"/>
-					<data name="accuracy" value="97"/>
-					<data name="cpe" value="cpe:/h:hp:p2000_g3"/>
+					<data name="osmatch">HP P2000 G3 NAS device</data>
+					<data name="accuracy">97</data>
+					<data name="line">25943</data>
+					<data name="osclass">storage-misc</data>
+					<data name="vendor">HP</data>
+					<data name="osfamily">embedded</data>
+					<data name="accuracy">97</data>
+					<data name="cpe">cpe:/h:hp:p2000_g3</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.32"/>
-					<data name="accuracy" value="97"/>
-					<data name="line" value="42773"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="97"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.32</data>
+					<data name="accuracy">97</data>
+					<data name="line">42773</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">97</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.26 - 2.6.35"/>
-					<data name="accuracy" value="96"/>
-					<data name="line" value="43092"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="96"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.26 - 2.6.35</data>
+					<data name="accuracy">96</data>
+					<data name="line">43092</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">96</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 3.0 - 3.9"/>
-					<data name="accuracy" value="96"/>
-					<data name="line" value="47287"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="3.X"/>
-					<data name="accuracy" value="96"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:3"/>
+					<data name="osmatch">Linux 3.0 - 3.9</data>
+					<data name="accuracy">96</data>
+					<data name="line">47287</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">3.X</data>
+					<data name="accuracy">96</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:3</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.22 - 2.6.36"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="39691"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.22 - 2.6.36</data>
+					<data name="accuracy">95</data>
+					<data name="line">39691</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.23 - 2.6.38"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="39895"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.23 - 2.6.38</data>
+					<data name="accuracy">95</data>
+					<data name="line">39895</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.15 - 2.6.30"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="36329"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.15 - 2.6.30</data>
+					<data name="accuracy">95</data>
+					<data name="line">36329</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.22"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="39171"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6.22"/>
+					<data name="osmatch">Linux 2.6.22</data>
+					<data name="accuracy">95</data>
+					<data name="line">39171</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6.22</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="DD-WRT v23 (Linux 2.4.37)"/>
-					<data name="accuracy" value="94"/>
-					<data name="line" value="35067"/>
-					<data name="osclass" value="WAP"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.4.X"/>
-					<data name="accuracy" value="94"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.4"/>
+					<data name="osmatch">DD-WRT v23 (Linux 2.4.37)</data>
+					<data name="accuracy">94</data>
+					<data name="line">35067</data>
+					<data name="osclass">WAP</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.4.X</data>
+					<data name="accuracy">94</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.4</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="uptime" value="8880195"/>
-					<data name="lastboot" value="Wed Jan 15 00:10:53 2014"/>
+					<data name="uptime">8880195</data>
+					<data name="lastboot">Wed Jan 15 00:10:53 2014</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="distance" value="13"/>
+					<data name="distance">13</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="tcpsequence" value="261"/>
-					<data name="difficulty" value="Good luck!"/>
-					<data name="values" value="AC94822C,6766AFF1,730BDBE8,79D67243,3E64E1C4,DC45ABF1"/>
+					<data name="tcpsequence">261</data>
+					<data name="difficulty">Good luck!</data>
+					<data name="values">AC94822C,6766AFF1,730BDBE8,79D67243,3E64E1C4,DC45ABF1</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="ipidsequence" value="All zeros"/>
-					<data name="values" value="0,0,0,0,0,0"/>
+					<data name="ipidsequence">All zeros</data>
+					<data name="values">0,0,0,0,0,0</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="tcptssequence" value="100HZ"/>
-					<data name="values" value="34EE0DC9,34EE0DD3,34EE0DDD,34EE0DE7,34EE0DF1,34EE0DFB"/>
+					<data name="tcptssequence">100HZ</data>
+					<data name="values">34EE0DC9,34EE0DD3,34EE0DDD,34EE0DE7,34EE0DF1,34EE0DFB</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="times" value="44109"/>
-					<data name="rttvar" value="467"/>
-					<data name="to" value="100000"/>
+					<data name="times">44109</data>
+					<data name="rttvar">467</data>
+					<data name="to">100000</data>
 				</Scan-Data>
 			</Port>
 		    <Port protocol="tcp / udp" portid="80">
 				<Service name="http" product="Apache httpd 2.2.3" version="1.0" />
 				<Scan-Data>
-					<data name="state" value="open"/>
-					<data name="reason" value="syn-ack"/>
-					<data name="reason_ttl" value="54"/>
-					<data name="method" value="probed"/>
-					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+					<data name="state">open</data>
+					<data name="reason">syn-ack</data>
+					<data name="reason_ttl">54</data>
+					<data name="method">probed</data>
+					<data name="cpe">cpe:/a:igor_sysoev:nginx:1.4.1</data>
 				</Scan-Data>
 			</Port>
 	    </Host>
 	    <Host name="Hostname" ip-address="1.1.1.2">
 	    	<Scan-Info>
-	    		<data name="hostname" value="testphp.vulnweb.com" />
-	    		<data name="type" value="user" />
+	    		<data name="hostname">testphp.vulnweb.com</data>
+	    		<data name="type">user</data>
 	    	</Scan-Info>
 	    	<Scan-Info>
-	    		<data name="hostname" value="rs202995.rs.hosteurope.de" />
-	    		<data name="type" value="PTR" />
+	    		<data name="hostname">rs202995.rs.hosteurope.de</data>
+	    		<data name="type">PTR</data>
 	    	</Scan-Info>
 	    	<Scan-Info>
-	    		<data name="state" value="closed" />
-	    		<data name="count" value="65520" />
-	    		<data name="reason" value="resets" />
-	    		<data name="count" value="65520" />
+	    		<data name="state">closed</data>
+	    		<data name="count">65520</data>
+	    		<data name="reason">resets</data>
+	    		<data name="count">65520</data>
 	    	</Scan-Info>
-		    <Port protocol="tcp / udp" portid="21">
+		    <Port protocol="tcp" portid="21">
 				<Service name="ftp" product="ProFTPD" version="1.3.3e" />
 				<Scan-Data>
-					<data name="state" value="open"/>
-					<data name="reason" value="syn-ack"/>
-					<data name="reason_ttl" value="54"/>
-					<data name="method" value="probed"/>
-					<data name="ostype" value="Unix"/>
-					<data name="conf" value="10"/>
-					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+					<data name="state">open</data>
+					<data name="reason">syn-ack</data>
+					<data name="reason_ttl">54</data>
+					<data name="method">probed</data>
+					<data name="ostype">Unix</data>
+					<data name="conf">10</data>
+					<data name="cpe">cpe:/a:igor_sysoev:nginx:1.4.1</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.31 - 2.6.35"/>
-					<data name="accuracy" value="98"/>
-					<data name="line" value="41855"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="98"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.31 - 2.6.35</data>
+					<data name="accuracy">98</data>
+					<data name="line">41855</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">98</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="HP P2000 G3 NAS device"/>
-					<data name="accuracy" value="97"/>
-					<data name="line" value="25943"/>
-					<data name="osclass" value="storage-misc"/>
-					<data name="vendor" value="HP"/>
-					<data name="osfamily" value="embedded"/>
-					<data name="accuracy" value="97"/>
-					<data name="cpe" value="cpe:/h:hp:p2000_g3"/>
+					<data name="osmatch">HP P2000 G3 NAS device</data>
+					<data name="accuracy">97</data>
+					<data name="line">25943</data>
+					<data name="osclass">storage-misc</data>
+					<data name="vendor">HP</data>
+					<data name="osfamily">embedded</data>
+					<data name="accuracy">97</data>
+					<data name="cpe">cpe:/h:hp:p2000_g3</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.32"/>
-					<data name="accuracy" value="97"/>
-					<data name="line" value="42773"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="97"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.32</data>
+					<data name="accuracy">97</data>
+					<data name="line">42773</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">97</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.26 - 2.6.35"/>
-					<data name="accuracy" value="96"/>
-					<data name="line" value="43092"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="96"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.26 - 2.6.35</data>
+					<data name="accuracy">96</data>
+					<data name="line">43092</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">96</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 3.0 - 3.9"/>
-					<data name="accuracy" value="96"/>
-					<data name="line" value="47287"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="3.X"/>
-					<data name="accuracy" value="96"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:3"/>
+					<data name="osmatch">Linux 3.0 - 3.9</data>
+					<data name="accuracy">96</data>
+					<data name="line">47287</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">3.X</data>
+					<data name="accuracy">96</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:3</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.22 - 2.6.36"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="39691"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.22 - 2.6.36</data>
+					<data name="accuracy">95</data>
+					<data name="line">39691</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.23 - 2.6.38"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="39895"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.23 - 2.6.38</data>
+					<data name="accuracy">95</data>
+					<data name="line">39895</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.15 - 2.6.30"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="36329"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6"/>
+					<data name="osmatch">Linux 2.6.15 - 2.6.30</data>
+					<data name="accuracy">95</data>
+					<data name="line">36329</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="Linux 2.6.22"/>
-					<data name="accuracy" value="95"/>
-					<data name="line" value="39171"/>
-					<data name="osclass" value="general purpose"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.6.X"/>
-					<data name="accuracy" value="95"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.6.22"/>
+					<data name="osmatch">Linux 2.6.22</data>
+					<data name="accuracy">95</data>
+					<data name="line">39171</data>
+					<data name="osclass">general purpose</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.6.X</data>
+					<data name="accuracy">95</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.6.22</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="osmatch" value="DD-WRT v23 (Linux 2.4.37)"/>
-					<data name="accuracy" value="94"/>
-					<data name="line" value="35067"/>
-					<data name="osclass" value="WAP"/>
-					<data name="vendor" value="Linux"/>
-					<data name="osfamily" value="Linux"/>
-					<data name="osgen" value="2.4.X"/>
-					<data name="accuracy" value="94"/>
-					<data name="cpe" value="cpe:/o:linux:linux_kernel:2.4"/>
+					<data name="osmatch">DD-WRT v23 (Linux 2.4.37)</data>
+					<data name="accuracy">94</data>
+					<data name="line">35067</data>
+					<data name="osclass">WAP</data>
+					<data name="vendor">Linux</data>
+					<data name="osfamily">Linux</data>
+					<data name="osgen">2.4.X</data>
+					<data name="accuracy">94</data>
+					<data name="cpe">cpe:/o:linux:linux_kernel:2.4</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="uptime" value="8880195"/>
-					<data name="lastboot" value="Wed Jan 15 00:10:53 2014"/>
+					<data name="uptime">8880195</data>
+					<data name="lastboot">Wed Jan 15 00:10:53 2014</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="distance" value="13"/>
+					<data name="distance">13</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="tcpsequence" value="261"/>
-					<data name="difficulty" value="Good luck!"/>
-					<data name="values" value="AC94822C,6766AFF1,730BDBE8,79D67243,3E64E1C4,DC45ABF1"/>
+					<data name="tcpsequence">261</data>
+					<data name="difficulty">Good luck!</data>
+					<data name="values">AC94822C,6766AFF1,730BDBE8,79D67243,3E64E1C4,DC45ABF1</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="ipidsequence" value="All zeros"/>
-					<data name="values" value="0,0,0,0,0,0"/>
+					<data name="ipidsequence">All zeros</data>
+					<data name="values">0,0,0,0,0,0</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="tcptssequence" value="100HZ"/>
-					<data name="values" value="34EE0DC9,34EE0DD3,34EE0DDD,34EE0DE7,34EE0DF1,34EE0DFB"/>
+					<data name="tcptssequence">100HZ</data>
+					<data name="values">34EE0DC9,34EE0DD3,34EE0DDD,34EE0DE7,34EE0DF1,34EE0DFB</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="times" value="44109"/>
-					<data name="rttvar" value="467"/>
-					<data name="to" value="100000"/>
+					<data name="times">44109</data>
+					<data name="rttvar">467</data>
+					<data name="to">100000</data>
 				</Scan-Data>
 			</Port>
-		    <Port protocol="tcp / udp" portid="80">
+		    <Port protocol="tcp" portid="80">
 				<Service name="http" product="Apache httpd 2.2.3" version="1.0" />
 				<Scan-Data>
-					<data name="state" value="open"/>
-					<data name="reason" value="syn-ack"/>
-					<data name="reason_ttl" value="54"/>
-					<data name="method" value="probed"/>
-					<data name="cpe" value="cpe:/a:igor_sysoev:nginx:1.4.1"/>
+					<data name="state">open</data>
+					<data name="reason">syn-ack</data>
+					<data name="reason_ttl">54</data>
+					<data name="method">probed</data>
+					<data name="cpe">cpe:/a:igor_sysoev:nginx:1.4.1</data>
 				</Scan-Data>
 			</Port>
 	    </Host>
@@ -360,40 +360,40 @@
 		    <Port protocol="tcp" portid="80">
 				<Service name="HTTPServer" product="nginx" version="1.4.1" />
 				<Scan-Data>
-					<data name="uri" value="http://testphp.vulnweb.com"/>
-					<data name="http-status" value="200"/>
-					<data name="Email" value="wvs@acunetix.com"/>
-					<data name="Adobe-Flash"/>
-					<data name="Title" value="Home of Acunetix Art"/>
-					<data name="PHP" value="5.3.10-1~lucid+2uwsgi2"/>
-					<data name="HTTPServer" value="nginx/1.4.1"/>
-					<data name="IP" value="176.28.50.165"/>
-					<data name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2"/>
-					<data name="nginx" value="1.4.1"/>
+					<data name="uri">http://testphp.vulnweb.com</data>
+					<data name="http-status">200</data>
+					<data name="Email">wvs@acunetix.com</data>
+					<data name="Adobe-Flash"></data>
+					<data name="Title">Home of Acunetix Art</data>
+					<data name="PHP">5.3.10-1~lucid+2uwsgi2</data>
+					<data name="HTTPServer">nginx/1.4.1</data>
+					<data name="IP">176.28.50.165</data>
+					<data name="X-Powered-By">PHP/5.3.10-1~lucid+2uwsgi2</data>
+					<data name="nginx">1.4.1</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="uri" value="http://testphp.vulnweb.com/robots.txt"/>
-					<data name="http-status" value="404"/>
-					<data name="Title" value="404 Not Found"/>
-					<data name="HTTPServer" value="nginx/1.4.1"/>
-					<data name="IP" value="176.28.50.165"/>
-					<data name="nginx" value="1.4.1"/>
+					<data name="uri">http://testphp.vulnweb.com/robots.txt</data>
+					<data name="http-status">404</data>
+					<data name="Title">404 Not Found</data>
+					<data name="HTTPServer">nginx/1.4.1</data>
+					<data name="IP">176.28.50.165</data>
+					<data name="nginx">1.4.1</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="uri" value="http://testphp.vulnweb.com/gui/"/>
-					<data name="http-status" value="404"/>
-					<data name="Title" value="404 Not Found"/>
-					<data name="HTTPServer" value="nginx/1.4.1"/>
-					<data name="nginx" value="1.4.1"/>
+					<data name="uri">http://testphp.vulnweb.com/gui/</data>
+					<data name="http-status">404</data>
+					<data name="Title">404 Not Found</data>
+					<data name="HTTPServer">nginx/1.4.1</data>
+					<data name="nginx">1.4.1</data>
 				</Scan-Data>
 				<Scan-Data>
-					<data name="uri" value="http://testphp.vulnweb.com/cgi-bin/authLogin.cgi"/>
-					<data name="http-status" value="404"/>
-					<data name="IP" value="176.28.50.165"/>
-					<data name="Title" value="404 Not Found"/>
-					<data name="HTTPServer" value="nginx/1.4.1"/>
-					<data name="IP" value="176.28.50.165"/>
-					<data name="nginx" value="1.4.1"/>
+					<data name="uri">http://testphp.vulnweb.com/cgi-bin/authLogin.cgi</data>
+					<data name="http-status">404</data>
+					<data name="IP">176.28.50.165</data>
+					<data name="Title">404 Not Found</data>
+					<data name="HTTPServer">nginx/1.4.1</data>
+					<data name="IP">176.28.50.165</data>
+					<data name="nginx">1.4.1</data>
 				</Scan-Data>
 			</Port>
 	    </Host>

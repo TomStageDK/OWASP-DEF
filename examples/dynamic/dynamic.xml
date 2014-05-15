@@ -36,25 +36,25 @@
 							    <Request>
 							    	<Request-Raw>The RAW HTTP Request</Request-Raw>
 									<Request-Headers>
-										<Data name="The name of the Header Data" value="The value for the Header Data"/>
+										<data name="The name of the Header Data">The value for the Header Data</data>
 									</Request-Headers>
 								    <Request-Cookie>
-										<Data name="The name of the Cookie Data" value="The value for the Cookie Data"/>
+										<data name="The name of the Cookie Data">The value for the Cookie Data</data>
 								    </Request-Cookie>
 									<Additional-RequestData>
-										<Data name="The name of the Additional Data" value="The value for the Additional Data"/>
+										<data name="The name of the Additional Data">The value for the Additional Data</data>
 									</Additional-RequestData>
 							    </Request>
 							    <Response>
 							    	<Reponse-Raw>The RAW HTTP Response</Reponse-Raw>
-									<Response-Headers>
-										<Data name="The name of the Header Data" value="The value for the Header Data"/>
-									</Response-Headers>
-								    <Response-Cookie>
-										<Data name="The name of the Cookie Data" value="The value for the Cookie Data"/>
-								    </Response-Cookie>
+									<Reponse-Headers>
+										<data name="The name of the Header Data">The value for the Header Data</data>
+									</Reponse-Headers>
+								    <Reponse-Cookie>
+										<data name="The name of the Cookie Data">The value for the Cookie Data</data>
+								    </Reponse-Cookie>
 									<Additional-ResponseData>
-										<Data name="The name of the Additional Data" value="The value for the Additional Data"/>
+										<data name="The name of the Additional Data">The value for the Additional Data</data>
 									</Additional-ResponseData>
 							    </Response>
 							</Request-Response>

@@ -36,25 +36,25 @@
 							    <Request>
 							    	<Request-Raw>The RAW HTTP Request</Request-Raw>
 									<Request-Headers>
-										<Data name="The name of the Header Data" value="The value for the Header Data"/>
+										<data name="The name of the Header Data">The value for the Header Data</data>
 									</Request-Headers>
 								    <Request-Cookie>
-										<Data name="The name of the Cookie Data" value="The value for the Cookie Data"/>
+										<data name="The name of the Cookie Data">The value for the Cookie Data</data>
 								    </Request-Cookie>
 									<Additional-RequestData>
-										<Data name="The name of the Additional Data" value="The value for the Additional Data"/>
+										<data name="The name of the Additional Data">The value for the Additional Data</data>
 									</Additional-RequestData>
 							    </Request>
 							    <Response>
 							    	<Reponse-Raw>The RAW HTTP Response</Reponse-Raw>
 									<Reponse-Headers>
-										<Data name="The name of the Header Data" value="The value for the Header Data"/>
+										<data name="The name of the Header Data">The value for the Header Data</data>
 									</Reponse-Headers>
 								    <Reponse-Cookie>
-										<Data name="The name of the Cookie Data" value="The value for the Cookie Data"/>
+										<data name="The name of the Cookie Data">The value for the Cookie Data</data>
 								    </Reponse-Cookie>
 									<Additional-ResponseData>
-										<Data name="The name of the Additional Data" value="The value for the Additional Data"/>
+										<data name="The name of the Additional Data">The value for the Additional Data</data>
 									</Additional-ResponseData>
 							    </Response>
 							</Request-Response>
@@ -93,12 +93,12 @@
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
 	    	<Scan-Info>
-	    		<data name="Scan Info name" value="Value for the Scan Info Data" />
+	    		<data name="Scan Info name">The value for the Scan-Info Data</data>
 	    	</Scan-Info>
 			<Port protocol="tcp / udp" portid="The Port Number">
 				<Service name="Name of the Service" product="Product Name" version="Product Version" />
 				<Scan-Data>
-					<data name="Name of the Scan Data" value="Value of the Scan Data"/>
+					<data name="Name of the Scan Data">The value for the Scan Data</data>
 				</Scan-Data>
 			</Port>
 	    </Host>
