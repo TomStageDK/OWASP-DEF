@@ -4,65 +4,60 @@
     <Date-time>Date and time the session was started</Date-time>
 	<Scan type="dynamic">
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
-			<Port protocol="tcp / udp" portid="The Port Number">
+			<Port protocol="The Protocol used" portid="The Port Number">
 				<Service name="Name of the Service" product="Product Name" version="Product Version" />
-			    <Software-name>Name of the tool that found the issue</Software-name>
-			    <Software-version>Version of the tool that found the issue</Software-version>
-			    <Software-arguments>Arguments used to perform the scan</Software-arguments>
+			    <Software-Name>Name of the tool that found the issue</Software-Name>
+			    <Software-Version>Version of the tool that found the issue</Software-Version>
+			    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
 				<Vulnerability Severity="The Severity">
-					<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" uniqueID="The Software unique ID for this Finding">
+					<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" UniqueID="The Software unique ID for this Finding">
 					    <Summary>A sort (one line) description</Summary>
 					    <Description>More detailed description</Description>
 					    <Confidence>One of an agreed list of values</Confidence>
 					    <Background>More info on the type of issue</Background>
 					    <Remediation>Advise on how to fix the issue</Remediation>
-					    <Further-information>
-					    	<Further-info>More information about this specific issue</Further-info>
-					    </Further-information>
+					    <Further-Information>
+					    	<Further-Info>More information about this specific issue</Further-Info>
+					    </Further-Information>
 						<Classifications>
 							<Classification type="The Classification System" id="Classification ID" href="The URL to the Classification description">The Title for the Clasasification</Classification>
 						</Classifications>
 						<Page>
-						    <Page-reference>Product specific reference e.g. Page Title</Page-reference>
+						    <Page-Reference>Product specific reference e.g. Page Title</Page-Reference>
 						    <URL>The UTL that the Vulnerability was found on</URL>
 						    <Method>HTTP method (GET, POST, etc)</Method>
 						    <HTTPVersion>The HTTP Version</HTTPVersion>
 						    <StatusCode>The HTTP Status code</StatusCode>
+			    			<Language>The detected Language of the Web Application</Language>
 							<Parameters>
 							    <Parameter>The parameter the vulnerability was found with</Parameter>
 							</Parameters>
-							<Request-response>
+							<Request-Response>
 							    <Request>
 							    	<Raw>The RAW HTTP Request</Raw>
 									<Headers>
-										<Header>
-											<Name>Header Name</Name>
-											<Value>Header Value</Value>
-										</Header>
+										<Data name="The name of the Header Data" value="The value for the Header Date"/>
 									</Headers>
 								    <Cookie>
-								    	<Name>Cookie Name</Name>
-								    	<Value>Cookie Value</Value>
-								    	<Domain>Cookie Domain</Domain>
-								    	<Path>Cookie Path</Path>
+										<Data name="The name of the Cookie Data" value="The value for the Cookie Date"/>
 								    </Cookie>
 									<Additional-RequestData>
-										<data name="The name of the Additional Data" value="The value for the Additional Date"/>
+										<Data name="The name of the Additional Data" value="The value for the Additional Date"/>
 									</Additional-RequestData>
 							    </Request>
 							    <Response>
 							    	<Raw>The RAW HTTP Response</Raw>
 									<Headers>
-										<Header>
-											<Name>Header Name</Name>
-											<Value>Header Value</Value>
-										</Header>
+										<Data name="The name of the Header Data" value="The value for the Header Date"/>
 									</Headers>
+								    <Cookie>
+										<Data name="The name of the Cookie Data" value="The value for the Cookie Date"/>
+								    </Cookie>
 									<Additional-ResponseData>
-										<data name="The name of the Additional Data" value="The value for the Additional Date"/>
+										<Data name="The name of the Additional Data" value="The value for the Additional Date"/>
 									</Additional-ResponseData>
 							    </Response>
-							</Request-response>
+							</Request-Response>
 						</Page>
 					</Finding>
 				</Vulnerability>
