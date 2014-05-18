@@ -36,25 +36,25 @@
 							    <Request>
 							    	<Request-Raw>The RAW HTTP Request</Request-Raw>
 									<Request-Headers>
-										<data name="The name of the Header Data">The value for the Header Data</data>
+										<Data name="The name of the Header Data">The value for the Header Data</Data>
 									</Request-Headers>
 								    <Request-Cookie>
-										<data name="The name of the Cookie Data">The value for the Cookie Data</data>
+										<Data name="The name of the Cookie Data">The value for the Cookie Data</Data>
 								    </Request-Cookie>
 									<Additional-RequestData>
-										<data name="The name of the Additional Data">The value for the Additional Data</data>
+										<Data name="The name of the Additional Data">The value for the Additional Data</Data>
 									</Additional-RequestData>
 							    </Request>
 							    <Response>
 							    	<Reponse-Raw>The RAW HTTP Response</Reponse-Raw>
 									<Reponse-Headers>
-										<data name="The name of the Header Data">The value for the Header Data</data>
+										<Data name="The name of the Header Data">The value for the Header Data</Data>
 									</Reponse-Headers>
 								    <Reponse-Cookie>
-										<data name="The name of the Cookie Data">The value for the Cookie Data</data>
+										<Data name="The name of the Cookie Data">The value for the Cookie Data</Data>
 								    </Reponse-Cookie>
 									<Additional-ResponseData>
-										<data name="The name of the Additional Data">The value for the Additional Data</data>
+										<Data name="The name of the Additional Data">The value for the Additional Data</Data>
 									</Additional-ResponseData>
 									<Response-ScreenShot>Base64 Encoded Screen Shot</Response-ScreenShot>
 							    </Response>
@@ -70,7 +70,7 @@
 	    <Software-Version>The version of the Software that did the scan</Software-Version>
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
 		<Vulnerability Severity="The Severity">
-			<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" uniqueID="The Software unique ID for this Finding">
+			<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" UniqueID="The Software unique ID for this Finding">
 			    <Summary>A sort (one line) description</Summary>
 			    <Description>More detailed description</Description>
 			    <Confidence>One of an agreed list of values</Confidence>
@@ -94,12 +94,12 @@
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
 	    	<Scan-Info>
-	    		<data name="Scan Info name">The value for the Scan-Info Data</data>
+	    		<Data name="Scan Info name">The value for the Scan-Info Data</Data>
 	    	</Scan-Info>
 			<Port protocol="tcp / udp" portid="The Port Number">
 				<Service name="Name of the Service" product="Product Name" version="Product Version" />
 				<Scan-Data>
-					<data name="Name of the Scan Data">The value for the Scan Data</data>
+					<Data name="Name of the Scan Data">The value for the Scan Data</Data>
 				</Scan-Data>
 			</Port>
 	    </Host>
