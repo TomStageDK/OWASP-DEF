@@ -136,6 +136,7 @@ Content-Type: text/html
 									<Additional-ResponseData>
 										<data name="The name of the Additional Data">The value for the Additional Data</data>
 									</Additional-ResponseData>
+									<Response-ScreenShot>Base64 Encoded Screen Shot</Response-ScreenShot>
 							    </Response>
 							</Request-Response>
 						</Page>
