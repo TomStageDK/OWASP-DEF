@@ -10,7 +10,64 @@
 			    <Software-Version>v0.4.6</Software-Version>
 			    <Software-Arguments>--authed-by='DVOS &lt;tom.stage@dvos.dk&gt;' --exclude='(?i)(logout|disconnect|signout|exit)+' --report=afr:outfile=/home/Scans/Arachni_testphp.vulnweb.com.afr http://testphp.vulnweb.com</Software-Arguments>
 			    <Software-Additional>
-			    	<Data name="The name">Value of the Additional Data</Data>
+			    	<Data name="start_datetime">Sun Apr 27 19:55:52 2014</Data>
+			    	<Data name="finish_datetime">Sun Apr 27 20:09:12 2014</Data>
+			    	<Data name="delta_time">00:13:19</Data>
+			    	<Data name="user_agent">Arachni/v0.4.6</Data>
+			    	<Data name="element">links</Data>
+			    	<Data name="element">forms</Data>
+			    	<Data name="element">cookies</Data>
+			    	<Data name="module">backdoors</Data>
+			    	<Data name="module">xst</Data>
+			    	<Data name="module">backup_files</Data>
+			    	<Data name="module">localstart_asp</Data>
+			    	<Data name="module">common_directories</Data>
+			    	<Data name="module">allowed_methods</Data>
+			    	<Data name="module">http_put</Data>
+			    	<Data name="module">htaccess_limit</Data>
+			    	<Data name="module">webdav</Data>
+			    	<Data name="module">directory_listing</Data>
+			    	<Data name="module">interesting_responses</Data>
+			    	<Data name="module">x_forwarded_for_access_restriction_bypass</Data>
+			    	<Data name="module">common_files</Data>
+			    	<Data name="module">unencrypted_password_forms</Data>
+			    	<Data name="module">emails</Data>
+			    	<Data name="module">credit_card</Data>
+			    	<Data name="module">ssn</Data>
+			    	<Data name="module">private_ip</Data>
+			    	<Data name="module">insecure_cookies</Data>
+			    	<Data name="module">cvs_svn_users</Data>
+			    	<Data name="module">html_objects</Data>
+			    	<Data name="module">form_upload</Data>
+			    	<Data name="module">password_autocomplete</Data>
+			    	<Data name="module">http_only_cookies</Data>
+			    	<Data name="module">captcha</Data>
+			    	<Data name="module">mixed_resource</Data>
+			    	<Data name="module">sqli</Data>
+			    	<Data name="module">code_injection_php_input_wrapper</Data>
+			    	<Data name="module">unvalidated_redirect</Data>
+			    	<Data name="module">os_cmd_injection_timing</Data>
+			    	<Data name="module">csrf</Data>
+			    	<Data name="module">sqli_blind_rdiff</Data>
+			    	<Data name="module">sqli_blind_timing</Data>
+			    	<Data name="module">ldapi</Data>
+			    	<Data name="module">file_inclusion</Data>
+			    	<Data name="module">code_injection_timing</Data>
+			    	<Data name="module">rfi</Data>
+			    	<Data name="module">path_traversal</Data>
+			    	<Data name="module">session_fixation</Data>
+			    	<Data name="module">trainer</Data>
+			    	<Data name="module">source_code_disclosure</Data>
+			    	<Data name="module">response_splitting</Data>
+			    	<Data name="module">xss_path</Data>
+			    	<Data name="module">code_injection</Data>
+			    	<Data name="module">xss</Data>
+			    	<Data name="module">xss_tag</Data>
+			    	<Data name="module">xss_event</Data>
+			    	<Data name="module">xpath</Data>
+			    	<Data name="module">xss_script_tag</Data>
+			    	<Data name="module">os_cmd_injection</Data>
+			    	<Data name="exclude_regexp">(?i-mx:(logout|disconnect|signout|exit)+)</Data>
 				</Software-Additional>
 				<Vulnerability Severity="High">
 					<Finding NativeID="XSS" IdentifiedTimestamp="" UniqueID="XSS::form::searchFor::http://testphp.vulnweb.com/search.php">
