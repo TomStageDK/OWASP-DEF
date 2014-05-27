@@ -32,8 +32,8 @@
 				Grant the minimum database access that is necessary for the application.
 						</Remediation>
 					    <Further-Information>
-					    	<Further-Info>OWASP A1-Injection : https://www.owasp.org/index.php/Top_10_2010-A1</Further-Info>
-					    	<Further-Info>OWASP SQLInjection Cheat Sheet : https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet</Further-Info>
+					    	<Further-Info name="OWASP A1-Injection" url="https://www.owasp.org/index.php/Top_10_2010-A1" />
+					    	<Further-Info name="OWASP SQLInjection Cheat Sheet" url="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet" />
 					    </Further-Information>
 						<Classifications>
 							<Classification type="CWE" id="CWE-89" href="http://cwe.mitre.org/data/definitions/89.html">CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</Classification>

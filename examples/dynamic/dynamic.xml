@@ -17,7 +17,7 @@
 					    <Background>More info on the type of issue</Background>
 					    <Remediation>Advise on how to fix the issue</Remediation>
 					    <Further-Information>
-					    	<Further-Info>More information about this specific issue</Further-Info>
+					    	<Further-Info name="The name" url="The URL to further information" />
 					    </Further-Information>
 						<Classifications>
 							<Classification type="The Classification System" id="Classification ID" href="The URL to the Classification description">The Title for the Clasasification</Classification>
