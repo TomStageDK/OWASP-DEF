@@ -259,7 +259,10 @@ CjwhLS0gSW5zdGFuY2VFbmQgLS0+PC9odG1sPg0K
 
 <tags><tag name="sql" /><tag name="blind" /><tag name="timing" /><tag name="injection" /><tag name="database" /></tags>
 
-<references><reference name="OWASP" url="http://www.owasp.org/index.php/Blind_SQL_Injection" /><reference name="MITRE - CAPEC" url="http://capec.mitre.org/data/definitions/7.html" /></references>
+<references>
+	<reference name="OWASP" url="http://www.owasp.org/index.php/Blind_SQL_Injection" />
+	<reference name="MITRE - CAPEC" url="http://capec.mitre.org/data/definitions/7.html" />
+</references>
 
 <variations>
 <variation>
@@ -272,9 +275,20 @@ CjwhLS0gSW5zdGFuY2VFbmQgLS0+PC9odG1sPg0K
 <remarks></remarks>
 
 <headers>
-<request><field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" /><field name="Accept-Encoding" value="gzip, deflate" /><field name="User-Agent" value="Arachni/v0.4.6" /><field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" /></request>
+<request>
+	<field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+	<field name="Accept-Encoding" value="gzip, deflate" />
+	<field name="User-Agent" value="Arachni/v0.4.6" />
+	<field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" />
+</request>
 
-<response><field name="Server" value="nginx/1.4.1" /><field name="Date" value="Sun, 27 Apr 2014 17:59:29 GMT" /><field name="Content-Type" value="text/html" /><field name="Content-Length" value="182" /><field name="Connection" value="keep-alive" /></response>
+<response>
+	<field name="Server" value="nginx/1.4.1" />
+	<field name="Date" value="Sun, 27 Apr 2014 17:59:29 GMT" />
+	<field name="Content-Type" value="text/html" />
+	<field name="Content-Length" value="182" />
+	<field name="Connection" value="keep-alive" />
+</response>
 </headers>
 
 <html>PGh0bWw+DQo8aGVhZD48dGl0bGU+NTA0IEdhdGV3YXkgVGltZS1vdXQ8L3Rp
@@ -325,7 +339,12 @@ DQo=
 
 <tags><tag name="sql" /><tag name="injection" /><tag name="regexp" /><tag name="database" /><tag name="error" /></tags>
 
-<references><reference name="UnixWiz" url="http://unixwiz.net/techtips/sql-injection.html" /><reference name="Wikipedia" url="http://en.wikipedia.org/wiki/SQL_injection" /><reference name="SecuriTeam" url="http://www.securiteam.com/securityreviews/5DP0N1P76E.html" /><reference name="OWASP" url="http://www.owasp.org/index.php/SQL_Injection" /></references>
+<references>
+	<reference name="UnixWiz" url="http://unixwiz.net/techtips/sql-injection.html" />
+	<reference name="Wikipedia" url="http://en.wikipedia.org/wiki/SQL_injection" />
+	<reference name="SecuriTeam" url="http://www.securiteam.com/securityreviews/5DP0N1P76E.html" />
+	<reference name="OWASP" url="http://www.owasp.org/index.php/SQL_Injection" />
+</references>
 
 <variations>
 <variation>
@@ -342,9 +361,22 @@ DQo=
 <remarks></remarks>
 
 <headers>
-<request><field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" /><field name="Accept-Encoding" value="gzip, deflate" /><field name="User-Agent" value="Arachni/v0.4.6" /><field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" /></request>
+<request>
+	<field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+	<field name="Accept-Encoding" value="gzip, deflate" />
+	<field name="User-Agent" value="Arachni/v0.4.6" />
+	<field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" />
+</request>
 
-<response><field name="Server" value="nginx/1.4.1" /><field name="Date" value="Sun, 27 Apr 2014 17:59:30 GMT" /><field name="Content-Type" value="text/html" /><field name="Transfer-Encoding" value="chunked" /><field name="Connection" value="keep-alive" /><field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" /><field name="Content-Encoding" value="gzip" /></response>
+<response>
+	<field name="Server" value="nginx/1.4.1" />
+	<field name="Date" value="Sun, 27 Apr 2014 17:59:30 GMT" />
+	<field name="Content-Type" value="text/html" />
+	<field name="Transfer-Encoding" value="chunked" />
+	<field name="Connection" value="keep-alive" />
+	<field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" />
+	<field name="Content-Encoding" value="gzip" />
+</response>
 </headers>
 
 <html>PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEg
@@ -482,7 +514,12 @@ bmQgLS0+PC9odG1sPg0K
 
 <tags><tag name="sql" /><tag name="injection" /><tag name="regexp" /><tag name="database" /><tag name="error" /></tags>
 
-<references><reference name="UnixWiz" url="http://unixwiz.net/techtips/sql-injection.html" /><reference name="Wikipedia" url="http://en.wikipedia.org/wiki/SQL_injection" /><reference name="SecuriTeam" url="http://www.securiteam.com/securityreviews/5DP0N1P76E.html" /><reference name="OWASP" url="http://www.owasp.org/index.php/SQL_Injection" /></references>
+<references>
+	<reference name="UnixWiz" url="http://unixwiz.net/techtips/sql-injection.html" />
+	<reference name="Wikipedia" url="http://en.wikipedia.org/wiki/SQL_injection" />
+	<reference name="SecuriTeam" url="http://www.securiteam.com/securityreviews/5DP0N1P76E.html" />
+	<reference name="OWASP" url="http://www.owasp.org/index.php/SQL_Injection" />
+</references>
 
 <variations>
 <variation>
@@ -499,9 +536,22 @@ bmQgLS0+PC9odG1sPg0K
 <remarks></remarks>
 
 <headers>
-<request><field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" /><field name="Accept-Encoding" value="gzip, deflate" /><field name="User-Agent" value="Arachni/v0.4.6" /><field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" /></request>
+<request>
+	<field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+	<field name="Accept-Encoding" value="gzip, deflate" />
+	<field name="User-Agent" value="Arachni/v0.4.6" />
+	<field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" />
+</request>
 
-<response><field name="Server" value="nginx/1.4.1" /><field name="Date" value="Sun, 27 Apr 2014 17:59:30 GMT" /><field name="Content-Type" value="text/html" /><field name="Transfer-Encoding" value="chunked" /><field name="Connection" value="keep-alive" /><field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" /><field name="Content-Encoding" value="gzip" /></response>
+<response>
+	<field name="Server" value="nginx/1.4.1" />
+	<field name="Date" value="Sun, 27 Apr 2014 17:59:30 GMT" />
+	<field name="Content-Type" value="text/html" />
+	<field name="Transfer-Encoding" value="chunked" />
+	<field name="Connection" value="keep-alive" />
+	<field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" />
+	<field name="Content-Encoding" value="gzip" />
+</response>
 </headers>
 
 <html>PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEg
@@ -653,9 +703,22 @@ LSBJbnN0YW5jZUVuZCAtLT48L2h0bWw+DQo=
 <remarks></remarks>
 
 <headers>
-<request><field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" /><field name="Accept-Encoding" value="gzip, deflate" /><field name="User-Agent" value="Arachni/v0.4.6" /><field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" /></request>
+<request>
+	<field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+	<field name="Accept-Encoding" value="gzip, deflate" />
+	<field name="User-Agent" value="Arachni/v0.4.6" />
+	<field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" />
+</request>
 
-<response><field name="Server" value="nginx/1.4.1" /><field name="Date" value="Sun, 27 Apr 2014 17:59:30 GMT" /><field name="Content-Type" value="text/html" /><field name="Transfer-Encoding" value="chunked" /><field name="Connection" value="keep-alive" /><field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" /><field name="Content-Encoding" value="gzip" /></response>
+<response>
+	<field name="Server" value="nginx/1.4.1" />
+	<field name="Date" value="Sun, 27 Apr 2014 17:59:30 GMT" />
+	<field name="Content-Type" value="text/html" />
+	<field name="Transfer-Encoding" value="chunked" />
+	<field name="Connection" value="keep-alive" />
+	<field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" />
+	<field name="Content-Encoding" value="gzip" />
+</response>
 </headers>
 
 <html>PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEg
@@ -965,9 +1028,21 @@ dGFuY2VFbmQgLS0+PC9odG1sPg0K
 <remarks></remarks>
 
 <headers>
-<request><field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" /><field name="Accept-Encoding" value="gzip, deflate" /><field name="User-Agent" value="Arachni/v0.4.6" /><field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" /></request>
+<request>
+	<field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+	<field name="Accept-Encoding" value="gzip, deflate" />
+	<field name="User-Agent" value="Arachni/v0.4.6" />
+	<field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" />
+</request>
 
-<response><field name="Server" value="nginx/1.4.1" /><field name="Date" value="Sun, 27 Apr 2014 17:59:31 GMT" /><field name="Content-Type" value="image/jpeg" /><field name="Transfer-Encoding" value="chunked" /><field name="Connection" value="keep-alive" /><field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" /></response>
+<response>
+	<field name="Server" value="nginx/1.4.1" />
+	<field name="Date" value="Sun, 27 Apr 2014 17:59:31 GMT" />
+	<field name="Content-Type" value="image/jpeg" />
+	<field name="Transfer-Encoding" value="chunked" />
+	<field name="Connection" value="keep-alive" />
+	<field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" />
+</response>
 </headers>
 
 <html></html>
@@ -1017,7 +1092,10 @@ dGFuY2VFbmQgLS0+PC9odG1sPg0K
 
 <tags><tag name="remote" /><tag name="file" /><tag name="inclusion" /><tag name="injection" /><tag name="regexp" /></tags>
 
-<references><reference name="WASC" url="http://projects.webappsec.org/Remote-File-Inclusion" /><reference name="Wikipedia" url="http://en.wikipedia.org/wiki/Remote_File_Inclusion" /></references>
+<references>
+	<reference name="WASC" url="http://projects.webappsec.org/Remote-File-Inclusion" />
+	<reference name="Wikipedia" url="http://en.wikipedia.org/wiki/Remote_File_Inclusion" />
+</references>
 
 <variations>
 <variation>
@@ -1034,7 +1112,12 @@ dGFuY2VFbmQgLS0+PC9odG1sPg0K
 <remarks></remarks>
 
 <headers>
-<request><field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" /><field name="Accept-Encoding" value="gzip, deflate" /><field name="User-Agent" value="Arachni/v0.4.6" /><field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" /></request>
+<request>
+	<field name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+	<field name="Accept-Encoding" value="gzip, deflate" />
+	<field name="User-Agent" value="Arachni/v0.4.6" />
+	<field name="From" value="DVOS &lt;tom.stage@dvos.dk&gt;" />
+</request>
 
 <response><field name="Server" value="nginx/1.4.1" /><field name="Date" value="Sun, 27 Apr 2014 17:59:33 GMT" /><field name="Content-Type" value="image/jpeg" /><field name="Transfer-Encoding" value="chunked" /><field name="Connection" value="keep-alive" /><field name="X-Powered-By" value="PHP/5.3.10-1~lucid+2uwsgi2" /></response>
 </headers>

@@ -6,6 +6,9 @@
 	    <Software-Name>Name of the tool that found the issue</Software-Name>
 	    <Software-Version>Version of the tool that found the issue</Software-Version>
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+	    <Software-Additional>
+	    	<Data name="The name">Value of the Additional Data</Data>
+		</Software-Additional>
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
 	    	<Scan-Info>
 	    		<data name="Scan Info name">The value for the Scan-Info Data</data>

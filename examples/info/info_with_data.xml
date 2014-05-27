@@ -7,6 +7,9 @@
 	    <Software-Name>Nmap</Software-Name>
 	    <Software-Version>6.40</Software-Version>
 	    <Software-Arguments>-oX - -p 1-65535 -sV -T3 -O -R -&#45;version-light -&#45;webxml testphp.vulnweb.com</Software-Arguments>
+	    <Software-Additional>
+	    	<Data name="The name">Value of the Additional Data</Data>
+		</Software-Additional>
 	    <Host name="testphp.vulnweb.com" ip-address="176.28.50.165">
 	    	<Scan-Info>
 	    		<data name="hostname">testphp.vulnweb.com</data>

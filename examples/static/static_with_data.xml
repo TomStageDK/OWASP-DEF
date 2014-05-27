@@ -7,6 +7,9 @@
 	    <Software-Name>Microsoft CAT.NET</Software-Name>
 	    <Software-Version>1</Software-Version>
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+	    <Software-Additional>
+	    	<Data name="The name">Value of the Additional Data</Data>
+		</Software-Additional>
 		<Vulnerability Severity="Critical">
 			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00" UniqueID="0000-0000-0000-9999">
 			    <Summary>XSS</Summary>

@@ -6,6 +6,9 @@
 	    <Software-Name>The name of the Software that did the scan</Software-Name>
 	    <Software-Version>The version of the Software that did the scan</Software-Version>
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+	    <Software-Additional>
+	    	<Data name="The name">Value of the Additional Data</Data>
+		</Software-Additional>
 		<Vulnerability Severity="The Severity">
 			<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" UniqueID="The Software unique ID for this Finding">
 			    <Summary>A sort (one line) description</Summary>

@@ -10,6 +10,9 @@
 			    <Software-Name>ZAProxy</Software-Name>
 			    <Software-Version>2.3.0.1</Software-Version>
 			    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+			    <Software-Additional>
+			    	<Data name="The name">Value of the Additional Data</Data>
+				</Software-Additional>
 				<Vulnerability Severity="Critical">
 					<Finding NativeID="40018" IdentifiedTimestamp="2002-05-30T09:00:00" UniqueID="0000-0000-0000-0001">
 					    <Summary>SQL Injection - MySQL</Summary>

@@ -9,6 +9,9 @@
 			    <Software-Name>Name of the tool that found the issue</Software-Name>
 			    <Software-Version>Version of the tool that found the issue</Software-Version>
 			    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+			    <Software-Additional>
+			    	<Data name="The name">Value of the Additional Data</Data>
+				</Software-Additional>
 				<Vulnerability Severity="The Severity">
 					<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" UniqueID="The Software unique ID for this Finding">
 					    <Summary>A sort (one line) description</Summary>
@@ -72,6 +75,9 @@
 	    <Software-Name>The name of the Software that did the scan</Software-Name>
 	    <Software-Version>The version of the Software that did the scan</Software-Version>
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+	    <Software-Additional>
+	    	<Data name="The name">Value of the Additional Data</Data>
+		</Software-Additional>
 		<Vulnerability Severity="The Severity">
 			<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" UniqueID="The Software unique ID for this Finding">
 			    <Summary>A sort (one line) description</Summary>
@@ -95,6 +101,9 @@
 	    <Software-Name>Name of the tool that found the issue</Software-Name>
 	    <Software-Version>Version of the tool that found the issue</Software-Version>
 	    <Software-Arguments>Arguments used to perform the scan</Software-Arguments>
+	    <Software-Additional>
+	    	<Data name="The name">Value of the Additional Data</Data>
+		</Software-Additional>
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
 	    	<Scan-Info>
 	    		<Data name="Scan Info name">The value for the Scan-Info Data</Data>
