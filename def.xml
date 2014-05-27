@@ -22,6 +22,9 @@
 						<Classifications>
 							<Classification type="The Classification System" id="Classification ID" href="The URL to the Classification description">The Title for the Clasasification</Classification>
 						</Classifications>
+					    <Additional-Data>
+					    	<Data name="The name">Value of the Additional Data</Data>
+					    </Additional-Data>
 						<Page>
 						    <Page-Reference>Product specific reference e.g. Page Title</Page-Reference>
 						    <URL>The UTL that the Vulnerability was found on</URL>
