@@ -1,5 +1,5 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="DEF">
+  <xs:element name="OWASP-DEF">
     <xs:annotation>
       <xs:documentation>The data in this example is compose from different sources</xs:documentation>
     </xs:annotation>
@@ -59,7 +59,16 @@
                                       <xs:element name="Further-Information">
                                         <xs:complexType>
                                           <xs:sequence>
-                                            <xs:element type="xs:string" name="Further-Info" maxOccurs="unbounded" minOccurs="0"/>
+                                            <xs:element name="Further-Info" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:string" name="name" use="optional"/>
+                                                    <xs:attribute type="xs:string" name="url" use="optional"/>
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
                                           </xs:sequence>
                                         </xs:complexType>
                                       </xs:element>
@@ -73,6 +82,21 @@
                                                     <xs:attribute type="xs:string" name="type" use="optional"/>
                                                     <xs:attribute type="xs:string" name="id" use="optional"/>
                                                     <xs:attribute type="xs:anyURI" name="href" use="optional"/>
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Additional-Data">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Data">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:string" name="name"/>
                                                   </xs:extension>
                                                 </xs:simpleContent>
                                               </xs:complexType>
@@ -200,6 +224,7 @@
                                                             </xs:sequence>
                                                           </xs:complexType>
                                                         </xs:element>
+                                                        <xs:element type="xs:string" name="Response-ScreenShot"/>
                                                       </xs:sequence>
                                                     </xs:complexType>
                                                   </xs:element>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<DEF SpecVersion="0.1">
+<OWASP-DEF SpecVersion="0.1">
     <Session-Reference>Product specific reference</Session-Reference>
     <Date-Time>Date and time the session was started</Date-Time>
 	<Scan type="info">
@@ -18,4 +18,4 @@
 			</Port>
 	    </Host>
 	</Scan>
-</DEF>
+</OWASP-DEF>

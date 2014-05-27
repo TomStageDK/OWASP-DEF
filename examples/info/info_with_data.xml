@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- The data in this example is compose from different sources -->
-<DEF SpecVersion="0.1">
+<OWASP-DEF SpecVersion="0.1">
     <Session-Reference>Nmap and WhatWeb scan of testphp.vulnweb.com</Session-Reference>
     <Date-Time>2002-05-30T09:00:00</Date-Time>
 	<Scan type="info">
@@ -398,4 +398,4 @@
 			</Port>
 	    </Host>
 	</Scan>
-</DEF>
+</OWASP-DEF>

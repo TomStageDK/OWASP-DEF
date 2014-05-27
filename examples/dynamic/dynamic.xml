@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<DEF SpecVersion="0.1">
-    <Session-reference>Product specific reference</Session-reference>
-    <Date-time>Date and time the session was started</Date-time>
+<OWASP-DEF SpecVersion="0.1">
+    <Session-Reference>Product specific reference</Session-Reference>
+    <Date-Time>Date and time the session was started</Date-Time>
 	<Scan type="dynamic">
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
 			<Port protocol="The Protocol used" portid="The Port Number">
@@ -68,4 +68,4 @@
 			</Port>
 		</Host>
 	</Scan>
-</DEF>
+</OWASP-DEF>
