@@ -1,8 +1,5 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="OWASP-DEF">
-    <xs:annotation>
-      <xs:documentation>The data in this example is compose from different sources</xs:documentation>
-    </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element type="xs:string" name="Session-Reference"/>
@@ -30,7 +27,7 @@
                     </xs:element>
                     <xs:element name="Port" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
-                        <xs:sequence>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
                           <xs:element name="Service">
                             <xs:complexType>
                               <xs:simpleContent>
@@ -42,10 +39,10 @@
                               </xs:simpleContent>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element type="xs:string" name="Software-Name" minOccurs="0"/>
-                          <xs:element type="xs:string" name="Software-Version" minOccurs="0"/>
-                          <xs:element type="xs:string" name="Software-Arguments" minOccurs="0"/>
-                          <xs:element name="Vulnerability" minOccurs="0">
+                          <xs:element type="xs:string" name="Software-Name"/>
+                          <xs:element type="xs:string" name="Software-Version"/>
+                          <xs:element type="xs:string" name="Software-Arguments"/>
+                          <xs:element name="Vulnerability">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="Finding">
@@ -235,7 +232,7 @@
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute type="xs:int" name="NativeID"/>
+                                    <xs:attribute type="xs:string" name="NativeID"/>
                                     <xs:attribute type="xs:dateTime" name="IdentifiedTimestamp"/>
                                     <xs:attribute type="xs:string" name="UniqueID"/>
                                   </xs:complexType>
@@ -244,7 +241,7 @@
                               <xs:attribute type="xs:string" name="Severity"/>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element name="Scan-Data" maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name="Scan-Data">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="data" maxOccurs="unbounded" minOccurs="0">
@@ -259,7 +256,7 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                        </xs:sequence>
+                        </xs:choice>
                         <xs:attribute type="xs:string" name="protocol" use="optional"/>
                         <xs:attribute type="xs:byte" name="portid" use="optional"/>
                       </xs:complexType>
@@ -326,7 +323,7 @@
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attribute type="xs:short" name="NativeID" use="optional"/>
+                        <xs:attribute type="xs:string" name="NativeID" use="optional"/>
                         <xs:attribute type="xs:string" name="IdentifiedTimestamp" use="optional"/>
                         <xs:attribute type="xs:string" name="UniqueID" use="optional"/>
                       </xs:complexType>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <OWASP-DEF SpecVersion="0.1">
-    <Session-Reference>Product specific reference</Session-Reference>
+    <Session-Reference>Scan specific reference</Session-Reference>
     <Date-Time>Date and time the session was started</Date-Time>
 	<Scan type="dynamic">
 		<Host name="Hostname" ip-address="Either IPv4 or IPv6 Address">
@@ -49,13 +49,13 @@
 									</Additional-RequestData>
 							    </Request>
 							    <Response>
-							    	<Reponse-Raw>The RAW HTTP Response</Reponse-Raw>
-									<Reponse-Headers>
+							    	<Response-Raw>The RAW HTTP Response</Response-Raw>
+									<Response-Headers>
 										<Data name="The name of the Header Data">The value for the Header Data</Data>
-									</Reponse-Headers>
-								    <Reponse-Cookie>
+									</Response-Headers>
+								    <Response-Cookie>
 										<Data name="The name of the Cookie Data">The value for the Cookie Data</Data>
-								    </Reponse-Cookie>
+								    </Response-Cookie>
 									<Additional-ResponseData>
 										<Data name="The name of the Additional Data">The value for the Additional Data</Data>
 									</Additional-ResponseData>
