@@ -1,0 +1,153 @@
+Full export format structure
+============================
+
+
+* The Full export file starts and ends with the Session tag.
+
+   * Within the pair of Session tags, each Session (page, URL) will be listed individually, bracketed by <Session> and </Session>, broken out with the sub-headings listed below.
+
+    * This export data will include all items counted in the Dashboard graphic, everything from Critical severity down to Low severity, plus the Informational and Best Practices (BP) items.
+
+    * The Sessions will be in the same order as they appear in the Sequence View of the Navigation pane (upper-left pane). This should be in the order of the server Responses. Please note that for a multi-threaded assessment, this is not the same as the order of the Requests, due to timing differences.
+
+    * This description is valid for WebInspect 10.1.177 ("10.10").
+	It is largely identical to prior the formats from 10.0, 9.x, and even back to 8.0.548.
+	One exception is the <Classifications> tag ("CWE")added with the 9.20 release, and expanded ("7PK") in 9.30.93.
+
+
+
+
+
+
+
+1. Session requestID - One section for each finding
+
+2. URL - Full URL of the specific Session requestID, e.g. "http://zero.webappsecurity.com:80/login1.asp"
+
+3. Scheme - e.g. "http"
+
+4. Host - e.g. "zero.webappsecurity.com"
+
+5. Port - web site port number, e.g. "443"
+
+6. AttackParamDescriptor - Name of the vulnerable parameter/field used if applicable, e.g. "/privacy.htm" or "userid"
+
+7. Issues - The vulnerability details for each issue (vulnerability) associated with this session. Each found issue is listed in its own <Issue> tagged section within the <Issues> section. Each <Issue> section starts with the Issue ID, a unique identified for this scan result.
+     * Issue id - e.g. "f20d424a-6c67-412c-9c6d-c58c815e2f37"
+        * CheckTypeID - This will list either "Vulnerability", "Info", or "Best Practices". Cross links with the <Severity> tag below.
+        * EngineType - Internal nomenclature, not very useful for customers. e.g. "XSS2", "GLOBALSEARCH", "REQMOD".
+        * AttackHTTPRequest - This will be blank if this session was only Crawled.  If this was an Audit/attack, this item will be the full, raw request as a blob object. Seems to be a copy of the <RawRequest> tag below.
+		* Sample
+			GET /errors/ HTTP/1.1
+			Referer: http://zero.webappsecurity.com:80/
+			User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)
+			Accept: */*
+			Pragma: no-cache
+			Host: zero.webappsecurity.com
+			X-Scan-Memo: Category="Audit"; Function="createStateRequestFromAttackDefinition"; SID="0EA7E2A800802F3CB10C788CD12A63D8"; PSID="3B5C6D4258EDE9E2520272F502F91B6B"; SessionType="AuditAttack"; CrawlType="None"; AttackType="Server"; OriginatingEngineID="ae34b422-6357-4aca-8fe7-7e449e14c9b7"; AttackSequence="0"; AttackParamDesc=""; AttackParamIndex="0"; AttackParamSubIndex="0"; CheckId="10214"; Engine="Directory+Enumeration"; Retry="False"; SmartMode="NonServerSpecificOnly"; ThreadId="39"; ThreadType="AuditDBReaderSessionDrivenAudit"; 
+			Connection: Keep-Alive
+			Cookie: CustomCookie=WebInspect69383ZXB3FCEA2CCD6849B0A63D3EFF65615601Y3637;status=yes;username=;userid=;sessionid=;ASPSESSIONIDCARBTACT=FFDJMBECGJJGDMKLNPHKPKBB;state=
+        * VulnerabilityID - The check's ID#, per the Policy Manager tool. Cross-referenced with the <Name> tag. Notice that user-created Custom Checks will have this value set to "00000000-0000-0000-0000-000000000000".
+        * Severity - Number identifying the severity of the item identified. Cross links with the <CheckTypeID> tag above.
+            4 = Critical
+            3 = High
+            2 = Medium
+            1 = Low
+            0 = Informational or Best Practices 
+        * Name - Full name or title of the vulnerability/check. Cross-referenced with the <VulnerabilityID> tag above. e.g. "Server Statistics Information Disclosure"
+	* Classifications - This sub-tag will have one or more entries under it for <Classification kind="CWE" or "7PK, followed by further details on that reference.  This tag was a new addition as of WebInspect 9.20 when CWE identifiers were added.  HP Fortify's 7 Pernicious Kingdoms ("7PK") classifications were added in the following release, 9.30.93.
+		* Sample:  <Classification kind="CWE" identifier="CWE-284" href="http://cwe.mitre.org/data/definitions/284.html">CWE-284: Access Control (Authorization) Issues</Classification>
+		* Sample:  <Classification kind="7PK" identifier="Security Features" href="http://www.hpenterprisesecurity.com/vulncat/en/vulncat/intro.html">Security Features</Classification>
+        * DetectionSelection - New addition as of WebInspect 9.0.351 (March 2011).
+            * Location offset - Series of sub-entries under this area, unknown use at this time.
+		* Sample:  <Location offset="1786" length="43"/>
+		* Sample:  <Location offset="207" length="35"/>
+        * ReportSection - <Name> and <SectionText> sub-tag data for each of the following five available report fields (Name=) from the remediation details provided within the attack databse (see the Policy Manager tool). If one of these five sections is missing, it was left blank by the researcher within the vulnerability database and it had no data for that section at the time the Export action was run in WebInspect.
+            Name=Summary
+            Name=Implication
+            Name=Execution
+            Name=Fix
+            Name=Reference Info 
+
+
+
+
+8. RawRequest - Full, raw request as a blob object. Unlike the related <AttackHTTPRequest> tag above, this section is always populated.
+        * When populated it begins with its unique ID which appears to be the same for the Request ID (below). This unique value will appear in various other places as it is used as the SID or PSID value found within the debug "X-Scan-Memo" header. For example, it will show up under Headers and AttackHTTP Request tags, among others. 
+	* Sample:  <RawRequest id="0EA7E2A800802F3CB10C788CD12A63D8">GET /errors/ HTTP/1.1
+		Referer: http://zero.webappsecurity.com:80/
+		User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)
+		Accept: */*
+		Pragma: no-cache
+		Host: zero.webappsecurity.com
+		X-Scan-Memo: Category="Audit"; Function="createStateRequestFromAttackDefinition"; SID="0EA7E2A800802F3CB10C788CD12A63D8"; PSID="3B5C6D4258EDE9E2520272F502F91B6B"; SessionType="AuditAttack"; CrawlType="None"; AttackType="Server"; OriginatingEngineID="ae34b422-6357-4aca-8fe7-7e449e14c9b7"; AttackSequence="0"; AttackParamDesc=""; AttackParamIndex="0"; AttackParamSubIndex="0"; CheckId="10214"; Engine="Directory+Enumeration"; Retry="False"; SmartMode="NonServerSpecificOnly"; ThreadId="39"; ThreadType="AuditDBReaderSessionDrivenAudit"; 
+		Connection: Keep-Alive
+		Cookie: CustomCookie=WebInspect69383ZXB3FCEA2CCD6849B0A63D3EFF65615601Y3637;status=yes;username=;userid=;sessionid=;ASPSESSIONIDCARBTACT=FFDJMBECGJJGDMKLNPHKPKBB;state=
+
+
+9. RawResponse - Full, raw response as a blob object. Bear in mind that WebInspect automatically caps the amount of response data stored using the Requestor scan settings panel, so anything beyond this length limit would not have been stored, reviewed for vulnerability text, and will not be available in this export either.
+	* Sample:
+		HTTP/1.1 403 Forbidden
+		Content-Length: 218
+		Content-Type: text/html
+		Server: Microsoft-IIS/6.0
+		X-Powered-By: ASP.NET
+		Date: Fri, 13 May 2011 19:41:41 GMT
+		
+		<html><head><title>Error</title></head><body><head><title>Directory Listing Denied</title></head>
+		<body><h1>Directory Listing Denied</h1>This Virtual Directory does not allow contents to be listed.</body></body></html>
+
+10. Request - This section breaks out the components of the Raw Request into individual tags, and it includes the <Headers> and <Cookies>. When populated, this section begins with its unique ID which appears to be the same used for the RawRequest ID (above). E.g. <Request id="4CEEC31A5F5C0FF5DD507052314AADF3">.
+        * Method - e.g. "GET", "POST", "TRACE", et al.
+        * Path - URI between the Host name and the File name. e.g. "/admin/"
+        * File - File name without its extension. e.g. "stats", "help.cgi"
+        * Ext - The file's extension, e.g. "do", "bak"
+        * PageMark - 		(Unknown use currenlty.)
+        * HTTPVersion - e.g. "HTTP/1.1"
+        * FullQuery - Request's Query data.  e.g. "Name=12345&Surname=12345&email=John.Doe%40somewhere.com&Password=12345&Confirm%20Password=12345&house=12345&street=12345&Address2=12345&town=12345&Postcode=12345&Country=12345&homephone=770&mobilephone=770"
+        * FullPostData - Request's POST data.  e.g. cboPage=pc1%3csCrIpT%3ealert(81363)%3c%2fsCrIpT%3e
+        * XMLPostData - 		(Unknown use currenlty.)
+        * MultiPartPostData - e.g. fromAcct=Household%20Checking&toAcct=Household%20Checking&amount=%24%20400.00%3csCrIpT%3ealert(65775)%3c%2fsCrIpT%3e&memo=12345&Enter=%20%20%20Preview%20Transfer%20%20
+        * RawASCSIIPostData - e.g. fromAcct=Household%20Checking&toAcct=Household%20Checking&amount=%24%20400.00%3csCrIpT%3ealert(65775)%3c%2fsCrIpT%3e&memo=12345&Enter=%20%20%20Preview%20Transfer%20%20
+        * Cookie - Raw cookie data as a blob object. See the <Cookies> tag below for individual tagged break-outs of the cookie details.
+		* Sample:  Cookie: CustomCookie=WebInspect69383ZXB3FCEA2CCD6849B0A63D3EFF65615601Y3637;status=yes;username=;userid=;sessionid=;ASPSESSIONIDCARBTACT=JFDJMBECELJLGNDOKPMKOHLA;state=
+        * Queries - <Name> and <Value> sub-tags listed individually, listing each of the Query parameters and the Value entered.
+        * Headers - <Name> and <Value> sub-tags listings for each of the individual headers in the request.
+		* e.g. "Referer", "User-Agent", "Accept", "Pragma", "X-Scan_Memo".
+        * Cookies - For each Cookie, the <Names>, <Values>, <Domains>, and <Paths> sub-tags are listed individually. 
+
+11. Response - This section breaks out the components of the Raw Response into individual tags.
+        * HTTPVersion - e.g. "HTTP/1.1"
+        * StatusCode - e.g. "200", "302", "404", "403", "500".
+        * StatusDescription - e.g. "File Not Found", "Forbidden"
+        * SetCookie - e.g. "Set-Cookie: passes=; path=/ Set-Cookie: passes3=; path=/ Set-Cookie: passes2=; path=/"
+        * ResponseBody - Raw text of the Response, without the header data.
+		* Sample:
+			<html><head><title>Error</title></head><body><head><title>Directory Listing Denied</title></head>
+			<body><h1>Directory Listing Denied</h1>This Virtual Directory does not allow contents to be listed.</body></body></html>
+        * Headers - All the Respone Headers are listed individually with their <Names> and <Values> sub-tags.
+        * SetCookies - Each of the cookies that were set, listed individually.
+            * SetCookie
+                * Name - e.g. "passes3"
+                * Value
+                * Domain
+                * Expires
+                * Path - e.g. "/"
+                * Secure - "True" or "False" 
+        * Forms - Each form will have its own <Form> sub-section with the following sub-tags within that.
+            * Action - e.g. "join1.asp"
+            * Method - e.g. "get", "post"
+            * Name - Form's name. e.g. "TheForm"
+            * OnSubmit - e.g. "return check()"
+            * InputFields
+                * InputField - Lists these individual sub-tag sections for each input field: <Name>, <Value>, <Size>, <MaxLength>, <sType>, and <Class>. 
+            * TextAreas
+            * SelectFields - Each field will be listed with the following sub-tags: <Name>, <Class>, and <Options> (one or more instances of an <Option> sub-tag). 
+
+12. On to the next <Session> tag.... 
+
+
+
+
+
+(eof, hans.enders@hp.com)
