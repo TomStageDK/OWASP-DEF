@@ -30,7 +30,58 @@
 <element>cookies</element>
 </audited_elements>
 
-<modules><module name="backdoors" /><module name="xst" /><module name="backup_files" /><module name="localstart_asp" /><module name="common_directories" /><module name="allowed_methods" /><module name="http_put" /><module name="htaccess_limit" /><module name="webdav" /><module name="directory_listing" /><module name="interesting_responses" /><module name="x_forwarded_for_access_restriction_bypass" /><module name="common_files" /><module name="unencrypted_password_forms" /><module name="emails" /><module name="credit_card" /><module name="ssn" /><module name="private_ip" /><module name="insecure_cookies" /><module name="cvs_svn_users" /><module name="html_objects" /><module name="form_upload" /><module name="password_autocomplete" /><module name="http_only_cookies" /><module name="captcha" /><module name="mixed_resource" /><module name="sqli" /><module name="code_injection_php_input_wrapper" /><module name="unvalidated_redirect" /><module name="os_cmd_injection_timing" /><module name="csrf" /><module name="sqli_blind_rdiff" /><module name="sqli_blind_timing" /><module name="ldapi" /><module name="file_inclusion" /><module name="code_injection_timing" /><module name="rfi" /><module name="path_traversal" /><module name="session_fixation" /><module name="trainer" /><module name="source_code_disclosure" /><module name="response_splitting" /><module name="xss_path" /><module name="code_injection" /><module name="xss" /><module name="xss_tag" /><module name="xss_event" /><module name="xpath" /><module name="xss_script_tag" /><module name="os_cmd_injection" /></modules>
+<modules>
+	<module name="backdoors" />
+	<module name="xst" />
+	<module name="backup_files" />
+	<module name="localstart_asp" />
+	<module name="common_directories" />
+	<module name="allowed_methods" />
+	<module name="http_put" />
+	<module name="htaccess_limit" />
+	<module name="webdav" />
+	<module name="directory_listing" />
+	<module name="interesting_responses" />
+	<module name="x_forwarded_for_access_restriction_bypass" />
+	<module name="common_files" />
+	<module name="unencrypted_password_forms" />
+	<module name="emails" />
+	<module name="credit_card" />
+	<module name="ssn" />
+	<module name="private_ip" />
+	<module name="insecure_cookies" />
+	<module name="cvs_svn_users" />
+	<module name="html_objects" />
+	<module name="form_upload" />
+	<module name="password_autocomplete" />
+	<module name="http_only_cookies" />
+	<module name="captcha" />
+	<module name="mixed_resource" />
+	<module name="sqli" />
+	<module name="code_injection_php_input_wrapper" />
+	<module name="unvalidated_redirect" />
+	<module name="os_cmd_injection_timing" />
+	<module name="csrf" />
+	<module name="sqli_blind_rdiff" />
+	<module name="sqli_blind_timing" />
+	<module name="ldapi" />
+	<module name="file_inclusion" />
+	<module name="code_injection_timing" />
+	<module name="rfi" />
+	<module name="path_traversal" />
+	<module name="session_fixation" />
+	<module name="trainer" />
+	<module name="source_code_disclosure" />
+	<module name="response_splitting" />
+	<module name="xss_path" />
+	<module name="code_injection" />
+	<module name="xss" />
+	<module name="xss_tag" />
+	<module name="xss_event" />
+	<module name="xpath" />
+	<module name="xss_script_tag" />
+	<module name="os_cmd_injection" />
+	</modules>
 
 <filters>
 <exclude>
