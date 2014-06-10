@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+<OWASP-DEF SpecVersion="0.1">
+    <Session-Reference>Burp Scan of https://mdsec.net</Session-Reference>
+    <Date-Time>Thu Jun 05 10:00:16 BST 2014</Date-Time>
+	<Scan type="dynamic">
+		<Host name="mdsec.net" ip-address="107.20.237.134">
+			<Port protocol="https" portid="443">
+				<Service name="HTTP" product="Microsoft-IIS" version="6.0" />
+			    <Software-Name>Burp</Software-Name>
+			    <Software-Version>1.6</Software-Version>
+			    <Software-Arguments></Software-Arguments>
+			    <Software-Additional>
+			    	<Data name=""></Data>
+				</Software-Additional>
+				<Vulnerability Severity="Information">
+					<Finding NativeID="" IdentifiedTimestamp="" UniqueID="4571688033363773440">
+					    <Summary>Cacheable HTTPS response</Summary>
+					    <Description></Description>
+					    <Confidence>10</Confidence>
+					    <Background><![CDATA[Unless directed otherwise, browsers may store a local cached copy of content received from web servers. Some browsers, including Internet Explorer, cache content accessed via HTTPS. If sensitive information in application responses is stored in the local cache, then this may be retrieved by other users who have access to the same computer at a future time.]]></Background>
+					    <Remediation><![CDATA[The application should return caching directives instructing browsers not to store local copies of any sensitive data. Often, this can be achieved by configuring the web server to prevent caching for relevant paths within the web root. Alternatively, most web development platforms allow you to control the server's caching directives from within individual scripts. Ideally, the web server should return the following HTTP headers in all responses containing sensitive content:<ul><li>Cache-control: no-store</li><li>Pragma: no-cache</li></ul>]]></Remediation>
+					    <Further-Information>
+					    	<Further-Info name="" url="" />
+					    </Further-Information>
+						<Classifications>
+							<Classification type="" id="" href=""></Classification>
+						</Classifications>
+					    <Additional-Data>
+					    	<Data name=""></Data>
+					    </Additional-Data>
+						<Page>
+						    <Page-Reference>subscribe</Page-Reference>
+						    <URL><![CDATA[https://mdsec.net/subscribe/]]></URL>
+						    <Method>GET</Method>
+						    <HTTPVersion>1.1</HTTPVersion>
+						    <StatusCode>200</StatusCode>
+			    			<Language>ASP.NET</Language>
+							<Parameters>
+							    <Parameter></Parameter>
+							</Parameters>
+							<Request-Response>
+							    <Request>
+							    	<Request-Raw><![CDATA[GET /subscribe/ HTTP/1.1
+Host: mdsec.net
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:22.0) Gecko/20100101 Firefox/22.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-gb,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: ASP.NET_SessionId=aetboy55vpbjpx45kafsyluo
+Connection: keep-alive
+]]>
+</Request-Raw>
+									<Request-Headers>
+										<Data name="Host">mdsec.net</Data>
+										<Data name="User-Agent"><![CDATA[Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:22.0) Gecko/20100101 Firefox/22.0]]></Data>
+										<Data name="Accept"><![CDATA[text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]]></Data>
+										<Data name="Accept-Language"><![CDATA[en-gb,en;q=0.5]]></Data>
+										<Data name="Accept-Encoding"><![CDATA[gzip, deflate]]></Data>
+										<Data name="Cookie"><![CDATA[ASP.NET_SessionId=aetboy55vpbjpx45kafsyluo]]></Data>
+										<Data name="Connection"><![CDATA[keep-alive]]></Data>
+									</Request-Headers>
+								    <Request-Cookie>
+										<Data name=""></Data>
+								    </Request-Cookie>
+									<Additional-RequestData>
+										<Data name=""></Data>
+									</Additional-RequestData>
+							    </Request>
+							    <Response>
+							    	<Response-Raw><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 05 Jun 2014 08:59:11 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 20129
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><meta content="en-gb" http-equiv="Content-Language" /><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="IE=Edge" http-equiv="X-UA-Compatible" /><title>
+	Buy Training Lab Credits
+</title><link href="../css/ps.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<link href="../css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]--><!--[if IE 7]>
+<link href="../css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="../css/favicon.png" rel="icon" type="image/png" />
+<!--[if IE]>
+<link href="../css/favicon.ico" rel="shortcut icon" />
+<![endif]-->
+</head>
+
+<body>
+
+<div id="TopBanner">
+	<ul>
+		<li><a href="http://mdsec.net/contact.html">Contact</a></li>
+		<li><a href="../users/">Login</a></li>
+	</ul>
+</div>
+<div id="NavBar">
+	<ul>
+		<li><a href="http://mdsec.net">Home</a></li>
+		<li>&gt;<a href="http://mdsec.net/labs/">Labs</a></li>
+		<li>&gt;<a href="./">Subscribe</a></li>
+	</ul>
+</div>
+<div id="MainContent">
+	<form name="form1" method="post" action="Default.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc3MTU0MDcxM2QYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFCGNoa1RhbmRDupinhLR5Oufey6z1cbb6v5ZomT8=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+		<h2>Buy Training Lab Credits</h2>
+        <p>You are buying credits for the MDSec on-demand training labs. Each credit can be 
+            exchanged for one hour&#39;s usage of the labs. Note that these are self-service labs demonstrating numerous types of security 
+            vulnerabilities. They do not contain any slides, videos or other training 
+            documentation. We recommend that you work through the labs while reading
+            <a href="http://mdsec.net/wahh">The Web Application Hacker&#39;s Handbook</a> 
+            as a study aid.</p>
+        <p>Credits cost
+            <span id="lblUnitCost" style="font-weight:bold;">$7.00</span>
+            each.</p>
+        <p>You can pay using credit 
+            card, PayPal, wire transfer or check. After you have made payment, you will 
+            receive download instructions via email and will be able to begin using the 
+            training labs immediately.</p>
+		<p>Click here for: <a href="../reseller/">
+            Reseller orders</a>&nbsp; <a href="../quote/">Quotations</a>&nbsp;
+            <a href="http://mdsec.net/labs/faq.html">Frequently asked questions</a></p>
+		<table class="Shaded">
+			<tr>
+				<td>Your name</td>
+				<td>
+				<input name="txtName" type="text" maxlength="99" id="txtName" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblNameError" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Company / organization&nbsp; </td>
+				<td>
+				<input name="txtCompany" type="text" maxlength="99" id="txtCompany" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblCompanyError" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Email address</td>
+				<td>
+				<input name="txtEmail" type="text" maxlength="99" id="txtEmail" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblEmailError" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td>
+				<select name="ddCountry" id="ddCountry" style="width:305px;">
+	<option value=""></option>
+	<option value="UNITED STATES">UNITED STATES</option>
+	<option value="AFGHANISTAN">AFGHANISTAN</option>
+	<option value="ALAND ISLANDS">ALAND ISLANDS</option>
+	<option value="ALBANIA">ALBANIA</option>
+	<option value="ALGERIA">ALGERIA</option>
+	<option value="AMERICAN SAMOA">AMERICAN SAMOA</option>
+	<option value="ANDORRA">ANDORRA</option>
+	<option value="ANGOLA">ANGOLA</option>
+	<option value="ANGUILLA">ANGUILLA</option>
+	<option value="ANTARCTICA">ANTARCTICA</option>
+	<option value="ANTIGUA AND BARBUDA">ANTIGUA AND BARBUDA</option>
+	<option value="ARGENTINA">ARGENTINA</option>
+	<option value="ARMENIA">ARMENIA</option>
+	<option value="ARUBA">ARUBA</option>
+	<option value="AUSTRALIA">AUSTRALIA</option>
+	<option value="AUSTRIA">AUSTRIA</option>
+	<option value="AZERBAIJAN">AZERBAIJAN</option>
+	<option value="BAHAMAS">BAHAMAS</option>
+	<option value="BAHRAIN">BAHRAIN</option>
+	<option value="BANGLADESH">BANGLADESH</option>
+	<option value="BARBADOS">BARBADOS</option>
+	<option value="BELARUS">BELARUS</option>
+	<option value="BELGIUM">BELGIUM</option>
+	<option value="BELIZE">BELIZE</option>
+	<option value="BENIN">BENIN</option>
+	<option value="BERMUDA">BERMUDA</option>
+	<option value="BHUTAN">BHUTAN</option>
+	<option value="BOLIVIA">BOLIVIA</option>
+	<option value="BOSNIA AND HERZEGOVINA">BOSNIA AND HERZEGOVINA</option>
+	<option value="BOTSWANA">BOTSWANA</option>
+	<option value="BOUVET ISLAND">BOUVET ISLAND</option>
+	<option value="BRAZIL">BRAZIL</option>
+	<option value="BRITISH INDIAN OCEAN TERRITORY">BRITISH INDIAN OCEAN TERRITORY</option>
+	<option value="BRUNEI DARUSSALAM">BRUNEI DARUSSALAM</option>
+	<option value="BULGARIA">BULGARIA</option>
+	<option value="BURKINA FASO">BURKINA FASO</option>
+	<option value="BURUNDI">BURUNDI</option>
+	<option value="CAMBODIA">CAMBODIA</option>
+	<option value="CAMEROON">CAMEROON</option>
+	<option value="CANADA">CANADA</option>
+	<option value="CAPE VERDE">CAPE VERDE</option>
+	<option value="CAYMAN ISLANDS">CAYMAN ISLANDS</option>
+	<option value="CENTRAL AFRICAN REPUBLIC">CENTRAL AFRICAN REPUBLIC</option>
+	<option value="CHAD">CHAD</option>
+	<option value="CHILE">CHILE</option>
+	<option value="CHINA">CHINA</option>
+	<option value="CHRISTMAS ISLAND">CHRISTMAS ISLAND</option>
+	<option value="COCOS (KEELING) ISLANDS">COCOS (KEELING) ISLANDS</option>
+	<option value="COLOMBIA">COLOMBIA</option>
+	<option value="COMOROS">COMOROS</option>
+	<option value="CONGO">CONGO</option>
+	<option value="COOK ISLANDS">COOK ISLANDS</option>
+	<option value="COSTA RICA">COSTA RICA</option>
+	<option value="COTE D'IVOIRE">COTE D'IVOIRE</option>
+	<option value="CROATIA">CROATIA</option>
+	<option value="CUBA">CUBA</option>
+	<option value="CYPRUS">CYPRUS</option>
+	<option value="CZECH REPUBLIC">CZECH REPUBLIC</option>
+	<option value="DENMARK">DENMARK</option>
+	<option value="DJIBOUTI">DJIBOUTI</option>
+	<option value="DOMINICA">DOMINICA</option>
+	<option value="DOMINICAN REPUBLIC">DOMINICAN REPUBLIC</option>
+	<option value="ECUADOR">ECUADOR</option>
+	<option value="EGYPT">EGYPT</option>
+	<option value="EL SALVADOR">EL SALVADOR</option>
+	<option value="EQUATORIAL GUINEA">EQUATORIAL GUINEA</option>
+	<option value="ERITREA">ERITREA</option>
+	<option value="ESTONIA">ESTONIA</option>
+	<option value="ETHIOPIA">ETHIOPIA</option>
+	<option value="FALKLAND ISLANDS (MALVINAS)">FALKLAND ISLANDS (MALVINAS)</option>
+	<option value="FAROE ISLANDS">FAROE ISLANDS</option>
+	<option value="FIJI">FIJI</option>
+	<option value="FINLAND">FINLAND</option>
+	<option value="FRANCE">FRANCE</option>
+	<option value="FRENCH GUIANA">FRENCH GUIANA</option>
+	<option value="FRENCH POLYNESIA">FRENCH POLYNESIA</option>
+	<option value="FRENCH SOUTHERN TERRITORIES">FRENCH SOUTHERN TERRITORIES</option>
+	<option value="GABON">GABON</option>
+	<option value="GAMBIA">GAMBIA</option>
+	<option value="GEORGIA">GEORGIA</option>
+	<option value="GERMANY">GERMANY</option>
+	<option value="GHANA">GHANA</option>
+	<option value="GIBRALTAR">GIBRALTAR</option>
+	<option value="GREECE">GREECE</option>
+	<option value="GREENLAND">GREENLAND</option>
+	<option value="GRENADA">GRENADA</option>
+	<option value="GUADELOUPE">GUADELOUPE</option>
+	<option value="GUAM">GUAM</option>
+	<option value="GUATEMALA">GUATEMALA</option>
+	<option value="GUERNSEY">GUERNSEY</option>
+	<option value="GUINEA">GUINEA</option>
+	<option value="GUINEA-BISSAU">GUINEA-BISSAU</option>
+	<option value="GUYANA">GUYANA</option>
+	<option value="HAITI">HAITI</option>
+	<option value="HONDURAS">HONDURAS</option>
+	<option value="HONG KONG">HONG KONG</option>
+	<option value="HUNGARY">HUNGARY</option>
+	<option value="ICELAND">ICELAND</option>
+	<option value="INDIA">INDIA</option>
+	<option value="INDONESIA">INDONESIA</option>
+	<option value="IRAN, ISLAMIC REPUBLIC OF">IRAN, ISLAMIC REPUBLIC OF</option>
+	<option value="IRAQ">IRAQ</option>
+	<option value="IRELAND">IRELAND</option>
+	<option value="ISLE OF MAN">ISLE OF MAN</option>
+	<option value="ISRAEL">ISRAEL</option>
+	<option value="ITALY">ITALY</option>
+	<option value="JAMAICA">JAMAICA</option>
+	<option value="JAPAN">JAPAN</option>
+	<option value="JERSEY">JERSEY</option>
+	<option value="JORDAN">JORDAN</option>
+	<option value="KAZAKHSTAN">KAZAKHSTAN</option>
+	<option value="KENYA">KENYA</option>
+	<option value="KIRIBATI">KIRIBATI</option>
+	<option value="KOREA, PEOPLE'S REPUBLIC OF">KOREA, PEOPLE'S REPUBLIC OF</option>
+	<option value="KOREA, REPUBLIC OF">KOREA, REPUBLIC OF</option>
+	<option value="KUWAIT">KUWAIT</option>
+	<option value="KYRGYZSTAN">KYRGYZSTAN</option>
+	<option value="LAO PEOPLE'S DEMOCRATIC REPUBLIC">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+	<option value="LATVIA">LATVIA</option>
+	<option value="LEBANON">LEBANON</option>
+	<option value="LESOTHO">LESOTHO</option>
+	<option value="LIBERIA">LIBERIA</option>
+	<option value="LIBYAN ARAB JAMAHIRIYA">LIBYAN ARAB JAMAHIRIYA</option>
+	<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+	<option value="LITHUANIA">LITHUANIA</option>
+	<option value="LUXEMBOURG">LUXEMBOURG</option>
+	<option value="MACAO">MACAO</option>
+	<option value="MACEDONIA">MACEDONIA</option>
+	<option value="MADAGASCAR">MADAGASCAR</option>
+	<option value="MALAWI">MALAWI</option>
+	<option value="MALAYSIA">MALAYSIA</option>
+	<option value="MALDIVES">MALDIVES</option>
+	<option value="MALI">MALI</option>
+	<option value="MALTA">MALTA</option>
+	<option value="MARSHALL ISLANDS">MARSHALL ISLANDS</option>
+	<option value="MARTINIQUE">MARTINIQUE</option>
+	<option value="MAURITANIA">MAURITANIA</option>
+	<option value="MAURITIUS">MAURITIUS</option>
+	<option value="MAYOTTE">MAYOTTE</option>
+	<option value="MEXICO">MEXICO</option>
+	<option value="MICRONESIA, FEDERATED STATES OF">MICRONESIA, FEDERATED STATES OF</option>
+	<option value="MOLDOVA, REPUBLIC OF">MOLDOVA, REPUBLIC OF</option>
+	<option value="MONACO">MONACO</option>
+	<option value="MONGOLIA">MONGOLIA</option>
+	<option value="MONTENEGRO">MONTENEGRO</option>
+	<option value="MONTSERRAT">MONTSERRAT</option>
+	<option value="MOROCCO">MOROCCO</option>
+	<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+	<option value="MYANMAR">MYANMAR</option>
+	<option value="NAMIBIA">NAMIBIA</option>
+	<option value="NAURU">NAURU</option>
+	<option value="NEPAL">NEPAL</option>
+	<option value="NETHERLANDS">NETHERLANDS</option>
+	<option value="NETHERLANDS ANTILLES">NETHERLANDS ANTILLES</option>
+	<option value="NEW CALEDONIA">NEW CALEDONIA</option>
+	<option value="NEW ZEALAND">NEW ZEALAND</option>
+	<option value="NICARAGUA">NICARAGUA</option>
+	<option value="NIGER">NIGER</option>
+	<option value="NIGERIA">NIGERIA</option>
+	<option value="NIUE">NIUE</option>
+	<option value="NORFOLK ISLAND">NORFOLK ISLAND</option>
+	<option value="NORTHERN MARIANA ISLANDS">NORTHERN MARIANA ISLANDS</option>
+	<option value="NORWAY">NORWAY</option>
+	<option value="OMAN">OMAN</option>
+	<option value="PAKISTAN">PAKISTAN</option>
+	<option value="PALAU">PALAU</option>
+	<option value="PALESTINIAN TERRITORY, OCCUPIED">PALESTINIAN TERRITORY, OCCUPIED</option>
+	<option value="PANAMA">PANAMA</option>
+	<option value="PAPUA NEW GUINEA">PAPUA NEW GUINEA</option>
+	<option value="PARAGUAY">PARAGUAY</option>
+	<option value="PERU">PERU</option>
+	<option value="PHILIPPINES">PHILIPPINES</option>
+	<option value="PITCAIRN">PITCAIRN</option>
+	<option value="POLAND">POLAND</option>
+	<option value="PORTUGAL">PORTUGAL</option>
+	<option value="PUERTO RICO">PUERTO RICO</option>
+	<option value="QATAR">QATAR</option>
+	<option value="REUNION">REUNION</option>
+	<option value="ROMANIA">ROMANIA</option>
+	<option value="RUSSIAN FEDERATION">RUSSIAN FEDERATION</option>
+	<option value="RWANDA">RWANDA</option>
+	<option value="SAINT BARTHELEMY">SAINT BARTHELEMY</option>
+	<option value="SAINT HELENA">SAINT HELENA</option>
+	<option value="SAINT KITTS AND NEVIS">SAINT KITTS AND NEVIS</option>
+	<option value="SAINT LUCIA">SAINT LUCIA</option>
+	<option value="SAINT MARTIN">SAINT MARTIN</option>
+	<option value="SAINT PIERRE AND MIQUELON">SAINT PIERRE AND MIQUELON</option>
+	<option value="SAINT VINCENT AND THE GRENADINES">SAINT VINCENT AND THE GRENADINES</option>
+	<option value="SAMOA">SAMOA</option>
+	<option value="SAN MARINO">SAN MARINO</option>
+	<option value="SAO TOME AND PRINCIPE">SAO TOME AND PRINCIPE</option>
+	<option value="SAUDI ARABIA">SAUDI ARABIA</option>
+	<option value="SENEGAL">SENEGAL</option>
+	<option value="SERBIA">SERBIA</option>
+	<option value="SEYCHELLES">SEYCHELLES</option>
+	<option value="SIERRA LEONE">SIERRA LEONE</option>
+	<option value="SINGAPORE">SINGAPORE</option>
+	<option value="SLOVAKIA">SLOVAKIA</option>
+	<option value="SLOVENIA">SLOVENIA</option>
+	<option value="SOLOMON ISLANDS">SOLOMON ISLANDS</option>
+	<option value="SOMALIA">SOMALIA</option>
+	<option value="SOUTH AFRICA">SOUTH AFRICA</option>
+	<option value="SOUTH GEORGIA">SOUTH GEORGIA</option>
+	<option value="SPAIN">SPAIN</option>
+	<option value="SRI LANKA">SRI LANKA</option>
+	<option value="SUDAN">SUDAN</option>
+	<option value="SURINAME">SURINAME</option>
+	<option value="SVALBARD AND JAN MAYEN">SVALBARD AND JAN MAYEN</option>
+	<option value="SWAZILAND">SWAZILAND</option>
+	<option value="SWEDEN">SWEDEN</option>
+	<option value="SWITZERLAND">SWITZERLAND</option>
+	<option value="SYRIAN ARAB REPUBLIC">SYRIAN ARAB REPUBLIC</option>
+	<option value="TAIWAN, PROVINCE OF CHINA">TAIWAN, PROVINCE OF CHINA</option>
+	<option value="TAJIKISTAN">TAJIKISTAN</option>
+	<option value="TANZANIA, UNITED REPUBLIC OF">TANZANIA, UNITED REPUBLIC OF</option>
+	<option value="THAILAND">THAILAND</option>
+	<option value="TIMOR-LESTE">TIMOR-LESTE</option>
+	<option value="TOGO">TOGO</option>
+	<option value="TOKELAU">TOKELAU</option>
+	<option value="TONGA">TONGA</option>
+	<option value="TRINIDAD AND TOBAGO">TRINIDAD AND TOBAGO</option>
+	<option value="TUNISIA">TUNISIA</option>
+	<option value="TURKEY">TURKEY</option>
+	<option value="TURKMENISTAN">TURKMENISTAN</option>
+	<option value="TURKS AND CAICOS ISLANDS">TURKS AND CAICOS ISLANDS</option>
+	<option value="TUVALU">TUVALU</option>
+	<option value="UGANDA">UGANDA</option>
+	<option value="UKRAINE">UKRAINE</option>
+	<option value="UNITED ARAB EMIRATES">UNITED ARAB EMIRATES</option>
+	<option value="UNITED KINGDOM">UNITED KINGDOM</option>
+	<option value="UNITED STATES">UNITED STATES</option>
+	<option value="URUGUAY">URUGUAY</option>
+	<option value="UZBEKISTAN">UZBEKISTAN</option>
+	<option value="VANUATU">VANUATU</option>
+	<option value="VENEZUELA">VENEZUELA</option>
+	<option value="VIET NAM">VIET NAM</option>
+	<option value="VIRGIN ISLANDS, BRITISH">VIRGIN ISLANDS, BRITISH</option>
+	<option value="VIRGIN ISLANDS, U.S.">VIRGIN ISLANDS, U.S.</option>
+	<option value="WALLIS AND FUTUNA">WALLIS AND FUTUNA</option>
+	<option value="WESTERN SAHARA">WESTERN SAHARA</option>
+	<option value="YEMEN">YEMEN</option>
+	<option value="ZAMBIA">ZAMBIA</option>
+	<option value="ZIMBABWE">ZIMBABWE</option>
+
+</select>
+				</td>
+				<td>
+				<span id="lblCountryError" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Number of credits</td>
+				<td>
+				<input name="txtNumCredits" type="text" maxlength="3" id="txtNumCredits" style="width:300px;" />
+                    &nbsp; </td>
+				<td>
+				<span id="lblNumCreditsError" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>VAT number (if registered)&nbsp; </td>
+				<td>
+				<input name="txtVatNumber" type="text" maxlength="99" id="txtVatNumber" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblVatNumberError" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Postal address</td>
+				<td>
+				<input name="txtAddress1" type="text" maxlength="99" id="txtAddress1" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblAddress1Error" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+				<input name="txtAddress2" type="text" maxlength="99" id="txtAddress2" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblAddress2Error" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+				<input name="txtAddress3" type="text" maxlength="99" id="txtAddress3" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblAddress3Error" class="Warning"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+				<input name="txtAddress4" type="text" maxlength="99" id="txtAddress4" style="width:300px;" />
+				</td>
+				<td>
+				<span id="lblAddress4Error" class="Warning"></span>
+				</td>
+			</tr>
+		</table>
+		<p>
+		<input id="chkTandC" type="checkbox" name="chkTandC" />
+		    I have read and accept the
+		<a href="http://mdsec.net/legal/tc.html" target="_blank">terms and 
+            conditions of purchase</a>.&nbsp;
+		<span id="lblTandC" class="Warning"></span>
+		</p>
+		<p>
+		<input type="submit" name="cmdNext" value="Submit Details" id="cmdNext" />
+		</p>
+	</form>
+</div>
+<div id="BottomBanner">
+<p>Copyright © 2012 MDSec Ltd. All rights reserved.</p>
+<ul>
+    <li><a href="http://mdsec.net/about.html">About</a></li>
+    <li><a href="http://mdsec.net/company.html">Company</a></li>
+    <li><a href="http://mdsec.net/legal/">Legal</a></li>
+    <li><a href="http://mdsec.net/contact.html">Contact</a></li>
+</ul>
+</div>
+
+</body>
+
+</html>]]>
+</Response-Raw>
+									<Response-Headers>
+										<Data name="Date">Thu, 05 Jun 2014 08:59:11 GMT</Data>
+										<Data name="Server">Microsoft-IIS/6.0</Data>
+										<Data name="X-Powered-By">ASP.NET</Data>
+										<Data name="X-AspNet-Version">2.0.50727</Data>
+										<Data name="Cache-Control">private</Data>
+										<Data name="Content-Type"><![CDATA[text/html; charset=utf-8]]></Data>
+										<Data name="Content-Length">20129</Data>
+									</Response-Headers>
+								    <Response-Cookie>
+										<Data name=""></Data>
+								    </Response-Cookie>
+									<Additional-ResponseData>
+										<Data name=""></Data>
+									</Additional-ResponseData>
+									<Response-ScreenShot></Response-ScreenShot>
+							    </Response>
+							</Request-Response>
+						</Page>
+					</Finding>
+				</Vulnerability>
+			</Port>
+		</Host>
+	</Scan>
+</OWASP-DEF>
