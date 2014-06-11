@@ -1,0 +1,2439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Document created with online XML Editor http://xmlgrid.net 2014/06/11 16:9:45  -->
+   <XmlReport Name="test attribute" XmlExportVersion="test attribute">
+         <AppScanInfo>
+               <Edition>test string</Edition>
+               <Version>test string</Version>
+               <ServicePack>test string</ServicePack>
+         </AppScanInfo>
+         <Summary>
+               <TotalIssues>9</TotalIssues>
+               <TotalVariants>9</TotalVariants>
+               <TotalRemediations>9</TotalRemediations>
+               <TotalScanDuration>test string</TotalScanDuration>
+               <Hosts>
+                     <Host Name="test attribute">
+                           <TotalInformationalIssues>9</TotalInformationalIssues>
+                           <TotalLowSeverityIssues>9</TotalLowSeverityIssues>
+                           <TotalMediumSeverityIssues>9</TotalMediumSeverityIssues>
+                           <TotalHighSeverityIssues>9</TotalHighSeverityIssues>
+                           <Total>9</Total>
+                     </Host>
+                     <Host Name="test attribute">
+                           <TotalInformationalIssues>9</TotalInformationalIssues>
+                           <TotalLowSeverityIssues>9</TotalLowSeverityIssues>
+                           <TotalMediumSeverityIssues>9</TotalMediumSeverityIssues>
+                           <TotalHighSeverityIssues>9</TotalHighSeverityIssues>
+                           <Total>9</Total>
+                     </Host>
+                     <Host Name="test attribute">
+                           <TotalInformationalIssues>9</TotalInformationalIssues>
+                           <TotalLowSeverityIssues>9</TotalLowSeverityIssues>
+                           <TotalMediumSeverityIssues>9</TotalMediumSeverityIssues>
+                           <TotalHighSeverityIssues>9</TotalHighSeverityIssues>
+                           <Total>9</Total>
+                     </Host>
+               </Hosts>
+         </Summary>
+         <Results>
+               <RemediationTypes>
+                     <Total>9</Total>
+                     <RemediationType ID="test attribute">
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Priority>test string</Priority>
+                           <Priority>test string</Priority>
+                           <Priority>test string</Priority>
+                           <fixRecommendation>test string</fixRecommendation>
+                     </RemediationType>
+                     <RemediationType ID="test attribute">
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Priority>test string</Priority>
+                           <Priority>test string</Priority>
+                           <Priority>test string</Priority>
+                           <fixRecommendation>test string</fixRecommendation>
+                     </RemediationType>
+                     <RemediationType ID="test attribute">
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Priority>test string</Priority>
+                           <Priority>test string</Priority>
+                           <Priority>test string</Priority>
+                           <fixRecommendation>test string</fixRecommendation>
+                     </RemediationType>
+               </RemediationTypes>
+               <IssueTypes>
+                     <Total>9</Total>
+                     <IssueType ID="test attribute" Count="test attribute">
+                           <RemediationID>test string</RemediationID>
+                           <RemediationID>test string</RemediationID>
+                           <RemediationID>test string</RemediationID>
+                           <advisory>
+                                 <name>test string</name>
+                                 <testDescription>test string</testDescription>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <testTechnicalDescription>test string</testTechnicalDescription>
+                                 <causes>
+                                       <cause>test string</cause>
+                                       <cause>test string</cause>
+                                       <cause>test string</cause>
+                                 </causes>
+                                 <securityRisks>
+                                       <securityRisk>test string</securityRisk>
+                                       <securityRisk>test string</securityRisk>
+                                       <securityRisk>test string</securityRisk>
+                                 </securityRisks>
+                                 <affectedProducts>
+                                       <affectedProduct>test string</affectedProduct>
+                                       <affectedProduct>test string</affectedProduct>
+                                       <affectedProduct>test string</affectedProduct>
+                                 </affectedProducts>
+                                 <cve>test string</cve>
+                                 <cwe>test string</cwe>
+                                 <references>test string</references>
+                                 <fixRecommendations>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                 </fixRecommendations>
+                           </advisory>
+                           <Severity>test string</Severity>
+                           <Severity>test string</Severity>
+                           <Severity>test string</Severity>
+                           <Invasive>test string</Invasive>
+                           <Invasive>test string</Invasive>
+                           <Invasive>test string</Invasive>
+                     </IssueType>
+                     <IssueType ID="test attribute" Count="test attribute">
+                           <RemediationID>test string</RemediationID>
+                           <RemediationID>test string</RemediationID>
+                           <RemediationID>test string</RemediationID>
+                           <advisory>
+                                 <name>test string</name>
+                                 <testDescription>test string</testDescription>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <testTechnicalDescription>test string</testTechnicalDescription>
+                                 <causes>
+                                       <cause>test string</cause>
+                                       <cause>test string</cause>
+                                       <cause>test string</cause>
+                                 </causes>
+                                 <securityRisks>
+                                       <securityRisk>test string</securityRisk>
+                                       <securityRisk>test string</securityRisk>
+                                       <securityRisk>test string</securityRisk>
+                                 </securityRisks>
+                                 <affectedProducts>
+                                       <affectedProduct>test string</affectedProduct>
+                                       <affectedProduct>test string</affectedProduct>
+                                       <affectedProduct>test string</affectedProduct>
+                                 </affectedProducts>
+                                 <cve>test string</cve>
+                                 <cwe>test string</cwe>
+                                 <references>test string</references>
+                                 <fixRecommendations>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                 </fixRecommendations>
+                           </advisory>
+                           <Severity>test string</Severity>
+                           <Severity>test string</Severity>
+                           <Severity>test string</Severity>
+                           <Invasive>test string</Invasive>
+                           <Invasive>test string</Invasive>
+                           <Invasive>test string</Invasive>
+                     </IssueType>
+                     <IssueType ID="test attribute" Count="test attribute">
+                           <RemediationID>test string</RemediationID>
+                           <RemediationID>test string</RemediationID>
+                           <RemediationID>test string</RemediationID>
+                           <advisory>
+                                 <name>test string</name>
+                                 <testDescription>test string</testDescription>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <threatClassification>
+                                       <name>test string</name>
+                                       <reference>test string</reference>
+                                 </threatClassification>
+                                 <testTechnicalDescription>test string</testTechnicalDescription>
+                                 <causes>
+                                       <cause>test string</cause>
+                                       <cause>test string</cause>
+                                       <cause>test string</cause>
+                                 </causes>
+                                 <securityRisks>
+                                       <securityRisk>test string</securityRisk>
+                                       <securityRisk>test string</securityRisk>
+                                       <securityRisk>test string</securityRisk>
+                                 </securityRisks>
+                                 <affectedProducts>
+                                       <affectedProduct>test string</affectedProduct>
+                                       <affectedProduct>test string</affectedProduct>
+                                       <affectedProduct>test string</affectedProduct>
+                                 </affectedProducts>
+                                 <cve>test string</cve>
+                                 <cwe>test string</cwe>
+                                 <references>test string</references>
+                                 <fixRecommendations>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                       <fixRecommendation>test string</fixRecommendation>
+                                 </fixRecommendations>
+                           </advisory>
+                           <Severity>test string</Severity>
+                           <Severity>test string</Severity>
+                           <Severity>test string</Severity>
+                           <Invasive>test string</Invasive>
+                           <Invasive>test string</Invasive>
+                           <Invasive>test string</Invasive>
+                     </IssueType>
+               </IssueTypes>
+               <Issues>
+                     <Issue IssueTypeID="test attribute" Noise="test attribute">
+                           <Url>test string</Url>
+                           <Severity>test string</Severity>
+                           <Entity Name="test attribute" Type="test attribute" Page="test attribute" Line="test attribute">test string</Entity>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                     </Issue>
+                     <Issue IssueTypeID="test attribute" Noise="test attribute">
+                           <Url>test string</Url>
+                           <Severity>test string</Severity>
+                           <Entity Name="test attribute" Type="test attribute" Page="test attribute" Line="test attribute">test string</Entity>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                     </Issue>
+                     <Issue IssueTypeID="test attribute" Noise="test attribute">
+                           <Url>test string</Url>
+                           <Severity>test string</Severity>
+                           <Entity Name="test attribute" Type="test attribute" Page="test attribute" Line="test attribute">test string</Entity>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                           <Variant ID="test attribute">
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Comments>test string</Comments>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Difference>test string</Difference>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <Reasoning>test string</Reasoning>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <AdditionalData>test string</AdditionalData>
+                                 <CWE>test string</CWE>
+                                 <CVE>test string</CVE>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <SinkData>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingFileName>test string</glassBoxEnclosingFileName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingClassName>test string</glassBoxEnclosingClassName>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingLineNumber>test string</glassBoxEnclosingLineNumber>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxEnclosingMethodName>test string</glassBoxEnclosingMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodName>test string</glassBoxSinkMethodName>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodArguments>test string</glassBoxSinkMethodArguments>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkMethodReturnValue>test string</glassBoxSinkMethodReturnValue>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgIndex>test string</glassBoxSinkArgIndex>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                       <glassBoxSinkArgValue>test string</glassBoxSinkArgValue>
+                                 </SinkData>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <snippets>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                       <snippet filename="test attribute" fullpath="test attribute">
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                             <ellipsis>test string</ellipsis>
+                                       </snippet>
+                                 </snippets>
+                                 <issue-information>
+                                       <template>test string</template>
+                                       <variant-id>9</variant-id>
+                                       <dictionary>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                             <item>test string</item>
+                                       </dictionary>
+                                       <security-risks>
+                                             <security-risk>test string</security-risk>
+                                       </security-risks>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                       <snippets>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                             <snippet filename="test attribute" fullpath="test attribute">
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                                   <ellipsis>test string</ellipsis>
+                                             </snippet>
+                                       </snippets>
+                                 </issue-information>
+                                 <ValidationDataLocationAtTestResponse>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                       <Validation Location="test attribute" Length="test attribute" String="test attribute">test string</Validation>
+                                 </ValidationDataLocationAtTestResponse>
+                                 <OriginalHttpTraffic>test string</OriginalHttpTraffic>
+                                 <TestHttpTraffic>test string</TestHttpTraffic>
+                           </Variant>
+                     </Issue>
+               </Issues>
+         </Results>
+         <ApplicationData>
+               <Cookies>
+                     <Total>9</Total>
+                     <Cookie>
+                           <Value>test string</Value>
+                           <Value>test string</Value>
+                           <Value>test string</Value>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <Domain>test string</Domain>
+                           <Domain>test string</Domain>
+                           <Domain>test string</Domain>
+                           <Expires>test string</Expires>
+                           <Secure>test string</Secure>
+                           <Name>test string</Name>
+                     </Cookie>
+                     <Cookie>
+                           <Value>test string</Value>
+                           <Value>test string</Value>
+                           <Value>test string</Value>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <Domain>test string</Domain>
+                           <Domain>test string</Domain>
+                           <Domain>test string</Domain>
+                           <Expires>test string</Expires>
+                           <Secure>test string</Secure>
+                           <Name>test string</Name>
+                     </Cookie>
+                     <Cookie>
+                           <Value>test string</Value>
+                           <Value>test string</Value>
+                           <Value>test string</Value>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstSetInUrl>test string</FirstSetInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <FirstRequestedInUrl>test string</FirstRequestedInUrl>
+                           <Domain>test string</Domain>
+                           <Domain>test string</Domain>
+                           <Domain>test string</Domain>
+                           <Expires>test string</Expires>
+                           <Secure>test string</Secure>
+                           <Name>test string</Name>
+                     </Cookie>
+               </Cookies>
+               <JavaScripts>
+                     <Total>9</Total>
+                     <JavaScript>
+                           <Text>test string</Text>
+                           <Url>test string</Url>
+                     </JavaScript>
+                     <JavaScript>
+                           <Text>test string</Text>
+                           <Url>test string</Url>
+                     </JavaScript>
+                     <JavaScript>
+                           <Text>test string</Text>
+                           <Url>test string</Url>
+                     </JavaScript>
+               </JavaScripts>
+               <Comments>
+                     <Total>9</Total>
+                     <Comment>
+                           <Text>test string</Text>
+                           <Url>test string</Url>
+                     </Comment>
+                     <Comment>
+                           <Text>test string</Text>
+                           <Url>test string</Url>
+                     </Comment>
+                     <Comment>
+                           <Text>test string</Text>
+                           <Url>test string</Url>
+                     </Comment>
+               </Comments>
+               <ScriptParameters>
+                     <Total>9</Total>
+                     <ScriptParameter>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Values>
+                                 <Value>test string</Value>
+                                 <Value>test string</Value>
+                                 <Value>test string</Value>
+                           </Values>
+                           <Url>test string</Url>
+                           <Url>test string</Url>
+                           <Url>test string</Url>
+                           <Type>test string</Type>
+                           <Type>test string</Type>
+                           <Type>test string</Type>
+                     </ScriptParameter>
+                     <ScriptParameter>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Values>
+                                 <Value>test string</Value>
+                                 <Value>test string</Value>
+                                 <Value>test string</Value>
+                           </Values>
+                           <Url>test string</Url>
+                           <Url>test string</Url>
+                           <Url>test string</Url>
+                           <Type>test string</Type>
+                           <Type>test string</Type>
+                           <Type>test string</Type>
+                     </ScriptParameter>
+                     <ScriptParameter>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Name>test string</Name>
+                           <Values>
+                                 <Value>test string</Value>
+                                 <Value>test string</Value>
+                                 <Value>test string</Value>
+                           </Values>
+                           <Url>test string</Url>
+                           <Url>test string</Url>
+                           <Url>test string</Url>
+                           <Type>test string</Type>
+                           <Type>test string</Type>
+                           <Type>test string</Type>
+                     </ScriptParameter>
+               </ScriptParameters>
+               <VisitedLinks>
+                     <Total>9</Total>
+                     <VisitedLink>
+                           <Url>test string</Url>
+                     </VisitedLink>
+                     <VisitedLink>
+                           <Url>test string</Url>
+                     </VisitedLink>
+                     <VisitedLink>
+                           <Url>test string</Url>
+                     </VisitedLink>
+               </VisitedLinks>
+               <BrokenLinks>
+                     <Total>9</Total>
+                     <BrokenLink>
+                           <Reason>test string</Reason>
+                           <Url>test string</Url>
+                     </BrokenLink>
+                     <BrokenLink>
+                           <Reason>test string</Reason>
+                           <Url>test string</Url>
+                     </BrokenLink>
+                     <BrokenLink>
+                           <Reason>test string</Reason>
+                           <Url>test string</Url>
+                     </BrokenLink>
+               </BrokenLinks>
+               <FilteredLinks>
+                     <Total>9</Total>
+                     <FilteredLink>
+                           <Reason>test string</Reason>
+                           <Url>test string</Url>
+                     </FilteredLink>
+                     <FilteredLink>
+                           <Reason>test string</Reason>
+                           <Url>test string</Url>
+                     </FilteredLink>
+                     <FilteredLink>
+                           <Reason>test string</Reason>
+                           <Url>test string</Url>
+                     </FilteredLink>
+               </FilteredLinks>
+         </ApplicationData>
+   </XmlReport>
+ 

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XmlReport" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:complexType name="TextElement">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="br" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="li" type="TextElement" />
+        <xs:element name="text" type="xs:string" />
+        <xs:element name="code" type="xs:string" />
+        <xs:element name="indentText" type="xs:string" />
+        <xs:element name="link" nillable="true" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="target" form="unqualified" type="xs:string" />
+                <xs:attribute name="id" form="unqualified" type="xs:string"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="type" form="unqualified" type="xs:string" />
+    <xs:attribute name="value" form="unqualified" type="xs:string" />
+  </xs:complexType>
+  
+  <xs:element name="snippets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="snippet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="snippet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ellipsis"/>
+        <xs:element ref="line"/>
+      </xs:choice>
+      <xs:attribute name="filename" use="required" type="xs:anyURI"/>
+      <xs:attribute name="fullpath" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ellipsis">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="line">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="keyword"/>
+        <xs:element ref="comment"/>
+        <xs:element ref="highlight"/>
+      </xs:choice>
+      <xs:attribute name="linenumber" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="comment" type="xs:string"/>
+  <xs:element name="highlight">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="keyword"/>
+      </xs:sequence>
+      <xs:attribute name="step" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="keyword" type="xs:NCName"/>
+
+  <xs:element name="XmlReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AppScanInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Edition" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="Version" type="xs:string" />
+              <xs:element name="ServicePack" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Summary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalIssues" type="xs:integer" />
+              <xs:element name="TotalVariants" type="xs:integer" />
+              <xs:element name="TotalRemediations" type="xs:integer" />
+              <xs:element name="TotalScanDuration" type="xs:string" />
+              <xs:element name="Hosts">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Host" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TotalInformationalIssues" type="xs:integer" />
+                          <xs:element name="TotalLowSeverityIssues" type="xs:integer" />
+                          <xs:element name="TotalMediumSeverityIssues" type="xs:integer" />
+                          <xs:element name="TotalHighSeverityIssues" type="xs:integer" />
+                          <xs:element name="Total" type="xs:integer" />
+                        </xs:sequence>
+                        <xs:attribute name="Name" form="unqualified" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Results">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RemediationTypes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="RemediationType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="Priority" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="fixRecommendation" type="TextElement" minOccurs="0" />
+                        </xs:sequence>
+                        <xs:attribute name="ID" form="unqualified" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="IssueTypes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="IssueType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="RemediationID" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="advisory" minOccurs="0" maxOccurs="1" nillable="true">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="name" type="xs:string" />
+                                <xs:element name="testDescription" type="xs:string" />
+                                <xs:element name="threatClassification" maxOccurs="1" minOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="name" type="xs:string" />
+                                      <xs:element name="reference" type="xs:string" minOccurs="0" nillable="true" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="testTechnicalDescription" type="TextElement" />
+                                <xs:element name="causes" minOccurs="0" maxOccurs="1" nillable="true">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="cause" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="securityRisks" minOccurs="0" maxOccurs="1" nillable="true">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="securityRisk" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="affectedProducts" minOccurs="0" maxOccurs="1" nillable="true">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="affectedProduct" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="cve" minOccurs="0" maxOccurs="1" nillable="true" type="TextElement" />
+                                <xs:element name="cwe" minOccurs="0" maxOccurs="1" nillable="true" type="TextElement" />
+                                <xs:element name="references" minOccurs="0" maxOccurs="1" nillable="true" type="TextElement" />
+                                <xs:element name="fixRecommendations">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="fixRecommendation" type="TextElement" minOccurs="0" maxOccurs="unbounded" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Severity" type="xs:string" maxOccurs="1" minOccurs="1" />                          
+                          <xs:element name="Invasive" type="xs:string" maxOccurs="1" minOccurs="1" />
+                        </xs:sequence>
+                        <xs:attribute name="ID" form="unqualified" type="xs:ID" />
+                        <xs:attribute name="Count" form="unqualified" type="xs:int" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Issues">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Issue" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Url" type="xs:string" />
+                          <xs:element name="Severity" type="xs:string" />
+                          <xs:element name="Entity" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:attribute name="Name" form="unqualified" type="xs:string" />
+                              <xs:attribute name="Type" form="unqualified" type="xs:string" />
+                              <xs:attribute name="Page" form="unqualified" type="xs:string" />
+                              <xs:attribute name="Line" form="unqualified" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Variant" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                <xs:element name="Difference" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                <xs:element name="Reasoning" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                <xs:element name="AdditionalData" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                <xs:element name="CWE" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="CVE" type="xs:string" minOccurs="0" maxOccurs="1" />
+								<xs:element minOccurs="0" maxOccurs="unbounded" name="SinkData">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxEnclosingFileName" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxEnclosingClassName" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxEnclosingLineNumber" type="xs:unsignedLong" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxEnclosingMethodName" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxSinkMethodName" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxSinkMethodArguments" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxSinkMethodReturnValue" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxSinkArgIndex" type="xs:unsignedByte" />
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="glassBoxSinkArgValue" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>                                
+									
+								<xs:element minOccurs="0" maxOccurs="unbounded" ref="snippets"/>
+									
+                                <xs:element minOccurs="0" name="issue-information">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="template" type="xs:string" />
+                                      <xs:element name="variant-id" type="xs:int" />
+
+
+
+										<xs:element name="dictionary">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" name="item">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="id" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="security-risks">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="security-risk" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+										
+											
+									  <xs:element minOccurs="0" maxOccurs="unbounded" ref="snippets"/>
+																					                                     
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                
+                                
+                                <xs:element name="ValidationDataLocationAtTestResponse">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Validation" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:attribute name="Location" form="unqualified" type="xs:int" />
+                                          <xs:attribute name="Length" form="unqualified" type="xs:int" />
+                                          <xs:attribute name="String" form="unqualified" type="xs:string" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                
+                                  <xs:element name="OriginalHttpTraffic" type="xs:string" maxOccurs="1" minOccurs="0" />
+                                <xs:element name="TestHttpTraffic" type="xs:string" maxOccurs="1" minOccurs="0" />
+                              </xs:sequence>
+                              <xs:attribute name="ID" form="unqualified" type="xs:int" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="IssueTypeID" form="unqualified" type="xs:string" />
+                        <xs:attribute name="Noise" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ApplicationData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cookies">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="Cookie" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="FirstSetInUrl" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="FirstRequestedInUrl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                          <xs:element name="Domain" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="Expires" type="xs:string" />
+                          <xs:element name="Secure" type="xs:string" />
+                          <xs:element name="Name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="JavaScripts">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="JavaScript" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Text" type="xs:string" maxOccurs="1" minOccurs="0" />
+                          <xs:element name="Url" type="xs:string" maxOccurs="1" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Comments">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="Comment" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Text" type="xs:string" maxOccurs="1" minOccurs="0" />
+                          <xs:element name="Url" type="xs:string" maxOccurs="1" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ScriptParameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="ScriptParameter" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="Values">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Url" type="xs:string" maxOccurs="1" minOccurs="1" />
+                          <xs:element name="Type" type="xs:string" maxOccurs="1" minOccurs="1" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="VisitedLinks">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="VisitedLink" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Url" type="xs:string" maxOccurs="1" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="BrokenLinks">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="BrokenLink" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Reason" type="xs:string" maxOccurs="1" minOccurs="0" />
+                          <xs:element name="Url" type="xs:string" maxOccurs="1" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FilteredLinks">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Total" type="xs:integer" />
+                    <xs:element name="FilteredLink" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Reason" type="xs:string" maxOccurs="1" minOccurs="0" />
+                          <xs:element name="Url" type="xs:string" maxOccurs="1" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Name" form="unqualified" type="xs:string" />
+      <xs:attribute name="XmlExportVersion" form="unqualified" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
