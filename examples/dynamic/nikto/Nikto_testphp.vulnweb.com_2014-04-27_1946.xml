@@ -4,6 +4,7 @@
 
 <scandetails targetip="176.28.50.165" targethostname="testphp.vulnweb.com" targetport="80" targetbanner="nginx/1.4.1" starttime="2014-04-27 20:09:22" sitename="http://testphp.vulnweb.com:80" siteip="http://176.28.50.165:80" hostheader="testphp.vulnweb.com" errors="0" checks="6545">
 
+<ssl ciphers="" issuers="" info="" />
 
 <item id="999986" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
 <description><![CDATA[Retrieved x-powered-by header: PHP/5.3.10-1~lucid+2uwsgi2]]></description>
