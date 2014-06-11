@@ -17,6 +17,7 @@
 					<Finding NativeID="40018" IdentifiedTimestamp="2002-05-30T09:00:00" UniqueID="0000-0000-0000-0001">
 					    <Summary>SQL Injection - MySQL</Summary>
 					    <Description>SQL injection may be possible</Description>
+					    <Confidence Level="4" AuditStatus="UnAudited" />
 					    <Confidence>9</Confidence>
 					    <Background>RDBMS [MySQL] likely, given UNION-specific error message fragment [The used SELECT statements have a different number of columns] in HTML results
 			The vulnerability was detected by manipulating the parameter with an SQL UNION clause to cause a database error message to be returned and recognised
@@ -162,7 +163,7 @@ Content-Type: text/html
 			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00" UniqueID="0000-0000-0000-9999">
 			    <Summary>XSS</Summary>
 			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>More info on the type of issue</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
 			    <Further-Information>
@@ -193,7 +194,7 @@ Content-Type: text/html
 			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
 			    <Summary>XSS</Summary>
 			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>More info on the type of issue</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
 			    <Further-Information>
@@ -232,7 +233,7 @@ Content-Type: text/html
 			<Finding>
 			    <Summary>Cross-Site Scripting: Reflected</Summary>
 			    <Description>More detailed description</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
 				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
 					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.
@@ -257,7 +258,7 @@ Content-Type: text/html
 			<Finding>
 			    <Summary>Cross-Site Scripting: Reflected</Summary>
 			    <Description>More detailed description</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
 				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
 					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.

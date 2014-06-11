@@ -16,7 +16,7 @@
 					<Finding NativeID="The internal Test ID" IdentifiedTimestamp="DateTime stamp for when we found this vulnerability" UniqueID="The Software unique ID for this Finding">
 					    <Summary>A sort (one line) description</Summary>
 					    <Description>More detailed description</Description>
-					    <Confidence>One of an agreed list of values</Confidence>
+					    <Confidence Level="One of an agreed list of values" AuditStatus="One of an agreed list of values" />
 					    <Background>More info on the type of issue</Background>
 					    <Remediation>Advise on how to fix the issue</Remediation>
 					    <Further-Information>

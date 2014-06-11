@@ -17,7 +17,7 @@
 					<Finding NativeID="40018" IdentifiedTimestamp="2002-05-30T09:00:00" UniqueID="0000-0000-0000-0001">
 					    <Summary>SQL Injection - MySQL</Summary>
 					    <Description>SQL injection may be possible</Description>
-					    <Confidence>9</Confidence>
+					    <Confidence Level="4" AuditStatus="UnAudited" />
 					    <Background>RDBMS [MySQL] likely, given UNION-specific error message fragment [The used SELECT statements have a different number of columns] in HTML results
 			The vulnerability was detected by manipulating the parameter with an SQL UNION clause to cause a database error message to be returned and recognised
 						</Background>

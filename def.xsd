@@ -1,5 +1,8 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="OWASP-DEF">
+    <xs:annotation>
+      <xs:documentation>The data in this example is compose from different sources</xs:documentation>
+    </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element type="xs:string" name="Session-Reference"/>
@@ -27,7 +30,7 @@
                     </xs:element>
                     <xs:element name="Port" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
-                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                        <xs:sequence>
                           <xs:element name="Service">
                             <xs:complexType>
                               <xs:simpleContent>
@@ -39,10 +42,25 @@
                               </xs:simpleContent>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element type="xs:string" name="Software-Name"/>
-                          <xs:element type="xs:string" name="Software-Version"/>
-                          <xs:element type="xs:string" name="Software-Arguments"/>
-                          <xs:element name="Vulnerability">
+                          <xs:element type="xs:string" name="Software-Name" minOccurs="0"/>
+                          <xs:element type="xs:string" name="Software-Version" minOccurs="0"/>
+                          <xs:element type="xs:string" name="Software-Arguments" minOccurs="0"/>
+                          <xs:element name="Software-Additional" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Data">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="name"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Vulnerability" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="Finding">
@@ -50,7 +68,16 @@
                                     <xs:sequence>
                                       <xs:element type="xs:string" name="Summary"/>
                                       <xs:element type="xs:string" name="Description"/>
-                                      <xs:element type="xs:byte" name="Confidence"/>
+                                      <xs:element name="Confidence" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:byte" name="Level" use="optional"/>
+                                              <xs:attribute type="xs:string" name="AuditStatus" use="optional"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
                                       <xs:element type="xs:string" name="Background"/>
                                       <xs:element type="xs:string" name="Remediation"/>
                                       <xs:element name="Further-Information">
@@ -232,7 +259,7 @@
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute type="xs:string" name="NativeID"/>
+                                    <xs:attribute type="xs:int" name="NativeID"/>
                                     <xs:attribute type="xs:dateTime" name="IdentifiedTimestamp"/>
                                     <xs:attribute type="xs:string" name="UniqueID"/>
                                   </xs:complexType>
@@ -241,7 +268,7 @@
                               <xs:attribute type="xs:string" name="Severity"/>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element name="Scan-Data">
+                          <xs:element name="Scan-Data" maxOccurs="unbounded" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="data" maxOccurs="unbounded" minOccurs="0">
@@ -256,7 +283,7 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                        </xs:choice>
+                        </xs:sequence>
                         <xs:attribute type="xs:string" name="protocol" use="optional"/>
                         <xs:attribute type="xs:byte" name="portid" use="optional"/>
                       </xs:complexType>
@@ -269,9 +296,24 @@
               <xs:element type="xs:string" name="Software-Name"/>
               <xs:element type="xs:string" name="Software-Version"/>
               <xs:element type="xs:string" name="Software-Arguments"/>
-              <xs:element type="xs:string" name="Software-name" minOccurs="0"/>
-              <xs:element type="xs:string" name="Software-version" minOccurs="0"/>
-              <xs:element type="xs:string" name="Software-arguments" minOccurs="0"/>
+              <xs:element type="xs:string" name="Software-name"/>
+              <xs:element type="xs:string" name="Software-version"/>
+              <xs:element type="xs:string" name="Software-arguments"/>
+              <xs:element name="Software-Additional">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Data">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="name" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
               <xs:element name="Vulnerability" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
@@ -280,7 +322,16 @@
                         <xs:sequence>
                           <xs:element type="xs:string" name="Summary"/>
                           <xs:element type="xs:string" name="Description"/>
-                          <xs:element type="xs:byte" name="Confidence"/>
+                          <xs:element name="Confidence">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="Level" use="optional"/>
+                                  <xs:attribute type="xs:string" name="AuditStatus" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
                           <xs:element type="xs:string" name="Background"/>
                           <xs:element type="xs:string" name="Remediation"/>
                           <xs:element name="Further-Information">
@@ -323,7 +374,7 @@
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attribute type="xs:string" name="NativeID" use="optional"/>
+                        <xs:attribute type="xs:short" name="NativeID" use="optional"/>
                         <xs:attribute type="xs:string" name="IdentifiedTimestamp" use="optional"/>
                         <xs:attribute type="xs:string" name="UniqueID" use="optional"/>
                       </xs:complexType>
@@ -344,7 +395,7 @@
   <xs:simpleType name="Confidence">
       <xs:restriction base="xs:integer">
           <xs:minInclusive value="0"/>
-          <xs:maxInclusive value="10"/>
+          <xs:maxInclusive value="5"/>
       </xs:restriction>
   </xs:simpleType>
 
@@ -381,6 +432,26 @@
           <xs:enumeration value="Dynamic" />
           <xs:enumeration value="Static" />
           <xs:enumeration value="Info" />
+      </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AuditStatus">
+      <xs:annotation>
+          <xs:documentation>
+              One of Audited, UnAudited, FalsePositive, BadPracties, NotAnIssue or Verified.
+          </xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+      </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Audit">
+      <xs:restriction base="AuditStatus">
+          <xs:enumeration value="Audited" />
+          <xs:enumeration value="UnAudited" />
+          <xs:enumeration value="FalsePositive" />
+          <xs:enumeration value="BadPracties" />
+          <xs:enumeration value="NotAnIssue" />
+          <xs:enumeration value="Verified" />
       </xs:restriction>
   </xs:simpleType>
 
