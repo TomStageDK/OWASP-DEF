@@ -14,7 +14,7 @@
 			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00" UniqueID="0000-0000-0000-9999">
 			    <Summary>XSS</Summary>
 			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>More info on the type of issue</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
 			    <Further-Information>
@@ -45,7 +45,7 @@
 			<Finding NativeID="23456" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
 			    <Summary>XSS</Summary>
 			    <Description>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>More info on the type of issue</Background>
 			    <Remediation>Advise on how to fix the issue</Remediation>
 			    <Further-Information>
@@ -81,7 +81,7 @@
 			<Finding>
 			    <Summary>Cross-Site Scripting: Reflected</Summary>
 			    <Description>More detailed description</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
 				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
 					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.
@@ -106,7 +106,7 @@
 			<Finding>
 			    <Summary>Cross-Site Scripting: Reflected</Summary>
 			    <Description>More detailed description</Description>
-			    <Confidence>10</Confidence>
+			    <Confidence Level="4" AuditStatus="UnAudited" />
 			    <Background>Cross-site scripting (XSS) vulnerabilities occur when:
 				1. Data enters a web application through an untrusted source. In the case of Reflected XSS, the untrusted source is typically a
 					web request, while in the case of Persisted (also known as Stored) XSS it is typically a database or other back-end datastore.
