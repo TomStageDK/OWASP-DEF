@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<OWASP-DEF SpecVersion="0.1">
+    <Session-Reference>Nikto Scan of testphp.vulnweb.com</Session-Reference>
+    <Date-Time>2014-04-27 20:09:22</Date-Time>
+	<Scan type="dynamic">
+		<Host name="testphp.vulnweb.com" ip-address="176.28.50.165">
+			<Port protocol="TCP" portid="80">
+				<Service name="HTTP" product="nginx" version="1.4.1" />
+			    <Software-Name>Nikto</Software-Name>
+			    <Software-Version>2.1.5</Software-Version>
+			    <Software-Arguments>-h testphp.vulnweb.com -vhost testphp.vulnweb.com -port 80 -root / -ask no -output /tmp/Nikto_testphp.vulnweb.com_2014-04-27_1946.xml -Format xml -Cgidirs all</Software-Arguments>
+			    <Software-Additional>
+			    	<Data name="checks">6545</Data>
+				</Software-Additional>
+				<Vulnerability Severity="">
+					<Finding NativeID="" IdentifiedTimestamp="" UniqueID="999986">
+					    <Summary></Summary>
+					    <Description><![CDATA[Retrieved x-powered-by header: PHP/5.3.10-1~lucid+2uwsgi2]]></Description>
+					    <Confidence Level="" AuditStatus="" />
+					    <Background></Background>
+					    <Remediation></Remediation>
+					    <Further-Information>
+					    	<Further-Info name="" url="" />
+					    </Further-Information>
+						<Classifications>
+							<Classification type="osvd" id="0" href="http://osvdb.org/0"></Classification>
+						</Classifications>
+					    <Additional-Data>
+					    	<Data name=""></Data>
+					    </Additional-Data>
+						<Page>
+						    <Page-Reference></Page-Reference>
+						    <URL>http://testphp.vulnweb.com:80/</URL>
+						    <Method>GET</Method>
+						    <HTTPVersion></HTTPVersion>
+						    <StatusCode></StatusCode>
+			    			<Language></Language>
+							<Parameters>
+							    <Parameter></Parameter>
+							</Parameters>
+							<Request-Response>
+							    <Request>
+							    	<Request-Raw></Request-Raw>
+									<Request-Headers>
+										<Data name=""></Data>
+									</Request-Headers>
+								    <Request-Cookie>
+										<Data name=""></Data>
+								    </Request-Cookie>
+									<Additional-RequestData>
+										<Data name=""></Data>
+									</Additional-RequestData>
+							    </Request>
+							    <Response>
+							    	<Response-Raw></Response-Raw>
+									<Response-Headers>
+										<Data name=""></Data>
+									</Response-Headers>
+								    <Response-Cookie>
+										<Data name=""></Data>
+								    </Response-Cookie>
+									<Additional-ResponseData>
+										<Data name=""></Data>
+									</Additional-ResponseData>
+									<Response-ScreenShot></Response-ScreenShot>
+							    </Response>
+							</Request-Response>
+						</Page>
+					</Finding>
+				</Vulnerability>
+			</Port>
+		</Host>
+	</Scan>
+</OWASP-DEF>
