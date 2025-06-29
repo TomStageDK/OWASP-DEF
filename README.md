@@ -1,3 +1,5 @@
+This project have been archived due to inactivity.
+
 OWASP-DEF
 =========
 
